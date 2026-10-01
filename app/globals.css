@@ -1,14 +1,18 @@
 :root {
-  --ivoire: #f7f1ea;
-  --sable: #efe5da;
-  --lin: #e6d8c9;
-  --encre: #1f1a17;
-  --encre-douce: #4a403a;
-  --gris: #7a6e66;
-  --accent: #8e3b2f; /* bordeaux chaud, couleur des boutons */
-  --accent-fonce: #6f2c22;
-  --accent-clair: #f3e2dc;
-  --nuit: #1b1614;
+  /* Charte FineArt Académie (reprise du live de juillet) : cuivre, noir, crème */
+  --ivoire: #f8f3ec;
+  --sable: #f1e7da;
+  --lin: #e5d5c3;
+  --encre: #17120f;
+  --encre-douce: #463a32;
+  --gris: #76695f;
+  --cuivre: #bc6c2e; /* couleur de marque, décoratif */
+  --accent: #a65a22; /* textes et liens cuivre, contraste AA sur crème */
+  --accent-fonce: #8a4a1b;
+  --accent-clair: #f6e6d6;
+  --bouton: #a65a22;
+  --bouton-survol: #8a4a1b;
+  --nuit: #17120f;
   --erreur: #b3261e;
   --rayon: 14px;
   --ombre: 0 10px 30px rgba(31, 26, 23, 0.08);
@@ -110,7 +114,7 @@ a {
 }
 
 .section--nuit .surtitre {
-  color: #e6b8a8;
+  color: #e9b48a;
 }
 
 .lead {
@@ -132,20 +136,20 @@ a {
   padding: 14px 28px;
   border: 0;
   border-radius: 999px;
-  background: var(--accent);
+  background: linear-gradient(180deg, var(--cuivre), var(--bouton));
   color: #fff;
   font: inherit;
   font-weight: 600;
   font-size: 1.05rem;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(142, 59, 47, 0.28);
+  box-shadow: 0 10px 24px -6px rgba(166, 90, 34, 0.45);
   transition: background 0.15s ease, transform 0.15s ease;
   -webkit-tap-highlight-color: transparent;
 }
 
 .bouton:hover {
-  background: var(--accent-fonce);
+  background: var(--bouton-survol);
 }
 
 .bouton:active {

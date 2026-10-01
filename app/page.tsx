@@ -3,6 +3,14 @@ import { CtaMobile } from "@/components/CtaMobile";
 import { Portrait } from "@/components/Portrait";
 import { Temoignages, type TemoignageMedia } from "@/components/Temoignages";
 import { Footer } from "@/components/Footer";
+import { VideoPresentation } from "@/components/VideoPresentation";
+import {
+  CADEAU_INSCRIPTION,
+  CADEAU_LIVE,
+  NOM_EVENEMENT,
+  POSTER_PRESENTATION,
+  VIDEO_PRESENTATION,
+} from "@/content/evenement";
 import { TEMOIGNAGES, URL_TEMOIGNAGES } from "@/content/temoignages";
 import { publicFileExists } from "@/lib/assets";
 import styles from "./page.module.css";
@@ -48,64 +56,61 @@ export default function Page() {
     };
   });
   const photoPresentation = publicFileExists(PHOTO_PRESENTATION) ? PHOTO_PRESENTATION : PHOTO_HERO;
+  const videoPresentation = publicFileExists(VIDEO_PRESENTATION) ? VIDEO_PRESENTATION : undefined;
+  const posterPresentation = publicFileExists(POSTER_PRESENTATION)
+    ? POSTER_PRESENTATION
+    : publicFileExists(PHOTO_HERO)
+      ? PHOTO_HERO
+      : undefined;
 
   return (
     <InscriptionProvider>
       <main>
         {/* ============ 1. HERO ============ */}
+        {/* Structure inspirée de Déclic (Shootiful) : titre, vidéo courte, bouton, réassurance. */}
         <section id="hero" className={styles.hero}>
-          <div className={`conteneur ${styles.heroGrille}`}>
-            <div className={styles.heroTexte}>
-              <p className={styles.heroSurtitre}>2 soirées de live gratuites · 18 et 19 octobre · 20h</p>
+          <div className={`conteneur ${styles.heroColonne}`}>
+            <p className={styles.marque}>
+              {NOM_EVENEMENT} <span>· avec Benjamin Hanachowicz</span>
+            </p>
+            <p className={styles.heroSurtitre}>2 soirées de live gratuites · 18 et 19 octobre · 20h</p>
 
-              {/*
-                Variantes de H1 proposées (la n°1 est intégrée) :
-                1. « Vivre du boudoir à plein temps, toute l'année. Je te montre comment, en direct. »
-                2. « Vivre du boudoir, toute l'année. La méthode, en direct, en 2 soirées. »
-                3. « Le boudoir peut te faire vivre de la photo à plein temps. Je te montre comment en 2 soirées. »
-                4. « Tes clientes, ton offre, ton prix : 2 soirées pour vivre du boudoir toute l'année. »
-                5. « Et si le boudoir te permettait de vivre de la photo, toute l'année ? »
-                Pourquoi la n°1 : elle porte l'idée « à plein temps, toute l'année » des pubs,
-                elle est en première personne (« je te montre »), et elle ne promet rien
-                d'autre que ce que Benjamin fait vraiment pendant le live.
-              */}
-              <h1 className={styles.h1}>
-                Vivre du boudoir à plein temps, toute l&apos;année.{" "}
-                <em>Je te montre comment, en direct.</em>
-              </h1>
+            {/*
+              Variantes de H1 proposées (la n°1 est intégrée) :
+              1. « Vivre du boudoir à plein temps, toute l'année. Je te montre comment, en direct. »
+              2. « Vivre du boudoir, toute l'année. La méthode, en direct, en 2 soirées. »
+              3. « Le boudoir peut te faire vivre de la photo à plein temps. Je te montre comment en 2 soirées. »
+              4. « Tes clientes, ton offre, ton prix : 2 soirées pour vivre du boudoir toute l'année. »
+              5. « Et si le boudoir te permettait de vivre de la photo, toute l'année ? »
+              Pourquoi la n°1 : elle porte l'idée « à plein temps, toute l'année » des pubs,
+              elle est en première personne (« je te montre »), et elle ne promet rien
+              d'autre que ce que Benjamin fait vraiment pendant le live.
+            */}
+            <h1 className={styles.h1}>
+              Vivre du boudoir à plein temps, toute l&apos;année.{" "}
+              <em>Je te montre comment, en direct.</em>
+            </h1>
 
-              <div className={styles.signature}>
-                <Portrait src={PHOTO_HERO} alt="Benjamin Hanachowicz" variante="avatar" priority />
-                <p>
-                  <strong>Benjamin Hanachowicz</strong>
-                  <br />
-                  Photographe boudoir à Roanne
-                </p>
-              </div>
-
-              <p className={styles.sousTitre}>
-                2 soirées en direct avec moi pour te montrer comment trouver tes premières clientes boudoir,
-                construire ton offre premium, et à quel prix la vendre pour en vivre. Pour les photographes boudoir
-                qui veulent en vivre, et pour ceux qui veulent l&apos;intégrer à leur activité.
-              </p>
-
-              <ul className={styles.bulles}>
-                <li>100 % gratuit</li>
-                <li>En direct avec moi les 18 et 19 oct. à 20h</li>
-                <li>Que tu fasses déjà du boudoir ou pas encore</li>
-              </ul>
-
-              <BoutonInscription plein className={styles.heroBouton} />
+            <div className={styles.heroVideo}>
+              <VideoPresentation src={videoPresentation} poster={posterPresentation} duree="2 min" />
             </div>
 
-            <div className={styles.heroPhoto}>
-              <Portrait
-                src={PHOTO_HERO}
-                alt="Benjamin Hanachowicz dans son studio boudoir à Roanne"
-                variante="grand"
-                priority
-              />
-            </div>
+            <BoutonInscription plein className={styles.heroBouton} />
+
+            <ul className={styles.bulles}>
+              <li>100 % gratuit</li>
+              <li>En direct avec moi les 18 et 19 oct. à 20h</li>
+              <li>Que tu fasses déjà du boudoir ou pas encore</li>
+            </ul>
+
+            <p className={styles.sousTitre}>
+              2 soirées en direct avec moi pour te montrer comment trouver tes premières clientes boudoir,
+              construire ton offre premium, et à quel prix la vendre pour en vivre. Pour les photographes boudoir
+              qui veulent en vivre, et pour ceux qui veulent l&apos;intégrer à leur activité.
+            </p>
+            <p className={styles.cadeauHero}>
+              <strong>Cadeau dès ton inscription :</strong> {CADEAU_INSCRIPTION.titre.toLowerCase()}.
+            </p>
           </div>
         </section>
 
@@ -222,6 +227,30 @@ export default function Page() {
             <div className="texte-centre">
               <BoutonInscription />
             </div>
+          </div>
+        </section>
+
+        {/* ============ 5 bis. TES CADEAUX ============ */}
+        {/* [À CONFIRMER : contenu des deux cadeaux, voir content/evenement.ts] */}
+        <section className="section section--sable">
+          <div className="conteneur">
+            <span className="surtitre">Tes cadeaux</span>
+            <h2>Deux choses que je te donne</h2>
+            <div className={styles.cadeaux}>
+              <article className={styles.cadeau}>
+                <p className={styles.cadeauQuand}>Dès ton inscription</p>
+                <h3>{CADEAU_INSCRIPTION.titre}</h3>
+                <p>{CADEAU_INSCRIPTION.texte}</p>
+              </article>
+              <article className={`${styles.cadeau} ${styles.cadeauLive}`}>
+                <p className={styles.cadeauQuand}>Pendant le live · réservé aux présents</p>
+                <h3>{CADEAU_LIVE.titre}</h3>
+                <p>{CADEAU_LIVE.texte}</p>
+              </article>
+            </div>
+            <p className={styles.cadeauxNote}>
+              <span className="a-valider">[À CONFIRMER : contenu des cadeaux]</span>
+            </p>
           </div>
         </section>
 

@@ -1,0 +1,55 @@
+.cadre {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #1a1513;
+  box-shadow: 0 24px 50px -24px rgba(20, 17, 16, 0.55);
+}
+
+.cadre video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bouton,
+.vide {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 10px;
+  border: 0;
+  padding: 12px;
+  background: linear-gradient(180deg, rgba(20, 17, 16, 0) 40%, rgba(20, 17, 16, 0.55));
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+}
+
+.vide {
+  background: radial-gradient(ellipse at center, #3a2a20, #1a1513 70%);
+  cursor: default;
+}
+
+.lecture {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  padding-left: 4px;
+  border-radius: 50%;
+  background: var(--bouton);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.duree {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
