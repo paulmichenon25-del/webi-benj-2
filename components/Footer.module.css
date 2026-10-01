@@ -1,0 +1,35 @@
+.footer {
+  padding: 36px 0 110px; /* marge basse : laisse la place au bouton fixé sur mobile */
+  background: var(--nuit);
+  color: #b9aca3;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 6px 0 0;
+}
+
+.liens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+  margin-bottom: 10px;
+}
+
+.liens a {
+  color: #e9dfd6;
+  padding: 6px 0;
+}
+
+.meta {
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+@media (min-width: 900px) {
+  .footer {
+    padding-bottom: 36px;
+  }
+}

@@ -1,0 +1,138 @@
+.page {
+  padding: 32px 0 24px;
+}
+
+.entete {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.titre {
+  font-size: clamp(1.9rem, 8vw, 3rem);
+  margin-bottom: 22px;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.date {
+  display: grid;
+  gap: 2px;
+  padding: 18px 10px;
+  border-radius: var(--rayon);
+  background: var(--nuit);
+  color: var(--ivoire);
+}
+
+.dateLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e6b8a8;
+}
+
+.dateJour {
+  font-family: var(--font-titre), Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.dateHeure {
+  font-family: var(--font-titre), Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1.1;
+}
+
+.fuseau {
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  color: var(--gris);
+}
+
+.bloc {
+  margin-bottom: 18px;
+  padding: 26px 20px;
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid var(--lin);
+}
+
+.bloc h2 {
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+}
+
+.bloc > p {
+  color: var(--encre-douce);
+}
+
+.etape {
+  margin: 0 0 6px !important;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent) !important;
+}
+
+.agenda {
+  display: grid;
+  gap: 18px;
+  margin-top: 6px;
+}
+
+.agendaLabel {
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.agendaBoutons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.agendaBoutons a {
+  padding: 10px 8px;
+  font-size: 0.92rem;
+}
+
+.video {
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: var(--lin);
+  aspect-ratio: 9 / 16;
+  max-height: 60vh;
+  margin: 0 auto;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoVide {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.rappel {
+  background: var(--accent-clair);
+  border-color: transparent;
+}
+
+.signature {
+  margin: 0;
+  font-family: var(--font-titre), Georgia, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--encre) !important;
+}

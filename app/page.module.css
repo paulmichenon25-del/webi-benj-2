@@ -1,0 +1,364 @@
+/* ---------- Hero ---------- */
+.hero {
+  padding: 14px 0 32px;
+  background: radial-gradient(120% 80% at 100% 0%, #f1e2d6 0%, var(--ivoire) 60%);
+}
+
+.heroGrille {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+
+.heroSurtitre {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--lin);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.3;
+}
+
+.h1 {
+  font-size: clamp(1.7rem, 7.6vw, 3.4rem);
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.h1 em {
+  display: block;
+  margin-top: 4px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent);
+  font-size: 0.72em;
+}
+
+.signature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.signature p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: var(--encre-douce);
+}
+
+.signature strong {
+  color: var(--encre);
+}
+
+.sousTitre {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--encre-douce);
+  margin-bottom: 12px;
+}
+
+.bulles {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.bulles li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--lin);
+  font-size: 0.76rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.bulles li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: 0 0 auto;
+}
+
+.heroBouton {
+  max-width: 420px;
+}
+
+/* Sur mobile, la grande photo passe sous le texte : tout le reste tient à l'écran */
+.heroPhoto {
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .hero {
+    padding: 72px 0 88px;
+  }
+  .heroGrille {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 64px;
+  }
+  .signature {
+    display: none;
+  }
+  .sousTitre {
+    font-size: 1.12rem;
+  }
+  .bulles li {
+    font-size: 0.88rem;
+    padding: 7px 14px;
+  }
+}
+
+/* ---------- Tu te reconnais ---------- */
+.scene {
+  border-left: 3px solid var(--accent);
+  padding-left: 18px;
+  margin-bottom: 22px;
+}
+
+.scene p {
+  font-family: var(--font-titre), Georgia, serif;
+  font-size: 1.18rem;
+  line-height: 1.45;
+  margin-bottom: 10px;
+}
+
+/* ---------- Pivot ---------- */
+.atouts {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.atouts li {
+  padding: 18px 20px;
+  background: #fff;
+  border-radius: var(--rayon);
+  border: 1px solid var(--lin);
+}
+
+.atouts strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.vocation {
+  margin: 0;
+  padding: 26px 22px;
+  border-radius: var(--rayon);
+  background: var(--accent-clair);
+  font-family: var(--font-titre), Georgia, serif;
+  font-size: 1.12rem;
+  line-height: 1.5;
+}
+
+.vocation p:last-child {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* ---------- Pour qui ---------- */
+.cartes {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .cartes {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+.carte {
+  padding: 26px 22px;
+  background: #fff;
+  border-radius: var(--rayon);
+  box-shadow: var(--ombre);
+}
+
+.carte h3 {
+  margin-bottom: 10px;
+}
+
+.carte p {
+  margin: 0;
+  color: var(--encre-douce);
+}
+
+.debutants {
+  margin: 24px auto 0;
+  max-width: 620px;
+  text-align: center;
+  color: var(--encre-douce);
+}
+
+/* ---------- Programme ---------- */
+.programme {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .programme {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+.soiree {
+  padding: 26px 22px;
+  border-radius: var(--rayon);
+  border: 1px solid var(--lin);
+  background: #fff;
+}
+
+.soireeDate {
+  margin: 0 0 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.soiree h3 {
+  margin-bottom: 14px;
+}
+
+.soiree ol {
+  margin: 0;
+  padding-left: 22px;
+  display: grid;
+  gap: 10px;
+}
+
+.soiree li::marker {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.promesse {
+  margin: 0 0 28px;
+  padding: 18px 20px;
+  border-radius: var(--rayon);
+  background: var(--nuit);
+  color: var(--ivoire);
+  font-family: var(--font-titre), Georgia, serif;
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+/* ---------- Benjamin ---------- */
+.bio {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+.bio p {
+  color: #e2d6cc;
+}
+
+.bioPhoto {
+  max-width: 360px;
+}
+
+@media (min-width: 900px) {
+  .bio {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 64px;
+  }
+}
+
+/* ---------- Témoignages ---------- */
+.lienTemoignages {
+  margin: 24px 0 0;
+  text-align: center;
+}
+
+.lienTemoignages a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ---------- FAQ ---------- */
+.faq {
+  display: grid;
+  gap: 10px;
+}
+
+.faq details {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--lin);
+}
+
+.faq summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 48px 18px 18px;
+  font-weight: 600;
+  position: relative;
+  min-height: 56px;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--accent);
+}
+
+.faq details[open] summary::after {
+  content: "–";
+}
+
+.faq details p {
+  margin: 0;
+  padding: 0 18px 18px;
+  color: var(--encre-douce);
+}
+
+/* ---------- CTA final ---------- */
+.final {
+  background: radial-gradient(100% 80% at 50% 100%, #f1e2d6 0%, var(--ivoire) 70%);
+}
+
+.signatureFin {
+  font-family: var(--font-titre), Georgia, serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+}
+
+.boutonFinal {
+  max-width: 420px;
+}

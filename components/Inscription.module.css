@@ -1,0 +1,265 @@
+.dialogue {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  margin: 0;
+  overscroll-behavior: contain;
+}
+
+.dialogue[open] {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.dialogue::backdrop {
+  background: rgba(27, 22, 20, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+/* Sur mobile : panneau qui monte du bas de l'écran */
+.panneau {
+  position: relative;
+  width: 100%;
+  max-height: 94dvh;
+  overflow-y: auto;
+  background: var(--ivoire);
+  border-radius: 22px 22px 0 0;
+  padding: 26px 20px calc(24px + env(safe-area-inset-bottom));
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2);
+  animation: monte 0.25s ease-out;
+}
+
+@keyframes monte {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 640px) {
+  .dialogue[open] {
+    align-items: center;
+  }
+  .panneau {
+    max-width: 520px;
+    border-radius: 22px;
+    padding: 36px 36px 32px;
+    max-height: 92vh;
+  }
+}
+
+.fermer {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--encre-douce);
+  cursor: pointer;
+}
+
+.fermer:hover {
+  background: var(--sable);
+}
+
+.surtitre {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 6px;
+}
+
+.titre {
+  font-size: 1.6rem;
+  margin: 0 44px 20px 0;
+}
+
+.formulaire {
+  display: grid;
+  gap: 16px;
+}
+
+.champ {
+  display: grid;
+  gap: 6px;
+}
+
+.champ label,
+.segments legend {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.formulaire input[type="text"],
+.formulaire input:not([type]),
+.formulaire input[type="email"],
+.formulaire input[type="tel"] {
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 14px;
+  border: 1px solid #cdbcac;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--encre);
+  font: inherit;
+  font-size: 16px; /* évite le zoom automatique sur iPhone */
+}
+
+.formulaire input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-clair);
+}
+
+.formulaire input[aria-invalid="true"] {
+  border-color: var(--erreur);
+}
+
+.telephone {
+  display: flex;
+  gap: 8px;
+}
+
+.indicatif {
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 86px;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 10px;
+  border: 1px solid #cdbcac;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 16px;
+}
+
+.indicatif::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid var(--gris);
+  border-bottom: 2px solid var(--gris);
+  transform: rotate(45deg) translateY(-3px);
+  margin-left: 4px;
+}
+
+/* Le select natif couvre la zone : on garde le sélecteur natif du téléphone */
+.indicatif select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.indicatif:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-clair);
+}
+
+.aide {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--gris);
+}
+
+.erreur {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--erreur);
+  font-weight: 500;
+}
+
+.segments {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.segments legend {
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 10px 14px;
+  border: 1px solid #cdbcac;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.option input {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.optionActive {
+  border-color: var(--accent);
+  background: var(--accent-clair);
+}
+
+.option:focus-within {
+  box-shadow: 0 0 0 3px var(--accent-clair);
+}
+
+.consentement {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--encre-douce);
+  cursor: pointer;
+}
+
+.consentement input {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 0;
+  accent-color: var(--accent);
+}
+
+.erreurGlobale {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #fbe9e7;
+  color: var(--erreur);
+  font-size: 0.92rem;
+}
+
+.mentions {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--gris);
+  text-align: center;
+}
