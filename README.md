@@ -79,8 +79,10 @@ l'autre (ou utiliser l'outil « Test A/B » de Meta). Plus lisible côté Meta, 
 répartit pas toujours le budget à parts égales.
 
 Dans les deux cas, chaque inscrit est stocké avec `variante_landing` (ex. « B · vidéo ») en plus des
-UTM. Taux de conversion d'une variante = inscrits de la variante / visiteurs de la variante (Vercel
-Web Analytics ou Meta, par URL `/v/x`).
+UTM. Taux de conversion d'une variante = inscrits de la variante / visiteurs de la variante.
+En mode 2, les visiteurs se lisent par URL (`/v/x`) dans Meta ou Vercel Analytics. En mode 1, l'URL
+affichée reste `/` : il faut un événement de vue par variante (à ajouter, voir avec Paul l'outil
+d'analytics retenu).
 
 Règle : ne tester qu'une chose à la fois (A vs B), viser au moins ~100 inscrits par variante avant
 de conclure, puis garder la gagnante (`AB_VARIANTES=b`) et tester l'élément suivant (B vs C).
