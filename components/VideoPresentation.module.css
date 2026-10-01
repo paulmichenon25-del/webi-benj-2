@@ -2,10 +2,11 @@
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 16px;
+  border-radius: 24px;
   overflow: hidden;
-  background: #1a1513;
-  box-shadow: 0 24px 50px -24px rgba(20, 17, 16, 0.55);
+  background: #141110;
+  border: 1px solid rgba(188, 108, 46, 0.25);
+  box-shadow: 0 26px 54px rgba(0, 0, 0, 0.28);
 }
 
 .cadre video {
@@ -32,7 +33,7 @@
 }
 
 .vide {
-  background: radial-gradient(ellipse at center, #3a2a20, #1a1513 70%);
+  background: radial-gradient(ellipse at center, #3a2a20, #141110 72%);
   cursor: default;
 }
 
@@ -43,7 +44,7 @@
   place-items: center;
   padding-left: 4px;
   border-radius: 50%;
-  background: var(--bouton);
+  background: linear-gradient(135deg, var(--cuivre-vif), var(--cuivre-profond));
   color: #fff;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }

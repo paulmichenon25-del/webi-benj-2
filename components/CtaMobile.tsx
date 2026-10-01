@@ -31,7 +31,7 @@ export function CtaMobile() {
   return (
     <div className={`${styles.barre} ${visible ? styles.visible : ""}`} aria-hidden={!visible}>
       <div className={styles.infos}>
-        <strong>Live gratuit</strong>
+        <strong>Live offert</strong>
         <span>18 et 19 oct. · 20h</span>
       </div>
       <BoutonInscription className={styles.bouton}>Je réserve ma place</BoutonInscription>

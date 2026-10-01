@@ -131,8 +131,8 @@
 
 .signature {
   margin: 0;
-  font-family: var(--font-titre), Georgia, serif;
-  font-style: italic;
+  font-family: var(--font-titre), Impact, sans-serif;
+  text-transform: uppercase;
   font-size: 1.2rem;
   color: var(--encre) !important;
 }

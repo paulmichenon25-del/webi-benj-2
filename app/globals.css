@@ -1,18 +1,21 @@
 :root {
-  /* Charte FineArt Académie (reprise du live de juillet) : cuivre, noir, crème */
-  --ivoire: #f8f3ec;
-  --sable: #f1e7da;
-  --lin: #e5d5c3;
-  --encre: #17120f;
-  --encre-douce: #463a32;
-  --gris: #76695f;
-  --cuivre: #bc6c2e; /* couleur de marque, décoratif */
-  --accent: #a65a22; /* textes et liens cuivre, contraste AA sur crème */
-  --accent-fonce: #8a4a1b;
-  --accent-clair: #f6e6d6;
-  --bouton: #a65a22;
-  --bouton-survol: #8a4a1b;
-  --nuit: #17120f;
+  /* Charte FineArt Académie / Benjamin, reprise à l'identique du live de juillet
+     (live.benjaminphoto.space) : crème, noir, cuivre #BC6C2E sur les détails. */
+  --ivoire: #f5f1ea;
+  --sable: #ebe5d8;
+  --lin: #ddd3c3;
+  --encre: #0a0a0a;
+  --encre-douce: #2a2a2a;
+  --gris: #6b6b6b;
+  --cuivre: #bc6c2e;
+  --cuivre-vif: #d8863c;
+  --cuivre-profond: #7e4418;
+  --accent: #a55e24; /* cuivre lisible sur crème (AA) */
+  --accent-fonce: #7e4418;
+  --accent-clair: #f3e3d1;
+  --bouton: #bc6c2e;
+  --bouton-survol: #7e4418;
+  --nuit: #0a0a0a;
   --erreur: #b3261e;
   --rayon: 14px;
   --ombre: 0 10px 30px rgba(31, 26, 23, 0.08);
@@ -49,22 +52,30 @@ video {
 }
 
 h1,
-h2,
-h3 {
-  font-family: var(--font-titre), Georgia, serif;
-  font-weight: 600;
-  line-height: 1.15;
+h2 {
+  font-family: var(--font-titre), "Arial Narrow", Impact, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.06;
   margin: 0;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
+h3 {
+  font-family: var(--font-texte), system-ui, sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
 }
 
 h2 {
-  font-size: clamp(1.75rem, 6vw, 2.5rem);
-  margin-bottom: 20px;
+  font-size: clamp(1.9rem, 7vw, 2.9rem);
+  margin-bottom: 14px;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
 }
 
 p {
@@ -104,17 +115,66 @@ a {
   color: var(--ivoire);
 }
 
+/* Pastille « eyebrow » du gabarit de juillet */
 .surtitre {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 15px;
+  border-radius: 999px;
+  border: 1px solid rgba(188, 108, 46, 0.28);
+  background: rgba(188, 108, 46, 0.08);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--cuivre);
+  flex: 0 0 auto;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(188, 108, 46, 0.55); }
+  70% { box-shadow: 0 0 0 9px rgba(188, 108, 46, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(188, 108, 46, 0); }
+}
+
+.check {
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(188, 108, 46, 0.14);
+  color: var(--cuivre);
+  font-size: 11px;
+  font-weight: 900;
+  flex: 0 0 auto;
+}
+
+.entete-section {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 30px;
+}
+
+.entete-section p {
+  color: var(--gris);
+  margin: 0;
 }
 
 .section--nuit .surtitre {
-  color: #e9b48a;
+  color: var(--cuivre-vif);
+  background: rgba(216, 134, 60, 0.1);
+  border-color: rgba(216, 134, 60, 0.3);
 }
 
 .lead {
@@ -136,20 +196,22 @@ a {
   padding: 14px 28px;
   border: 0;
   border-radius: 999px;
-  background: linear-gradient(180deg, var(--cuivre), var(--bouton));
+  background: linear-gradient(135deg, var(--cuivre-vif) 0%, var(--cuivre) 46%, var(--cuivre-profond) 100%);
   color: #fff;
   font: inherit;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1.05rem;
+  letter-spacing: 0.01em;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 10px 24px -6px rgba(166, 90, 34, 0.45);
-  transition: background 0.15s ease, transform 0.15s ease;
+  box-shadow: 0 14px 34px rgba(188, 108, 46, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
   -webkit-tap-highlight-color: transparent;
 }
 
 .bouton:hover {
-  background: var(--bouton-survol);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 44px rgba(188, 108, 46, 0.42);
 }
 
 .bouton:active {

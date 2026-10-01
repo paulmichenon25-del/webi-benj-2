@@ -1,3 +1,4 @@
+/* Barre fixe du gabarit de juillet : fond noir, badge cuivre, date, bouton. */
 .barre {
   position: fixed;
   left: 0;
@@ -7,12 +8,11 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
-  background: rgba(247, 241, 234, 0.97);
-  border-top: 1px solid var(--lin);
-  box-shadow: 0 -6px 20px rgba(31, 26, 23, 0.08);
-  transform: translateY(110%);
-  transition: transform 0.25s ease;
+  padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+  background: var(--encre);
+  border-top: 1px solid rgba(188, 108, 46, 0.35);
+  transform: translateY(120%);
+  transition: transform 0.32s cubic-bezier(0.2, 0.7, 0.2, 1);
   visibility: hidden;
 }
 
@@ -23,22 +23,34 @@
 
 .infos {
   display: grid;
-  line-height: 1.25;
-  font-size: 0.82rem;
-  color: var(--encre-douce);
+  gap: 3px;
   flex: 0 0 auto;
+  line-height: 1.2;
 }
 
 .infos strong {
-  color: var(--encre);
-  font-size: 0.9rem;
+  justify-self: start;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--cuivre-vif), var(--cuivre-profond));
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.infos span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #cfccc4;
 }
 
 .bouton {
   flex: 1 1 auto;
-  min-height: 50px;
+  min-height: 48px;
   padding: 10px 16px;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
 }
 
 @media (min-width: 900px) {

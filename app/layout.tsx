@@ -1,19 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Anton, Inter } from "next/font/google";
 import { MetaPixel } from "@/components/MetaPixel";
 import "./globals.css";
 
-const titre = Playfair_Display({
+const titre = Anton({
   subsets: ["latin"],
-  weight: ["500", "600"],
-  style: ["normal", "italic"],
+  weight: "400",
   variable: "--font-titre",
   display: "swap",
 });
 
 const texte = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-texte",
   display: "swap",
 });
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#f8f3ec",
+  themeColor: "#7e4418",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
