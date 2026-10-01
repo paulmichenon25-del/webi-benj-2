@@ -58,3 +58,29 @@ utm_source=facebook&utm_medium=paid&utm_campaign={{campaign.name}}&utm_content={
 - Prénom repris de l'inscription.
 - Google Agenda + `.ics` (Apple / Outlook) pour chaque soirée, 20h heure de Paris, rappels 1h et 10 min avant. Le lien live personnel renvoyé par WebinarJam est mis dans l'événement ; sinon `NEXT_PUBLIC_WEBINAR_LIVE_URL`.
 - Bloc WhatsApp affiché seulement si `NEXT_PUBLIC_WHATSAPP_URL` est renseigné.
+
+## A/B test des landings
+
+Trois variantes, même DA, même contenu sauf un élément :
+
+| URL | Variante | Ce qui change |
+|---|---|---|
+| `/v/a` | A · photo | Photo fixe de Benjamin en tête de page |
+| `/v/b` | B · vidéo | Vidéo courte de Benjamin en tête de page |
+| `/v/c` | C · autres photographes | Photo fixe + titre adressé aux photographes mariage / portrait / grossesse |
+
+**Mode 1, répartition automatique sur `/`** (recommandé) : `proxy.ts` attribue une variante au hasard
+à chaque visiteur parmi `AB_VARIANTES` (par défaut `a,b`), et la garde 30 jours (cookie `fa_variante`).
+L'URL ne change pas, les UTM restent intacts. Toutes les pubs pointent vers la même URL.
+`/?v=b` force une variante (pour vérifier).
+
+**Mode 2, une URL par pub** : dans Meta, dupliquer la pub et mettre `/v/a` dans l'une, `/v/b` dans
+l'autre (ou utiliser l'outil « Test A/B » de Meta). Plus lisible côté Meta, mais l'algorithme ne
+répartit pas toujours le budget à parts égales.
+
+Dans les deux cas, chaque inscrit est stocké avec `variante_landing` (ex. « B · vidéo ») en plus des
+UTM. Taux de conversion d'une variante = inscrits de la variante / visiteurs de la variante (Vercel
+Web Analytics ou Meta, par URL `/v/x`).
+
+Règle : ne tester qu'une chose à la fois (A vs B), viser au moins ~100 inscrits par variante avant
+de conclure, puis garder la gagnante (`AB_VARIANTES=b`) et tester l'élément suivant (B vs C).

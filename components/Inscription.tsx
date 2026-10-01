@@ -59,10 +59,10 @@ function readTracking(): Tracking {
   return tracking;
 }
 
-type Ctx = { open: () => void };
-const InscriptionContext = createContext<Ctx>({ open: () => {} });
+type Ctx = { open: () => void; variante: string };
+const InscriptionContext = createContext<Ctx>({ open: () => {}, variante: "" });
 
-export function InscriptionProvider({ children }: { children: React.ReactNode }) {
+export function InscriptionProvider({ children, variante = "" }: { children: React.ReactNode; variante?: string }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const open = useCallback(() => {
     const d = dialogRef.current;
@@ -76,7 +76,7 @@ export function InscriptionProvider({ children }: { children: React.ReactNode })
   };
 
   return (
-    <InscriptionContext.Provider value={{ open }}>
+    <InscriptionContext.Provider value={{ open, variante }}>
       {children}
       <dialog
         ref={dialogRef}
@@ -125,6 +125,7 @@ export function BoutonInscription({
 
 function FormulaireInscription() {
   const router = useRouter();
+  const { variante } = useContext(InscriptionContext);
   const [prenom, setPrenom] = useState("");
   const [email, setEmail] = useState("");
   const [pays, setPays] = useState("FR");
@@ -153,7 +154,7 @@ function FormulaireInscription() {
       pays,
       segment,
       consentementRappels: consentement,
-      tracking: tracking.current,
+      tracking: { ...tracking.current, variante },
       website,
     };
     const found = validateLead(payload);

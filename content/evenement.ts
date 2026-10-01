@@ -20,5 +20,5 @@ export const CADEAU_INSCRIPTION = {
 export const CADEAU_LIVE = {
   titre: "Mon outil de calcul de prix",
   texte:
-    "Je le donne pendant la soirée 2, uniquement aux personnes présentes en direct. Il te montre le prix de séance dont tu as besoin pour vivre du boudoir toute l'année.",
+    "Je le donne pendant le live, uniquement aux personnes présentes en direct. Il te montre le prix de séance dont tu as besoin pour vivre du boudoir toute l'année.",
 };

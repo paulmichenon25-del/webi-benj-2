@@ -24,6 +24,7 @@ export type TrackingKey = (typeof TRACKING_KEYS)[number];
 export type Tracking = Partial<Record<TrackingKey, string>> & {
   page_url?: string; // URL complète de la landing au moment de l'inscription
   referrer?: string; // URL de provenance (document.referrer)
+  variante?: string; // variante de landing vue (A/B test)
 };
 
 // Indicatifs proposés dans le formulaire (+33 par défaut).
@@ -109,7 +110,7 @@ export function sanitizeTracking(raw: unknown): Tracking {
   const out: Tracking = {};
   if (!raw || typeof raw !== "object") return out;
   const src = raw as Record<string, unknown>;
-  for (const key of [...TRACKING_KEYS, "page_url", "referrer"] as const) {
+  for (const key of [...TRACKING_KEYS, "page_url", "referrer", "variante"] as const) {
     const value = src[key];
     if (typeof value === "string" && value.trim()) out[key] = value.trim().slice(0, 1000);
   }

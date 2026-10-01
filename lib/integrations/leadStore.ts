@@ -19,6 +19,7 @@ export type StoredLead = {
   fbclid: string;
   page_url: string;
   referrer: string;
+  variante_landing: string;
   webinarjam_statut: "ok" | "erreur" | "non_configure";
   webinarjam_erreur: string;
   webinarjam_lien_live: string;

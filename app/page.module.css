@@ -810,3 +810,115 @@
   font-size: 1.3rem;
   color: var(--encre) !important;
 }
+
+/* ---------- Variantes ---------- */
+.h1Long {
+  font-size: clamp(1.55rem, 6.6vw, 3rem);
+  max-width: 24ch;
+}
+
+.heroImage {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(188, 108, 46, 0.25);
+  box-shadow: 0 26px 54px rgba(0, 0, 0, 0.22);
+}
+
+.heroImage > * {
+  aspect-ratio: 16 / 10 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.ciblesInverse > :first-child {
+  order: 2;
+}
+
+/* ---------- Comparatif « la solution » ---------- */
+.comparatif {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+@media (min-width: 760px) {
+  .comparatif {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.comparatifAvant,
+.comparatifApres {
+  padding: 24px 22px;
+  border-radius: 20px;
+}
+
+.comparatifAvant {
+  background: #fff;
+  border: 1px solid var(--lin);
+}
+
+.comparatifApres {
+  background: var(--encre);
+  color: #fff;
+  border: 1px solid rgba(188, 108, 46, 0.4);
+  box-shadow: 0 20px 44px rgba(188, 108, 46, 0.18);
+}
+
+.comparatifTitre {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+.comparatifApres .comparatifTitre {
+  color: var(--cuivre-vif);
+}
+
+.comparatif ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.comparatif li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 0.95rem;
+}
+
+.comparatifAvant li {
+  color: var(--gris);
+}
+
+.comparatif li::before {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: 900;
+}
+
+.comparatifAvant li::before {
+  content: "✕";
+  background: rgba(10, 10, 10, 0.06);
+  color: var(--gris);
+}
+
+.comparatifApres li::before {
+  content: "✓";
+  background: rgba(216, 134, 60, 0.18);
+  color: var(--cuivre-vif);
+}

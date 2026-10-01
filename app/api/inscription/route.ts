@@ -89,6 +89,7 @@ export async function POST(req: NextRequest) {
     fbclid: input.tracking.fbclid ?? "",
     page_url: input.tracking.page_url ?? "",
     referrer: input.tracking.referrer ?? "",
+    variante_landing: input.tracking.variante ?? "",
     webinarjam_statut: wj === null ? "non_configure" : wj.ok ? "ok" : "erreur",
     webinarjam_erreur: wj && !wj.ok ? wj.error : "",
     webinarjam_lien_live: wj?.ok ? wj.liveUrl ?? "" : "",
