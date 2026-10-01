@@ -42,7 +42,7 @@
 }
 
 .dateHeure {
-  font-family: var(--font-titre), Georgia, serif;
+  font-family: var(--font-impact), Impact, sans-serif;
   font-size: 2.2rem;
   line-height: 1.1;
 }
@@ -131,8 +131,8 @@
 
 .signature {
   margin: 0;
-  font-family: var(--font-titre), Impact, sans-serif;
-  text-transform: uppercase;
+  font-family: var(--font-titre), Georgia, serif;
+  font-style: italic;
   font-size: 1.2rem;
   color: var(--encre) !important;
 }

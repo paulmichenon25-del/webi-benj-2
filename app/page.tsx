@@ -6,6 +6,7 @@ import { VideoPresentation } from "@/components/VideoPresentation";
 import {
   CADEAU_INSCRIPTION,
   CADEAU_LIVE,
+  NOM_EVENEMENT,
   POSTER_PRESENTATION,
   VIDEO_PRESENTATION,
 } from "@/content/evenement";
@@ -54,20 +55,23 @@ export default function Page() {
         {/* ============ HERO ============ */}
         <section id="hero" className={styles.hero}>
           <div className={`conteneur ${styles.heroCentre}`}>
+            <p className={styles.marque}>
+              {NOM_EVENEMENT} <span>· avec Benjamin Hanachowicz</span>
+            </p>
             <span className="surtitre">
-              <span className="pulse" aria-hidden="true" /> Live offert · Dim. 18 et lun. 19 octobre · 20h
+              <span className="pulse" aria-hidden="true" /> 2 lives gratuits · 18 et 19 octobre · 20h
             </span>
 
             {/*
               Variantes de H1 proposées (la n°1 est intégrée) :
-              1. « Vivre du boudoir à plein temps, toute l'année. »
+              1. « Vivre du boudoir à plein temps, toute l'année. Je te montre comment, en direct. »
               2. « Vivre du boudoir, toute l'année. La méthode, en direct, en 2 soirées. »
               3. « Le boudoir peut te faire vivre de la photo à plein temps. »
               4. « Tes clientes, ton offre, ton prix : vivre du boudoir toute l'année. »
               5. « Et si le boudoir te permettait de vivre de la photo, toute l'année ? »
             */}
             <h1 className={styles.h1}>
-              Vivre du boudoir à plein temps, <span className={styles.cuivre}>toute l&apos;année.</span>
+              Vivre du boudoir à plein temps, toute l&apos;année. <em>Je te montre comment, en direct.</em>
             </h1>
 
             <div className={styles.heroMedia}>
@@ -141,7 +145,7 @@ export default function Page() {
           <div className="conteneur">
             <div className="entete-section">
               <span className="surtitre">Tu te reconnais ?</span>
-              <h2>Ce qui te freine n&apos;est pas ton talent</h2>
+              <h2>Ce qui te freine <em>n&apos;est pas ton talent</em></h2>
             </div>
             <div className={styles.objections}>
               {DOULEURS.map((d) => (
@@ -174,7 +178,7 @@ export default function Page() {
           <div className="conteneur">
             <div className="entete-section">
               <span className="surtitre">Pour qui</span>
-              <h2>Ces deux soirées sont pour toi si…</h2>
+              <h2>Ces deux soirées sont <em>pour toi si…</em></h2>
             </div>
             <div className={styles.cibles}>
               <article className={styles.cible}>
@@ -200,7 +204,7 @@ export default function Page() {
           <div className="conteneur">
             <div className="entete-section">
               <span className="surtitre">Le programme</span>
-              <h2>Ce que je te montre en direct</h2>
+              <h2>Ce que je te montre <em>en direct</em></h2>
             </div>
             <div className={styles.programme}>
               <article className={styles.soiree}>
@@ -249,7 +253,7 @@ export default function Page() {
           <div className="conteneur">
             <div className="entete-section">
               <span className="surtitre">Ton intervenant</span>
-              <h2>Qui anime ce live</h2>
+              <h2>Moi, c&apos;est <em>Benjamin</em></h2>
             </div>
             <div className={styles.intervenant}>
               <div className={styles.photoRonde}>
@@ -299,7 +303,7 @@ export default function Page() {
           <div className="conteneur">
             <div className="entete-section">
               <span className="surtitre">Questions fréquentes</span>
-              <h2>Tout ce que tu te demandes</h2>
+              <h2>Tout ce que <em>tu te demandes</em></h2>
             </div>
             <div className={styles.faq}>
               {FAQ.map((item) => (
@@ -319,7 +323,7 @@ export default function Page() {
               <span className="surtitre">
                 <span className="pulse" aria-hidden="true" /> Dernière étape
               </span>
-              <h2>Dimanche 18 et lundi 19 octobre, 20h. Ta place t&apos;attend.</h2>
+              <h2>Dimanche 18 et lundi 19 octobre, 20h. <em>Ta place t&apos;attend.</em></h2>
               <p>Si tu aimes ce métier, on va passer deux belles soirées. Viens avec tes questions.</p>
               <div className={styles.tableau}>
                 <div><span>Soirée 1</span><b>Dim. 18 oct. · 20h</b></div>

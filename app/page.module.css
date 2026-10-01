@@ -6,6 +6,7 @@
 
 .cuivreVif {
   color: var(--cuivre-vif);
+  font-style: italic;
 }
 
 /* ---------- Hero ---------- */
@@ -27,18 +28,50 @@
   white-space: nowrap;
 }
 
+.marque {
+  margin: 0 0 10px;
+  font-family: var(--font-titre), Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.marque span {
+  font-family: var(--font-texte), system-ui, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--gris);
+}
+
 .h1 {
-  font-size: clamp(1.75rem, 8.4vw, 3.6rem);
-  line-height: 1.06;
-  margin-bottom: 18px;
-  max-width: 16ch;
+  font-size: clamp(1.7rem, 7.4vw, 3.3rem);
+  line-height: 1.1;
+  margin-bottom: 16px;
+  max-width: 20ch;
+}
+
+.h1 em {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.72em;
 }
 
 .heroMedia {
   position: relative;
   width: 100%;
   max-width: 760px;
-  margin: 4px 0 30px;
+  margin: 4px 0 28px;
+}
+
+@media (max-width: 420px) {
+  .lede {
+    font-size: 0.94rem;
+    margin-bottom: 14px;
+  }
 }
 
 .badgeGratuit {
@@ -182,7 +215,7 @@
 }
 
 .quandJour {
-  font-family: var(--font-titre), Impact, sans-serif;
+  font-family: var(--font-impact), Impact, sans-serif;
   font-size: 3.2rem;
   line-height: 0.95;
   color: var(--cuivre-vif);
@@ -334,10 +367,9 @@
 
 .citationTexte {
   margin: 0;
-  font-family: var(--font-titre), Impact, sans-serif;
-  font-size: clamp(1.7rem, 7vw, 2.8rem);
-  line-height: 1.12;
-  text-transform: uppercase;
+  font-family: var(--font-titre), Georgia, serif;
+  font-size: clamp(1.6rem, 6.6vw, 2.6rem);
+  line-height: 1.2;
   text-wrap: balance;
 }
 
@@ -436,10 +468,9 @@
 }
 
 .soiree h3 {
-  font-family: var(--font-titre), Impact, sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  text-transform: uppercase;
+  font-family: var(--font-titre), Georgia, serif;
+  font-weight: 600;
+  font-size: 1.55rem;
   margin-bottom: 16px;
 }
 
@@ -545,10 +576,10 @@
 
 .nom {
   margin: 0 0 12px;
-  font-family: var(--font-titre), Impact, sans-serif;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  line-height: 1;
+  font-family: var(--font-titre), Georgia, serif;
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 1.1;
 }
 
 .ligne {
@@ -608,7 +639,7 @@
   border-radius: 50%;
   border: 2px solid var(--encre);
   background: linear-gradient(150deg, var(--cuivre-vif), var(--cuivre-profond));
-  font-family: var(--font-titre), Impact, sans-serif;
+  font-family: var(--font-impact), Impact, sans-serif;
   font-size: 1.3rem;
 }
 
@@ -630,10 +661,10 @@
 }
 
 .temoignagesTitre {
-  font-family: var(--font-titre), Impact, sans-serif;
-  font-size: clamp(1.8rem, 7vw, 2.6rem);
-  line-height: 1.05;
-  text-transform: uppercase;
+  font-family: var(--font-titre), Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 7vw, 2.5rem);
+  line-height: 1.1;
 }
 
 .temoignagesNoms {
@@ -774,8 +805,8 @@
 
 .signature {
   margin: 10px 0 0 !important;
-  font-family: var(--font-titre), Impact, sans-serif;
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-family: var(--font-titre), Georgia, serif;
+  font-style: italic;
+  font-size: 1.3rem;
   color: var(--encre) !important;
 }

@@ -1,12 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Anton, Inter } from "next/font/google";
+import { Anton, Inter, Playfair_Display } from "next/font/google";
 import { MetaPixel } from "@/components/MetaPixel";
 import "./globals.css";
 
-const titre = Anton({
+// Titres : serif élégante (version validée par Paul). Anton : dates et chiffres,
+// comme sur la page du live de juillet.
+const titre = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-titre",
+  display: "swap",
+});
+
+const impact = Anton({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-titre",
+  variable: "--font-impact",
   display: "swap",
 });
 
@@ -38,7 +48,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${titre.variable} ${texte.variable}`}>
+    <html lang="fr" className={`${titre.variable} ${impact.variable} ${texte.variable}`}>
       <body>
         {children}
         <MetaPixel />
