@@ -10,15 +10,14 @@ export const NOM_EVENEMENT = "Plein Temps";
 export const VIDEO_PRESENTATION = "/benjamin-presentation.mp4";
 export const POSTER_PRESENTATION = "/benjamin-presentation.jpg";
 
-// [À CONFIRMER : contenu des deux cadeaux]
+// Cadeaux volontairement mystérieux sur la page : le contenu se découvre par email et en live.
 export const CADEAU_INSCRIPTION = {
-  titre: "Ton carnet de préparation boudoir",
-  texte:
-    "Tu le reçois dès ton inscription. Quelques pages à remplir avant le live : qui sont tes clientes, ce que tu proposes aujourd'hui, ce qui te bloque. Tu arrives le dimanche avec une longueur d'avance.",
+  titre: "Un cadeau mystère",
+  texte: "Je ne te dis rien. Ouvre tes emails juste après ton inscription.",
 };
 
 export const CADEAU_LIVE = {
-  titre: "Mon outil de calcul de prix",
+  titre: "Des outils… et une grosse annonce",
   texte:
-    "Je le donne pendant le live, uniquement aux personnes présentes en direct. Il ne sera pas envoyé ensuite. Il te montre le prix de séance dont tu as besoin pour vivre du boudoir toute l'année.",
+    "Calcul de prix, templates, et d'autres choses que je garde pour le live. Si tu n'es pas là, tu passes à côté.",
 };

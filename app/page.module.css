@@ -1051,3 +1051,27 @@
 .promesse .signatureHero {
   margin-top: 18px;
 }
+
+.cadeauTexte {
+  margin-top: 4px;
+  font-size: 0.88rem;
+  color: var(--gris);
+}
+
+.cadeauxNote {
+  margin: 0 0 26px;
+}
+
+.sousBouton {
+  max-width: 30ch;
+}
+
+.reponse b {
+  font-weight: 700;
+}
+
+@media (min-width: 700px) {
+  .objection:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}

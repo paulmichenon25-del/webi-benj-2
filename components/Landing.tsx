@@ -7,7 +7,6 @@ import { CompteARebours } from "@/components/CompteARebours";
 import {
   CADEAU_INSCRIPTION,
   CADEAU_LIVE,
-  NOM_EVENEMENT,
   POSTER_PRESENTATION,
   VIDEO_PRESENTATION,
 } from "@/content/evenement";
@@ -24,10 +23,11 @@ const PHOTO_HERO = "/benjamin-hero.jpg"; // [IMAGE À FOURNIR : /public/benjamin
 const PHOTO_PORTRAIT = "/benjamin-portrait.jpg"; // [IMAGE À FOURNIR : portrait carré, sinon la photo du hero]
 
 const DOULEURS = [
-  "« Novembre arrive, et mon agenda se vide. »",
-  "« Lundi, 6h45, je retourne au vrai travail. »",
+  "« Je me brade pour remplir mon agenda. »",
+  "« Je suis en concurrence avec tous les autres photographes boudoir. »",
+  "« On compare mes tarifs, on me demande de faire un prix. »",
+  "« Mon agenda est plein un mois, vide le suivant. »",
   "« Instagram a encore retiré ma plus belle photo. »",
-  "« C'est combien la séance ? On peut s'arranger ? »",
 ];
 
 const FAQ: { q: string; r: string }[] = [
@@ -36,13 +36,15 @@ const FAQ: { q: string; r: string }[] = [
     q: "Je ne fais pas encore de boudoir, c'est pour moi ?",
     r: "Oui. Si tu fais du mariage, du portrait ou de la grossesse, tes futures clientes boudoir sont déjà dans tes contacts. Je te montre comment l'intégrer sans changer d'image.",
   },
-  { q: "Je débute, c'est trop tôt ?", r: "Non. Certains photographes que j'accompagne sont partis de zéro. Autant poser les bonnes bases dès le début." },
+  {
+    q: "Je débute, c'est trop tôt ?",
+    r: "Non, pas du tout. Même si tu n'as jamais tenu un appareil photo de ta vie, si tu as envie de faire du boudoir, c'est possible. Certains photographes que j'accompagne sont partis de là.",
+  },
   { q: "Il faut un studio ?", r: "Non. Le boudoir se fait en intérieur, et tu peux commencer sans studio. J'en parle pendant le live." },
   {
     q: "Je ne peux être là qu'à une soirée ?",
     r: "Inscris-toi quand même, mais bloque les deux si tu peux. Chaque soir, je fais des annonces et je donne des bonus réservés aux personnes présentes en direct. Ils ne sont pas retransmis ensuite.",
   },
-  { q: "C'est technique (lumière, matériel) ?", r: "Non. On ne parle ni de lumière ni de réglages. On parle clientes, offre et prix." },
 ];
 
 export function Landing({ variante }: { variante: Variante }) {
@@ -85,7 +87,7 @@ export function Landing({ variante }: { variante: Variante }) {
               Je réserve ma place gratuite <span aria-hidden="true">→</span>
             </BoutonInscription>
 
-            <p className={styles.sousBouton}>Inscription gratuite, en 30 secondes.</p>
+            <p className={styles.sousBouton}>Pour les photographes qui aiment accompagner, pas seulement photographier.</p>
           </div>
         </section>
 
@@ -141,98 +143,28 @@ export function Landing({ variante }: { variante: Variante }) {
           </p>
         </div>
 
-        {/* ============ TU TE RECONNAIS ? (objections) ============ */}
-        <section className={`section section--sable ${styles.sectionHaute}`}>
-          <div className="conteneur">
-            <div className="entete-section">
-              <span className="surtitre">Tu te reconnais ?</span>
-              <h2>Ce qui te freine <em>n&apos;est pas ton talent</em></h2>
-            </div>
-            <div className={styles.objections}>
-              {DOULEURS.map((d) => (
-                <p key={d} className={styles.objection}>{d}</p>
-              ))}
-            </div>
-            <p className={styles.reponse}>
-              Le problème n&apos;est ni ton matériel ni ton œil. C&apos;est la prestation que tu vends.
-            </p>
-          </div>
-        </section>
-
-        {/* ============ LA SOLUTION : LE BOUDOIR AVEC LA BONNE MÉTHODE ============ */}
-        <section className="section">
-          <div className="conteneur">
-            <div className="entete-section">
-              <span className="surtitre">La solution</span>
-              <h2>
-                Le boudoir, avec la bonne méthode, <em>c&apos;est ce qui fait vivre de la photo à plein temps</em>
-              </h2>
-              <p>
-                Que tu fasses déjà du boudoir ou du mariage, du portrait, de la grossesse : c&apos;est la prestation
-                qui remplit un agenda toute l&apos;année.
-              </p>
-            </div>
-            <div className={styles.comparatif}>
-              <div className={styles.comparatifAvant}>
-                <span className={styles.comparatifTitre}>Ce que vivent la plupart des photographes</span>
-                <ul>
-                  <li>Une saison chargée, puis des mois creux</li>
-                  <li>Des shootings en extérieur qui dépendent de la météo</li>
-                  <li>Des prix discutés, des fichiers comparés</li>
-                  <li>Un travail à côté pour tenir l&apos;année</li>
-                </ul>
-              </div>
-              <div className={styles.comparatifApres}>
-                <span className={styles.comparatifTitre}>Le boudoir, avec la bonne méthode</span>
-                <ul>
-                  <li>Des séances toute l&apos;année, en semaine</li>
-                  <li>En intérieur, avec le matériel que tu as déjà</li>
-                  <li>Une offre premium, un prix qui ne se négocie pas</li>
-                  <li>Une activité dont tu peux vivre à plein temps</li>
-                </ul>
-              </div>
-            </div>
-            <div className="texte-centre">
-              <BoutonInscription>Je veux découvrir la méthode <span aria-hidden="true">→</span></BoutonInscription>
-            </div>
-          </div>
-        </section>
-
-        {/* ============ PIVOT / VOCATION ============ */}
-        <section className={styles.citation}>
-          <div className="conteneur etroit">
-            <p className={styles.citationTexte}>
-              Une femme n&apos;achète pas des fichiers.{" "}
-              <span className={styles.cuivreVif}>Elle achète le jour où elle s&apos;est trouvée belle.</span>
-            </p>
-            <p className={styles.citationSuite}>
-              Le boudoir, c&apos;est d&apos;abord un accompagnement. En vivre toute l&apos;année, c&apos;est la
-              conséquence de bien le faire.
-            </p>
-          </div>
-        </section>
-
         {/* ============ POUR QUI ============ */}
-        <section className="section">
+        <section className={`section ${styles.sectionHaute}`}>
           <div className="conteneur">
             <div className="entete-section">
               <span className="surtitre">Pour qui</span>
               <h2>Ces deux soirées sont <em>pour toi si…</em></h2>
+              <p>Tu aimes accompagner les femmes avec bienveillance, pas seulement les photographier.</p>
             </div>
             <div className={variante.ciblesAutresDabord ? `${styles.cibles} ${styles.ciblesInverse}` : styles.cibles}>
               <article className={styles.cible}>
                 <span className={styles.cibleTag}>Tu fais déjà du boudoir</span>
-                <h3>Passer de quelques séances à un agenda plein</h3>
-                <p>Tes clientes repartent transformées, mais ton agenda fait encore le yoyo. La méthode t&apos;aide à en vivre à plein temps.</p>
+                <h3>En vivre enfin à plein temps</h3>
+                <p>Tu es en concurrence avec les autres photographes boudoir, on compare tes tarifs, ton agenda fait le yoyo. Il te manque la bonne méthode : ton positionnement, ta stratégie de contenu, ton prix.</p>
               </article>
               <article className={styles.cible}>
-                <span className={styles.cibleTag}>Tu fais mariage, portrait, grossesse</span>
+                <span className={styles.cibleTag}>Tu fais mariage, portrait, grossesse…</span>
                 <h3>Ajouter la prestation qui te fera vivre toute l&apos;année</h3>
-                <p>Tes futures clientes boudoir, tu les as déjà dans tes contacts. Tu l&apos;intègres sans changer d&apos;image.</p>
+                <p>Le boudoir vient en complément de ce que tu fais déjà. Tes futures clientes sont déjà dans tes contacts, et tu l&apos;intègres sans changer d&apos;image.</p>
               </article>
             </div>
             <p className={styles.debutants}>
-              Tu débutes en photo ? Viens aussi. Certains photographes que j&apos;accompagne sont partis de zéro.
+              Tu débutes ? Viens aussi. Même sans avoir jamais tenu un appareil photo, c&apos;est possible.
             </p>
           </div>
         </section>
@@ -268,20 +200,19 @@ export function Landing({ variante }: { variante: Variante }) {
               </article>
             </div>
 
-            {/* [À CONFIRMER : contenu des deux cadeaux, voir content/evenement.ts] */}
             <div className={styles.cadeaux}>
               <div className={styles.cadeau}>
-                <span className={styles.cadeauQuand}>Cadeau · dès ton inscription</span>
+                <span className={styles.cadeauQuand}>Dès ton inscription</span>
                 <b>{CADEAU_INSCRIPTION.titre}</b>
+                <span className={styles.cadeauTexte}>{CADEAU_INSCRIPTION.texte}</span>
               </div>
               <div className={styles.cadeau}>
-                <span className={styles.cadeauQuand}>Cadeau · réservé aux présents</span>
+                <span className={styles.cadeauQuand}>Réservé aux présents</span>
                 <b>{CADEAU_LIVE.titre}</b>
+                <span className={styles.cadeauTexte}>{CADEAU_LIVE.texte}</span>
               </div>
             </div>
-            <p className={styles.cadeauxNote}>
-              <span className="a-valider">[À CONFIRMER : contenu des cadeaux]</span>
-            </p>
+            <div className={styles.cadeauxNote} />
 
             <div className="texte-centre">
               <BoutonInscription>Je réserve ma place <span aria-hidden="true">→</span></BoutonInscription>
@@ -300,15 +231,14 @@ export function Landing({ variante }: { variante: Variante }) {
               <div className={styles.photoRonde}>
                 <Portrait src={portrait} alt="Benjamin Hanachowicz" variante="grand" sizes="220px" />
               </div>
-              <p className={styles.role}>Il anime les deux soirées</p>
+              <p className={styles.role}>J&apos;anime les deux soirées</p>
               <p className={styles.nom}>Benjamin Hanachowicz</p>
               <p className={styles.ligne}>
                 Photographe boudoir à Roanne. Je vis <b>à 100 % de mes séances</b>, toute l&apos;année. Ce que
                 j&apos;aime dans ce métier : le moment où une femme découvre ses photos et se regarde autrement.
               </p>
               <span className={styles.tagChiffre}>
-                <span className="a-valider">[CHIFFRE À VALIDER]</span> photographes accompagnés dans la FineArt
-                Académie
+                Une quarantaine de photographes accompagnés dans la FineArt Académie
               </span>
             </div>
           </div>
@@ -336,6 +266,78 @@ export function Landing({ variante }: { variante: Variante }) {
                 Voir tous les témoignages <span aria-hidden="true">→</span>
               </span>
             </a>
+          </div>
+        </section>
+
+        {/* ============ TU TE RECONNAIS ? (objections) ============ */}
+        <section className="section section--sable">
+          <div className="conteneur">
+            <div className="entete-section">
+              <span className="surtitre">Tu te reconnais ?</span>
+              <h2>Ce qui te freine <em>n&apos;est pas ton talent</em></h2>
+            </div>
+            <div className={styles.objections}>
+              {DOULEURS.map((d) => (
+                <p key={d} className={styles.objection}>{d}</p>
+              ))}
+            </div>
+            <p className={styles.reponse}>
+              Le problème n&apos;est ni ton matériel ni ton œil. C&apos;est l&apos;absence de méthode : <b>un
+              positionnement à toi, une offre premium et une stratégie de contenu</b> qui attire les bonnes clientes.
+            </p>
+          </div>
+        </section>
+
+        {/* ============ LA SOLUTION : LE BOUDOIR AVEC LA BONNE MÉTHODE ============ */}
+        <section className="section">
+          <div className="conteneur">
+            <div className="entete-section">
+              <span className="surtitre">La solution</span>
+              <h2>
+                Le boudoir, avec la bonne méthode, <em>c&apos;est ce qui fait vivre de la photo à plein temps</em>
+              </h2>
+              <p>
+                Que tu fasses déjà du boudoir ou du mariage, du portrait, de la grossesse : c&apos;est la prestation
+                qui remplit un agenda toute l&apos;année.
+              </p>
+            </div>
+            <div className={styles.comparatif}>
+              <div className={styles.comparatifAvant}>
+                <span className={styles.comparatifTitre}>Ce que vivent la plupart des photographes</span>
+                <ul>
+                  <li>Une saison chargée, puis des mois creux</li>
+                  <li>Des prix tirés vers le bas par la concurrence</li>
+                  <li>Des clientes qui comparent et négocient</li>
+                  <li>Un travail à côté pour tenir l&apos;année</li>
+                </ul>
+              </div>
+              <div className={styles.comparatifApres}>
+                <span className={styles.comparatifTitre}>Le boudoir, avec la bonne méthode</span>
+                <ul>
+                  <li>Quelques séances par mois suffisent pour vivre confortablement</li>
+                  <li>Ton propre positionnement : on ne te compare plus aux autres</li>
+                  <li>Ta propre stratégie de contenu, qui attire les bonnes clientes</li>
+                  <li>Une offre premium, un prix qui ne se négocie pas, toute l&apos;année</li>
+                </ul>
+              </div>
+            </div>
+            <div className="texte-centre">
+              <BoutonInscription>Je veux découvrir la méthode <span aria-hidden="true">→</span></BoutonInscription>
+            </div>
+          </div>
+        </section>
+
+        {/* ============ PIVOT / VOCATION ============ */}
+        <section className={styles.citation}>
+          <div className="conteneur etroit">
+            <p className={styles.citationTexte}>
+              Une femme n&apos;achète pas des fichiers.{" "}
+              <span className={styles.cuivreVif}>Elle achète le jour où elle s&apos;est trouvée belle.</span>
+            </p>
+            <p className={styles.citationSuite}>
+              Le boudoir, c&apos;est d&apos;abord un accompagnement. En vivre toute l&apos;année, c&apos;est la
+              conséquence de bien le faire.
+            </p>
           </div>
         </section>
 
