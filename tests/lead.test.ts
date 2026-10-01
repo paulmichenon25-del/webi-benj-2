@@ -26,6 +26,7 @@ test("accepte un mobile belge et un numéro étranger saisi avec +", () => {
 test("valide le formulaire", () => {
   const ok = { prenom: "Léa", email: "lea@exemple.fr", telephone: "0612345678", pays: "FR", segment: "boudoir", consentementRappels: false, tracking: {} };
   assert.deepEqual(validateLead(ok), {});
+  assert.deepEqual(validateLead({ ...ok, segment: "" }), {}); // question facultative
   const ko = validateLead({ ...ok, prenom: " ", email: "lea@", telephone: "01", segment: "x" });
   assert.deepEqual(Object.keys(ko).sort(), ["email", "prenom", "segment", "telephone"]);
 });

@@ -4,23 +4,16 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState } f
 import { useRouter } from "next/navigation";
 import {
   COUNTRIES,
-  SEGMENTS,
   TRACKING_KEYS,
   validateLead,
   type FieldErrors,
-  type Segment,
   type Tracking,
 } from "@/lib/lead";
 import styles from "./Inscription.module.css";
 
 export const STORAGE_INSCRIPTION = "fa_inscription";
 
-// Libellés affichés dans la fenêtre (les libellés complets restent stockés avec l'inscrit).
-const LIBELLES_COURTS: Record<Segment, string> = {
-  boudoir: "Je fais déjà du boudoir",
-  autre_specialite: "Mariage, portrait, grossesse",
-  debutant: "Je débute en photo",
-};
+
 const STORAGE_TRACKING = "fa_tracking";
 
 function safeGet(key: string): string | null {
@@ -137,8 +130,6 @@ function FormulaireInscription() {
   const [email, setEmail] = useState("");
   const [pays, setPays] = useState("FR");
   const [telephone, setTelephone] = useState("");
-  const [segment, setSegment] = useState<Segment | "">("");
-  const [consentement, setConsentement] = useState(false);
   const [website, setWebsite] = useState("");
   const [errors, setErrors] = useState<FieldErrors>({});
   const [erreurGlobale, setErreurGlobale] = useState("");
@@ -159,8 +150,8 @@ function FormulaireInscription() {
       email,
       telephone,
       pays,
-      segment,
-      consentementRappels: consentement,
+      segment: "",
+      consentementRappels: false,
       tracking: { ...tracking.current, variante },
       website,
     };
@@ -269,30 +260,6 @@ function FormulaireInscription() {
         {errors.telephone && <p id="e-tel" className={styles.erreur}>{errors.telephone}</p>}
       </div>
 
-      <fieldset className={styles.segments} aria-describedby={errors.segment ? "e-segment" : undefined}>
-        <legend>Aujourd&apos;hui, tu…</legend>
-        {(Object.keys(SEGMENTS) as Segment[]).map((key) => (
-          <label key={key} className={`${styles.option} ${segment === key ? styles.optionActive : ""}`}>
-            <input
-              type="radio"
-              name="segment"
-              value={key}
-              checked={segment === key}
-              onChange={() => { setSegment(key); setErrors((x) => ({ ...x, segment: undefined })); }}
-              aria-invalid={Boolean(errors.segment)}
-              required
-            />
-            <span>{LIBELLES_COURTS[key]}</span>
-          </label>
-        ))}
-        {errors.segment && <p id="e-segment" className={styles.erreur}>{errors.segment}</p>}
-      </fieldset>
-
-      <label className={styles.consentement}>
-        <input type="checkbox" checked={consentement} onChange={(e) => setConsentement(e.target.checked)} />
-        <span>J&apos;accepte les rappels du live par SMS et WhatsApp (STOP pour arrêter).</span>
-      </label>
-
       {/* Pot de miel : invisible pour les humains */}
       <div className="visuellement-cache" aria-hidden="true">
         <label>
@@ -313,8 +280,7 @@ function FormulaireInscription() {
       </button>
 
       <p className={styles.mentions}>
-        Tes infos servent uniquement à t&apos;envoyer les accès et les rappels du live.{" "}
-        <a href="/confidentialite" target="_blank">Confidentialité</a>
+        Tes infos servent uniquement à t&apos;envoyer les accès au live.
       </p>
     </form>
   );

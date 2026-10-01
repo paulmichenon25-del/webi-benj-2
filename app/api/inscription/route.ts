@@ -74,7 +74,7 @@ export async function POST(req: NextRequest) {
         prenom: input.prenom,
         email: input.email,
         ip,
-        phone: input.consentementRappels ? phone : undefined,
+        phone,
       })
     : null;
   if (wj && !wj.ok) console.error("[inscription] WebinarJam :", wj.error, input.email);
@@ -87,7 +87,7 @@ export async function POST(req: NextRequest) {
     email: input.email,
     telephone_e164: phone.e164,
     segment: input.segment,
-    segment_libelle: SEGMENTS[input.segment as Segment],
+    segment_libelle: SEGMENTS[input.segment as Segment] ?? "",
     consentement_rappels_sms_whatsapp: input.consentementRappels,
     utm_source: input.tracking.utm_source ?? "",
     utm_medium: input.tracking.utm_medium ?? "",

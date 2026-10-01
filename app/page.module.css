@@ -1075,3 +1075,33 @@
     grid-column: 1 / -1;
   }
 }
+
+/* ---------- Ajustements v4 : titre plus grand (2 lignes max sur téléphone), espaces resserrés ---------- */
+@media (max-width: 899px) {
+  .hero .h1 {
+    font-size: 8vw;
+    letter-spacing: -0.025em;
+    max-width: none;
+    margin-inline: -8px;
+  }
+}
+
+.hero {
+  padding-bottom: 20px;
+}
+
+.sousBouton {
+  max-width: none;
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+.promesse {
+  padding-top: 6px;
+}
+
+.promesse p {
+  max-width: 40ch;
+  font-size: 1rem;
+  line-height: 1.55;
+}

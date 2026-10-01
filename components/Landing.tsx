@@ -87,7 +87,7 @@ export function Landing({ variante }: { variante: Variante }) {
               Je réserve ma place gratuite <span aria-hidden="true">→</span>
             </BoutonInscription>
 
-            <p className={styles.sousBouton}>100 % gratuit · En direct · Bonus pour les présents</p>
+            <p className={styles.sousBouton}>100 % gratuit · 2 soirées en direct</p>
           </div>
         </section>
 
@@ -96,7 +96,6 @@ export function Landing({ variante }: { variante: Variante }) {
           <div className="conteneur etroit">
             <p>{variante.lede}</p>
             <ul className={styles.bulles}>
-              <li><span className="check">✓</span>100 % gratuit</li>
               <li><span className="check">✓</span>Boudoir ou pas encore</li>
               <li><span className="check">✓</span>Bonus réservés aux présents</li>
             </ul>

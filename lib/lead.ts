@@ -102,7 +102,8 @@ export function validateLead(input: LeadInput): FieldErrors {
   if (!isValidEmail(input.email)) errors.email = "Vérifie ton adresse email.";
   if (!normalizeMobile(input.telephone, input.pays))
     errors.telephone = "Vérifie ton numéro de mobile.";
-  if (!(input.segment in SEGMENTS)) errors.segment = "Choisis la réponse qui te correspond.";
+  // Question de segmentation retirée du formulaire : facultative, validée seulement si fournie.
+  if (input.segment && !(input.segment in SEGMENTS)) errors.segment = "Choisis la réponse qui te correspond.";
   return errors;
 }
 
