@@ -73,10 +73,10 @@ export default function MerciPage() {
           )}
 
           <section className={`${styles.bloc} ${styles.rappel}`}>
-            <h2>Reste jusqu&apos;au bout de la soirée 2</h2>
+            <h2>Sois là en direct, les deux soirs</h2>
             <p>
-              Lundi 19 octobre, à la fin du live, je fais une annonce réservée aux personnes présentes en direct.
-              Garde ta soirée.
+              Chaque soir, je fais des annonces et je donne des bonus réservés aux personnes présentes en direct.
+              Ils ne sont pas retransmis. Garde tes deux soirées.
             </p>
             <p className={styles.signature}>À dimanche. Benjamin</p>
           </section>

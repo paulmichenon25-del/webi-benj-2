@@ -52,10 +52,9 @@ export function agendaDescription(liveUrl: string, soiree: Soiree): string {
   const lien = liveUrl
     ? `Ton lien pour rejoindre le live : ${liveUrl}`
     : "Ton lien pour rejoindre le live t'arrive par email.";
-  const fin =
-    soiree.id === "2"
-      ? "Reste jusqu'au bout : une annonce est réservée aux personnes présentes en direct."
-      : "On se retrouve aussi demain, lundi 19 octobre à 20h, pour la soirée 2.";
+  const suite =
+    soiree.id === "1" ? " On se retrouve aussi demain, lundi 19 octobre à 20h, pour la soirée 2." : "";
+  const fin = `Reste jusqu'au bout : bonus et annonces réservés aux personnes présentes en direct, non retransmis.${suite}`;
   return [
     `${soiree.label} du live gratuit de Benjamin Hanachowicz (FineArt Académie).`,
     "",

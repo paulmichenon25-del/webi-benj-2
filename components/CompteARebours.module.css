@@ -1,0 +1,45 @@
+.ligne {
+  margin: 14px 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gris);
+  font-variant-numeric: tabular-nums;
+}
+
+.ligne b {
+  color: var(--accent);
+}
+
+.blocs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto 24px;
+  font-variant-numeric: tabular-nums;
+}
+
+.blocs > div {
+  min-width: 66px;
+  padding: 12px 6px;
+  border-radius: 14px;
+  background: var(--ivoire);
+  border: 1px solid rgba(188, 108, 46, 0.25);
+  display: grid;
+  gap: 4px;
+}
+
+.blocs b {
+  font-family: var(--font-impact), Impact, sans-serif;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: var(--cuivre);
+}
+
+.blocs span {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gris);
+}

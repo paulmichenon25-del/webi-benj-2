@@ -3,6 +3,7 @@ import { CtaMobile } from "@/components/CtaMobile";
 import { Portrait } from "@/components/Portrait";
 import { Footer } from "@/components/Footer";
 import { VideoPresentation } from "@/components/VideoPresentation";
+import { CompteARebours } from "@/components/CompteARebours";
 import {
   CADEAU_INSCRIPTION,
   CADEAU_LIVE,
@@ -39,7 +40,7 @@ const FAQ: { q: string; r: string }[] = [
   { q: "Il faut un studio ?", r: "Non. Le boudoir se fait en intérieur, et tu peux commencer sans studio. J'en parle pendant le live." },
   {
     q: "Je ne peux être là qu'à une soirée ?",
-    r: "Inscris-toi quand même et bloque les deux si tu peux. L'annonce de fin du lundi est réservée aux personnes présentes en direct.",
+    r: "Inscris-toi quand même, mais bloque les deux si tu peux. Chaque soir, je fais des annonces et je donne des bonus réservés aux personnes présentes en direct. Ils ne sont pas retransmis ensuite.",
   },
   { q: "C'est technique (lumière, matériel) ?", r: "Non. On ne parle ni de lumière ni de réglages. On parle clientes, offre et prix." },
 ];
@@ -87,18 +88,20 @@ export function Landing({ variante }: { variante: Variante }) {
               </span>
             </div>
 
-            <p className={styles.lede}>{variante.lede}</p>
-
             <BoutonInscription className={styles.heroBouton}>
               Je réserve ma place gratuite <span aria-hidden="true">→</span>
             </BoutonInscription>
+
+            <CompteARebours />
 
             <div className={styles.confiance}>
               <span><span className="check">✓</span> 100 % gratuit</span>
               <span><span className="check">✓</span> En direct avec moi</span>
               <span><span className="check">✓</span> Boudoir ou pas encore</span>
-              <span><span className="check">✓</span> Un cadeau dès l&apos;inscription</span>
+              <span><span className="check">✓</span> Bonus réservés aux présents</span>
             </div>
+
+            <p className={styles.lede}>{variante.lede}</p>
 
             <p className={styles.legende}>
               <b>Benjamin Hanachowicz</b> · Photographe boudoir à Roanne
@@ -254,15 +257,17 @@ export function Landing({ variante }: { variante: Variante }) {
                   <li><span>01</span>Pourquoi le boudoir est la prestation qui fait vivre de la photo à plein temps</li>
                   <li><span>02</span>Construire ton offre premium, que tu fasses déjà du boudoir ou pas encore</li>
                   <li><span>03</span>Fixer ton prix pour en vivre toute l&apos;année, sans négocier</li>
+                  <li className={styles.bonusLive}><span>+</span>Bonus et annonce réservés aux présents</li>
                 </ol>
               </article>
               <article className={`${styles.soiree} ${styles.soireeForte}`}>
                 <span className={styles.soireeTag}>Soirée 2 · Lun. 19 octobre · 20h</span>
                 <h3>Trouver tes clientes</h3>
                 <ol>
-                  <li><span>01</span>Où sont tes premières clientes boudoir, y compris parmi tes anciennes clientes</li>
-                  <li><span>02</span>Le message exact à leur envoyer, dès le lendemain</li>
-                  <li><span>03</span>Une annonce réservée aux personnes présentes en direct</li>
+                  <li><span>01</span>Où sont tes premières clientes boudoir, y compris dans tes contacts actuels</li>
+                  <li><span>02</span>Le message exact à envoyer à tes anciennes clientes</li>
+                  <li><span>03</span>Les premières actions à lancer dès le lendemain du live</li>
+                  <li className={styles.bonusLive}><span>+</span>Bonus et annonce réservés aux présents</li>
                 </ol>
               </article>
             </div>
@@ -365,6 +370,7 @@ export function Landing({ variante }: { variante: Variante }) {
               </span>
               <h2>Dimanche 18 et lundi 19 octobre, 20h. <em>Ta place t&apos;attend.</em></h2>
               <p>Si tu aimes ce métier, on va passer deux belles soirées. Viens avec tes questions.</p>
+              <CompteARebours variante="blocs" />
               <div className={styles.tableau}>
                 <div><span>Soirée 1</span><b>Dim. 18 oct. · 20h</b></div>
                 <div><span>Soirée 2</span><b>Lun. 19 oct. · 20h</b></div>
@@ -374,7 +380,7 @@ export function Landing({ variante }: { variante: Variante }) {
               <BoutonInscription plein className={styles.boutonFinal}>
                 Je réserve ma place gratuite <span aria-hidden="true">→</span>
               </BoutonInscription>
-              <p className={styles.avertissement}>Annonce réservée aux personnes présentes en direct le lundi.</p>
+              <p className={styles.avertissement}>Chaque soir : bonus et annonces réservés aux personnes présentes en direct. Rien n'est retransmis.</p>
               <p className={styles.signature}>Je t&apos;attends. Benjamin</p>
             </div>
           </div>

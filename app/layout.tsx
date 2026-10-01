@@ -29,11 +29,11 @@ const texte = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
-  title: "Vivre du boudoir, toute l'année · 2 soirées de live gratuites avec Benjamin",
+  title: "Vivre de ta passion à plein temps grâce au boudoir · 2 lives gratuits avec Benjamin",
   description:
     "Les 18 et 19 octobre à 20h, je te montre en direct comment trouver tes clientes boudoir, construire ton offre et la vendre au bon prix pour en vivre toute l'année.",
   openGraph: {
-    title: "Vivre du boudoir, toute l'année",
+    title: "Vivre de ta passion à plein temps, toute l'année, grâce au boudoir",
     description: "2 soirées de live gratuites avec Benjamin Hanachowicz · 18 et 19 octobre · 20h",
     locale: "fr_FR",
     type: "website",

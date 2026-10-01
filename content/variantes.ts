@@ -24,7 +24,7 @@ export const VARIANTES: Record<VarianteId, Variante> = {
     id: "a",
     nom: "A · photo",
     media: "image",
-    titre: "Vivre du boudoir à plein temps, toute l'année.",
+    titre: "Vivre de ta passion à plein temps, toute l'année, grâce au boudoir.",
     titreEm: "Je te montre comment, en direct.",
     lede: LEDE_PUBS,
     ciblesAutresDabord: false,
@@ -33,7 +33,7 @@ export const VARIANTES: Record<VarianteId, Variante> = {
     id: "b",
     nom: "B · vidéo",
     media: "video",
-    titre: "Vivre du boudoir à plein temps, toute l'année.",
+    titre: "Vivre de ta passion à plein temps, toute l'année, grâce au boudoir.",
     titreEm: "Je te montre comment, en direct.",
     lede: LEDE_PUBS,
     ciblesAutresDabord: false,
@@ -56,9 +56,9 @@ export function estVariante(v: string | undefined | null): v is VarianteId {
 }
 
 // Variantes en test sur « / » (répartition égale). Modifiable sans toucher au code :
-// AB_VARIANTES=a,b dans les variables d'environnement. Une seule lettre = pas de test.
+// AB_VARIANTES=a,b dans les variables d'environnement. Par défaut « b » seule (vidéo), sans test.
 export function variantesActives(): VarianteId[] {
-  const env = (process.env.AB_VARIANTES || "a,b").split(",").map((s) => s.trim());
+  const env = (process.env.AB_VARIANTES || "b").split(",").map((s) => s.trim());
   const ids = env.filter(estVariante);
   return ids.length ? ids : ["a"];
 }
