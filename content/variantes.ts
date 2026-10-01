@@ -17,7 +17,7 @@ export type Variante = {
 };
 
 const LEDE_PUBS =
-  "En direct, je te montre comment trouver tes premières clientes boudoir, construire ton offre premium, et à quel prix la vendre pour en vivre.";
+  "En direct, je te montre la méthode pour trouver tes clientes boudoir, construire ton offre premium et savoir à quel prix la vendre pour en vivre.";
 
 export const VARIANTES: Record<VarianteId, Variante> = {
   a: {

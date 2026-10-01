@@ -85,7 +85,7 @@ export function Landing({ variante }: { variante: Variante }) {
               Je réserve ma place gratuite <span aria-hidden="true">→</span>
             </BoutonInscription>
 
-            <p className={styles.sousBouton}>Gratuit · En direct · Bonus pour les présents</p>
+            <p className={styles.sousBouton}>Inscription gratuite, en 30 secondes.</p>
           </div>
         </section>
 
@@ -93,6 +93,11 @@ export function Landing({ variante }: { variante: Variante }) {
         <section className={styles.promesse}>
           <div className="conteneur etroit">
             <p>{variante.lede}</p>
+            <ul className={styles.bulles}>
+              <li><span className="check">✓</span>100 % gratuit</li>
+              <li><span className="check">✓</span>Boudoir ou pas encore</li>
+              <li><span className="check">✓</span>Bonus réservés aux présents</li>
+            </ul>
             <p className={styles.signatureHero}>
               <b>Benjamin Hanachowicz</b> · Photographe boudoir à Roanne
             </p>
@@ -255,7 +260,7 @@ export function Landing({ variante }: { variante: Variante }) {
                 <span className={styles.soireeTag}>Soirée 2 · Lun. 19 octobre · 20h</span>
                 <h3>Trouver tes clientes</h3>
                 <ol>
-                  <li><span>01</span>Où sont tes premières clientes boudoir, y compris dans tes contacts actuels</li>
+                  <li><span>01</span>Où trouver tes clientes boudoir, y compris dans tes contacts actuels</li>
                   <li><span>02</span>Le message exact à envoyer à tes anciennes clientes</li>
                   <li><span>03</span>Les premières actions à lancer dès le lendemain du live</li>
                   <li className={styles.bonusLive}><span>+</span>Bonus et annonce réservés aux présents</li>
