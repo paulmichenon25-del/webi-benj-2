@@ -954,3 +954,70 @@
     margin-bottom: 26px;
   }
 }
+
+/* ---------- Hero aéré (v3) ---------- */
+.hero {
+  padding: 34px 0 44px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.hero .h1 {
+  margin-bottom: 26px;
+}
+
+.hero .heroMedia {
+  margin: 0 0 26px;
+}
+
+.sousBouton {
+  margin: 14px 0 0;
+  font-family: var(--font-titre), Georgia, serif;
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--gris);
+}
+
+.promesse {
+  padding: 8px 0 40px;
+  text-align: center;
+}
+
+.promesse p {
+  margin: 0 auto;
+  max-width: 34ch;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: var(--encre-douce);
+}
+
+.promesse .signatureHero {
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: var(--gris);
+}
+
+.signatureHero b {
+  color: var(--encre);
+}
+
+@media (min-width: 900px) {
+  .hero {
+    padding: 48px 0 52px;
+  }
+  .promesse p {
+    max-width: 46ch;
+    font-size: 1.15rem;
+  }
+}

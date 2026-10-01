@@ -15,7 +15,7 @@ const pad = (n: number) => String(n).padStart(2, "0");
 
 // Compte à rebours jusqu'au dimanche 18 octobre, 20h (Paris).
 // Rendu vide côté serveur pour éviter un décalage d'hydratation.
-export function CompteARebours({ variante = "ligne" }: { variante?: "ligne" | "blocs" }) {
+export function CompteARebours({ variante = "ligne" }: { variante?: "ligne" | "blocs" | "sombre" }) {
   const [t, setT] = useState<ReturnType<typeof reste> | null>(null);
 
   useEffect(() => {
@@ -39,8 +39,8 @@ export function CompteARebours({ variante = "ligne" }: { variante?: "ligne" | "b
   }
 
   return (
-    <p className={styles.ligne}>
-      Le live commence dans{" "}
+    <p className={variante === "sombre" ? `${styles.ligne} ${styles.sombre}` : styles.ligne}>
+      {variante === "sombre" ? "Début dans" : "Le live commence dans"}{" "}
       <b suppressHydrationWarning>{t ? `${t.j} j ${pad(t.h)} h ${pad(t.m)} min ${pad(t.s)} s` : "…"}</b>
     </p>
   );

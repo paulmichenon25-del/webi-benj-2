@@ -14,6 +14,13 @@ import {
 import styles from "./Inscription.module.css";
 
 export const STORAGE_INSCRIPTION = "fa_inscription";
+
+// Libellés affichés dans la fenêtre (les libellés complets restent stockés avec l'inscrit).
+const LIBELLES_COURTS: Record<Segment, string> = {
+  boudoir: "Je fais déjà du boudoir",
+  autre_specialite: "Mariage, portrait, grossesse",
+  debutant: "Je débute en photo",
+};
 const STORAGE_TRACKING = "fa_tracking";
 
 function safeGet(key: string): string | null {
@@ -90,10 +97,10 @@ export function InscriptionProvider({ children, variante = "" }: { children: Rea
               <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
           </button>
-          <p className={styles.surtitre}>Dim. 18 et lun. 19 octobre · 20h</p>
           <h2 id="titre-inscription" className={styles.titre}>
-            Réserve ta place pour les 2 soirées
+            Réserve ta place
           </h2>
+          <p className={styles.sousTitre}>Les 18 et 19 octobre à 20h, en direct.</p>
           <FormulaireInscription />
         </div>
       </dialog>
@@ -192,13 +199,14 @@ function FormulaireInscription() {
   return (
     <form className={styles.formulaire} onSubmit={onSubmit} noValidate>
       <div className={styles.champ}>
-        <label htmlFor="f-prenom">Ton prénom</label>
+        <label htmlFor="f-prenom" className="visuellement-cache">Ton prénom</label>
         <input
           id="f-prenom"
           name="prenom"
           autoComplete="given-name"
+          placeholder="Ton prénom"
           value={prenom}
-          onChange={(e) => setPrenom(e.target.value)}
+          onChange={(e) => { setPrenom(e.target.value); setErrors((x) => ({ ...x, prenom: undefined })); }}
           aria-invalid={Boolean(errors.prenom)}
           aria-describedby={errors.prenom ? "e-prenom" : undefined}
           required
@@ -207,7 +215,7 @@ function FormulaireInscription() {
       </div>
 
       <div className={styles.champ}>
-        <label htmlFor="f-email">Ton email</label>
+        <label htmlFor="f-email" className="visuellement-cache">Ton email</label>
         <input
           id="f-email"
           name="email"
@@ -216,8 +224,9 @@ function FormulaireInscription() {
           autoComplete="email"
           autoCapitalize="off"
           spellCheck={false}
+          placeholder="Ton meilleur email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => { setEmail(e.target.value); setErrors((x) => ({ ...x, email: undefined })); }}
           aria-invalid={Boolean(errors.email)}
           aria-describedby={errors.email ? "e-email" : undefined}
           required
@@ -226,7 +235,7 @@ function FormulaireInscription() {
       </div>
 
       <div className={styles.champ}>
-        <label htmlFor="f-tel">Ton numéro de mobile</label>
+        <label htmlFor="f-tel" className="visuellement-cache">Ton numéro de mobile</label>
         <div className={styles.telephone}>
           <div className={styles.indicatif}>
             <span aria-hidden="true">{indicatif}</span>
@@ -249,19 +258,15 @@ function FormulaireInscription() {
             type="tel"
             inputMode="tel"
             autoComplete="tel-national"
-            placeholder="06 12 34 56 78"
+            placeholder="Ton numéro de mobile"
             value={telephone}
-            onChange={(e) => setTelephone(e.target.value)}
+            onChange={(e) => { setTelephone(e.target.value); setErrors((x) => ({ ...x, telephone: undefined })); }}
             aria-invalid={Boolean(errors.telephone)}
-            aria-describedby={errors.telephone ? "e-tel" : "a-tel"}
+            aria-describedby={errors.telephone ? "e-tel" : undefined}
             required
           />
         </div>
-        {errors.telephone ? (
-          <p id="e-tel" className={styles.erreur}>{errors.telephone}</p>
-        ) : (
-          <p id="a-tel" className={styles.aide}>Pour te prévenir quand le live commence.</p>
-        )}
+        {errors.telephone && <p id="e-tel" className={styles.erreur}>{errors.telephone}</p>}
       </div>
 
       <fieldset className={styles.segments} aria-describedby={errors.segment ? "e-segment" : undefined}>
@@ -273,11 +278,11 @@ function FormulaireInscription() {
               name="segment"
               value={key}
               checked={segment === key}
-              onChange={() => setSegment(key)}
+              onChange={() => { setSegment(key); setErrors((x) => ({ ...x, segment: undefined })); }}
               aria-invalid={Boolean(errors.segment)}
               required
             />
-            <span>{SEGMENTS[key]}</span>
+            <span>{LIBELLES_COURTS[key]}</span>
           </label>
         ))}
         {errors.segment && <p id="e-segment" className={styles.erreur}>{errors.segment}</p>}
@@ -285,10 +290,7 @@ function FormulaireInscription() {
 
       <label className={styles.consentement}>
         <input type="checkbox" checked={consentement} onChange={(e) => setConsentement(e.target.checked)} />
-        <span>
-          J&apos;accepte de recevoir les rappels du live par SMS et WhatsApp. Tu peux te désinscrire à tout moment
-          en répondant STOP.
-        </span>
+        <span>J&apos;accepte les rappels du live par SMS et WhatsApp (STOP pour arrêter).</span>
       </label>
 
       {/* Pot de miel : invisible pour les humains */}
@@ -305,13 +307,14 @@ function FormulaireInscription() {
         </p>
       )}
 
-      <button type="submit" className="bouton bouton--plein" disabled={envoi}>
-        {envoi ? "Je réserve ta place…" : "Je réserve ma place gratuite"}
+      <button type="submit" className={`bouton bouton--plein ${styles.envoyer}`} disabled={envoi}>
+        <span>{envoi ? "Je réserve ta place…" : "Je réserve ma place"}</span>
+        {!envoi && <small>Oui, je participe</small>}
       </button>
 
       <p className={styles.mentions}>
-        Tu recevras par email ton lien d&apos;accès et les informations du live. Tes données restent chez nous,
-        voir la <a href="/confidentialite" target="_blank">politique de confidentialité</a>.
+        Tes infos servent uniquement à t&apos;envoyer les accès et les rappels du live.{" "}
+        <a href="/confidentialite" target="_blank">Confidentialité</a>
       </p>
     </form>
   );

@@ -43,3 +43,13 @@
   text-transform: uppercase;
   color: var(--gris);
 }
+
+.sombre {
+  margin: 0;
+  text-align: center;
+  color: #a29e95;
+}
+
+.sombre b {
+  color: var(--cuivre-vif);
+}

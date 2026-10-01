@@ -57,12 +57,9 @@ export function Landing({ variante }: { variante: Variante }) {
         {/* ============ HERO ============ */}
         <section id="hero" className={styles.hero}>
           <div className={`conteneur ${styles.heroCentre}`}>
-            <p className={styles.marque}>
-              {NOM_EVENEMENT} <span>· avec Benjamin Hanachowicz</span>
+            <p className={styles.eyebrow}>
+              <span className="pulse" aria-hidden="true" /> Live gratuit · 18 & 19 oct. · 20h
             </p>
-            <span className="surtitre">
-              <span className="pulse" aria-hidden="true" /> 2 lives gratuits · 18 et 19 octobre · 20h
-            </span>
 
             <h1 className={variante.id === "c" ? `${styles.h1} ${styles.h1Long}` : styles.h1}>
               {variante.titre} <em>{variante.titreEm}</em>
@@ -82,28 +79,21 @@ export function Landing({ variante }: { variante: Variante }) {
                   />
                 </div>
               )}
-              <span className={styles.badgeGratuit}>Gratuit</span>
-              <span className={styles.badgeLive}>
-                <span className={styles.liveDot} aria-hidden="true" /> 2 soirées en direct
-              </span>
             </div>
 
             <BoutonInscription className={styles.heroBouton}>
               Je réserve ma place gratuite <span aria-hidden="true">→</span>
             </BoutonInscription>
 
-            <CompteARebours />
+            <p className={styles.sousBouton}>Gratuit · En direct · Bonus pour les présents</p>
+          </div>
+        </section>
 
-            <div className={styles.confiance}>
-              <span><span className="check">✓</span> 100 % gratuit</span>
-              <span><span className="check">✓</span> En direct avec moi</span>
-              <span><span className="check">✓</span> Boudoir ou pas encore</span>
-              <span><span className="check">✓</span> Bonus réservés aux présents</span>
-            </div>
-
-            <p className={styles.lede}>{variante.lede}</p>
-
-            <p className={styles.legende}>
+        {/* ============ PROMESSE (reprend mot pour mot les pubs) ============ */}
+        <section className={styles.promesse}>
+          <div className="conteneur etroit">
+            <p>{variante.lede}</p>
+            <p className={styles.signatureHero}>
               <b>Benjamin Hanachowicz</b> · Photographe boudoir à Roanne
             </p>
           </div>
@@ -132,6 +122,7 @@ export function Landing({ variante }: { variante: Variante }) {
               <div><span>Pour</span><b>Photographes boudoir et futurs</b></div>
             </div>
             <BoutonInscription plein>Je réserve ma place <span aria-hidden="true">→</span></BoutonInscription>
+            <CompteARebours variante="sombre" />
           </aside>
         </div>
 
