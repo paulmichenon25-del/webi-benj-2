@@ -96,8 +96,8 @@ export function Landing({ variante }: { variante: Variante }) {
           <div className="conteneur etroit">
             <p>{variante.lede}</p>
             <ul className={styles.bulles}>
-              <li><span className="check">✓</span>Boudoir ou pas encore</li>
-              <li><span className="check">✓</span>Bonus réservés aux présents</li>
+              <li><span className="check">✓</span>Débutant ou déjà lancé</li>
+              <li><span className="check">✓</span>La méthode complète</li>
             </ul>
             <p className={styles.signatureHero}>
               <b>Benjamin Hanachowicz</b> · Photographe boudoir à Roanne
@@ -132,15 +132,6 @@ export function Landing({ variante }: { variante: Variante }) {
           </aside>
         </div>
 
-        <div className="conteneur">
-          <p className={styles.reassurance}>
-            <span className="check">✓</span>
-            <span>
-              <b>Ce n&apos;est pas un live technique.</b> Pas de réglages, pas de matériel : on parle de ce qui te
-              fait vivre, tes clientes, ton offre, ton prix.
-            </span>
-          </p>
-        </div>
 
         {/* ============ POUR QUI ============ */}
         <section className={`section ${styles.sectionHaute}`}>
