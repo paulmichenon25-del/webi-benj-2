@@ -11,6 +11,7 @@ import {
 import { registerToWebinarJam, webinarJamConfigured } from "@/lib/integrations/webinarjam";
 import { leadStoreConfigured, storeLead, type StoredLead } from "@/lib/integrations/leadStore";
 import { sendCapiLead } from "@/lib/integrations/metaCapi";
+import { inscrireDansSystemeIo, systemeIoConfigured } from "@/lib/integrations/systemeio";
 
 export const runtime = "nodejs";
 
@@ -51,7 +52,7 @@ export async function POST(req: NextRequest) {
   const userAgent = req.headers.get("user-agent") || "";
   const eventId = randomUUID();
 
-  if (!webinarJamConfigured() && !leadStoreConfigured()) {
+  if (!webinarJamConfigured() && !leadStoreConfigured() && !systemeIoConfigured()) {
     if (process.env.NODE_ENV === "production") {
       console.error("[inscription] Aucune intégration configurée, inscription perdue :", input.email);
       return NextResponse.json(
@@ -63,6 +64,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true, eventId, liveUrl: "" });
   }
 
+  // systeme.io (contact + tag → email de confirmation) en parallèle de WebinarJam.
+  const sioPromise = systemeIoConfigured()
+    ? inscrireDansSystemeIo({ prenom: input.prenom, email: input.email, telephoneE164: phone.e164 })
+    : Promise.resolve(null);
+
   const wj = webinarJamConfigured()
     ? await registerToWebinarJam({
         prenom: input.prenom,
@@ -72,6 +78,8 @@ export async function POST(req: NextRequest) {
       })
     : null;
   if (wj && !wj.ok) console.error("[inscription] WebinarJam :", wj.error, input.email);
+  const sio = await sioPromise;
+  if (sio && !sio.ok) console.error("[inscription] systeme.io :", sio.error, input.email);
 
   const lead: StoredLead = {
     inscrit_le: new Date().toISOString(),
@@ -93,6 +101,7 @@ export async function POST(req: NextRequest) {
     webinarjam_statut: wj === null ? "non_configure" : wj.ok ? "ok" : "erreur",
     webinarjam_erreur: wj && !wj.ok ? wj.error : "",
     webinarjam_lien_live: wj?.ok ? wj.liveUrl ?? "" : "",
+    systemeio_statut: sio === null ? "non_configure" : sio.ok ? "ok" : "erreur",
     event_id: eventId,
     user_agent: userAgent,
   };
@@ -101,7 +110,7 @@ export async function POST(req: NextRequest) {
   if (stored && !stored.ok) console.error("[inscription] Webhook inscrits :", stored.error, JSON.stringify(lead));
 
   // L'inscrit est perdu seulement si toutes les intégrations configurées ont échoué.
-  const saved = Boolean(wj?.ok || stored?.ok);
+  const saved = Boolean(wj?.ok || stored?.ok || sio?.ok);
   if (!saved) {
     return NextResponse.json(
       { ok: false, error: "Ton inscription n'est pas passée. Réessaie dans un instant." },

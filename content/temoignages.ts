@@ -15,7 +15,7 @@ export const TEMOIGNAGES: Temoignage[] = [
   { slug: "nicolas", nom: "Nicolas", legende: "[CONTENU À FOURNIR : légende]" },
   { slug: "jessica", nom: "Jessica", legende: "[CONTENU À FOURNIR : légende]" },
   { slug: "samantha", nom: "Samantha · Échappe et Belle", legende: "[CONTENU À FOURNIR : légende]" },
-  { slug: "benjamin-m", nom: "Benjamin M.", legende: "[CONTENU À FOURNIR : légende]" },
+  { slug: "benjamin-m", nom: "Benjamin", legende: "[CONTENU À FOURNIR : légende]" },
 ];
 
 export const URL_TEMOIGNAGES = "https://temoignages.fineart-academie.com";

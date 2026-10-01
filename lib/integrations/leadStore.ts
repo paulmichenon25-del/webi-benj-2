@@ -23,6 +23,7 @@ export type StoredLead = {
   webinarjam_statut: "ok" | "erreur" | "non_configure";
   webinarjam_erreur: string;
   webinarjam_lien_live: string;
+  systemeio_statut: "ok" | "erreur" | "non_configure";
   event_id: string; // identifiant partagé Pixel / API Conversions
   user_agent: string;
 };

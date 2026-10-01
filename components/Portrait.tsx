@@ -9,12 +9,14 @@ export function Portrait({
   variante,
   priority = false,
   sizes,
+  cadrage = "center",
 }: {
   src: string;
   alt: string;
   variante: "avatar" | "grand";
   priority?: boolean;
   sizes?: string;
+  cadrage?: string; // object-position, pour centrer un visage
 }) {
   const existe = publicFileExists(src);
   const cls = `${styles.cadre} ${variante === "avatar" ? styles.avatar : styles.grand}`;
@@ -37,7 +39,7 @@ export function Portrait({
         fill
         priority={priority}
         sizes={sizes ?? (variante === "avatar" ? "48px" : "(min-width: 900px) 440px, 100vw")}
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", objectPosition: cadrage }}
       />
     </div>
   );

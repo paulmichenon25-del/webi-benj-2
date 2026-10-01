@@ -20,7 +20,7 @@ import styles from "@/app/page.module.css";
 // FAQ et carte finale. Couleurs : crème, noir, cuivre #BC6C2E sur les détails.
 
 const PHOTO_HERO = "/benjamin-hero.jpg"; // [IMAGE À FOURNIR : /public/benjamin-hero.jpg]
-const PHOTO_PORTRAIT = "/benjamin-portrait.jpg"; // [IMAGE À FOURNIR : portrait carré, sinon la photo du hero]
+const PHOTO_PORTRAIT = "/benjamin-portrait.jpg"; // photo fournie par Paul
 
 const DOULEURS = [
   "« Je me brade pour remplir mon agenda. »",
@@ -87,7 +87,7 @@ export function Landing({ variante }: { variante: Variante }) {
               Je réserve ma place gratuite <span aria-hidden="true">→</span>
             </BoutonInscription>
 
-            <p className={styles.sousBouton}>Pour les photographes qui aiment accompagner, pas seulement photographier.</p>
+            <p className={styles.sousBouton}>100 % gratuit · En direct · Bonus pour les présents</p>
           </div>
         </section>
 
@@ -229,7 +229,7 @@ export function Landing({ variante }: { variante: Variante }) {
             </div>
             <div className={styles.intervenant}>
               <div className={styles.photoRonde}>
-                <Portrait src={portrait} alt="Benjamin Hanachowicz" variante="grand" sizes="220px" />
+                <Portrait src={portrait} alt="Benjamin Hanachowicz" variante="grand" sizes="220px" cadrage="38% 40%" />
               </div>
               <p className={styles.role}>J&apos;anime les deux soirées</p>
               <p className={styles.nom}>Benjamin Hanachowicz</p>

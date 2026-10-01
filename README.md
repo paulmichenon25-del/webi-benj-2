@@ -86,3 +86,11 @@ d'analytics retenu).
 
 Règle : ne tester qu'une chose à la fois (A vs B), viser au moins ~100 inscrits par variante avant
 de conclure, puis garder la gagnante (`AB_VARIANTES=b`) et tester l'élément suivant (B vs C).
+
+## systeme.io
+
+À chaque inscription, `/api/inscription` crée le contact dans systeme.io (prénom, email, mobile)
+puis lui pose le tag `SYSTEMEIO_TAG_ID`. Dans systeme.io, une règle d'automatisation
+« Tag ajouté → envoyer l'email de confirmation / démarrer la campagne » fait le reste.
+Un contact déjà existant est retrouvé par son email et reçoit quand même le tag.
+Variables : `SYSTEMEIO_API_KEY`, `SYSTEMEIO_TAG_ID`. Le statut est stocké avec l'inscrit (`systemeio_statut`).
