@@ -39,13 +39,14 @@
   font-family: var(--font-impact), Impact, sans-serif;
   font-weight: 400;
   font-size: clamp(2.1rem, 9.6vw, 3.6rem);
-  line-height: 1.04;
+  line-height: 1.12;
   letter-spacing: 0;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
 
 .titre em {
+  display: block;
   font-style: normal;
   font-weight: 400;
   color: var(--cuivre);

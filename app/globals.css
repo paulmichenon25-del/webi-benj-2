@@ -280,6 +280,22 @@ a {
   }
 }
 
+/* Ordinateur : tout un cran plus grand (les tailles sont en rem). */
+@media (min-width: 900px) {
+  :root {
+    --max: 1180px;
+  }
+  html {
+    font-size: 112.5%;
+  }
+  body {
+    font-size: 19px;
+  }
+  .etroit {
+    max-width: 760px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
