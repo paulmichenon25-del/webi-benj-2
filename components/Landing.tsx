@@ -55,7 +55,7 @@ export function Landing({ variante }: { variante: Variante }) {
 
   return (
     <InscriptionProvider variante={variante.nom}>
-      <main>
+      <main className={styles.landing}>
         {/* ============ HERO ============ */}
         <section id="hero" className={styles.hero}>
           <div className={`conteneur ${styles.heroCentre}`}>

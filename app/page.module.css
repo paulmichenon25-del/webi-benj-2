@@ -1140,3 +1140,20 @@
     padding-right: 8px;
   }
 }
+
+/* Ordinateur : sections plus resserrées à partir de la carte événement (landing uniquement). */
+@media (min-width: 900px) {
+  .landing :global(.section) {
+    padding: 64px 0;
+  }
+  .landing .sectionHaute {
+    margin-top: 8px;
+  }
+  .landing .temoignagesSection {
+    padding-bottom: 44px;
+  }
+  .landing .citation,
+  .landing .final {
+    padding: 48px 0;
+  }
+}
