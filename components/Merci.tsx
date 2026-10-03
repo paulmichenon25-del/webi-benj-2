@@ -54,17 +54,8 @@ export function TitreMerci() {
 
   return (
     <h1 className={styles.titre}>
-      Ta place est réservée{prenom ? `, ${prenom}` : ""}. <em>Il te reste 2 choses à faire.</em>
+      Ta place est réservée{prenom ? `, ${prenom}` : ""}. <em>Il te reste 1 chose à faire.</em>
     </h1>
-  );
-}
-
-export function AuRevoir() {
-  const prenom = usePrenom();
-  return (
-    <h2 className={styles.auRevoir}>
-      À très vite{prenom ? <>, <em>{prenom}</em></> : null}.
-    </h2>
   );
 }
 
@@ -80,13 +71,9 @@ export function BoutonsAgenda() {
 
   return (
     <div className={styles.agenda}>
-      <a className={styles.agendaBouton} href={ics}>
-        <b>Apple Calendrier</b>
-        <span>les 2 soirées</span>
-      </a>
-      <a className={styles.agendaBouton} href={ics}>
-        <b>Outlook</b>
-        <span>les 2 soirées</span>
+      <a className={`${styles.agendaBouton} ${styles.agendaIcs}`} href={ics}>
+        <b>Apple / Outlook</b>
+        <span>les 2 soirées d&apos;un coup</span>
       </a>
       {SOIREES.map((s) => (
         <a
@@ -130,47 +117,9 @@ export function BoutonWhatsApp({ url }: { url: string }) {
       </span>
     </>
   );
-  if (!url) {
-    return (
-      <div className={styles.whatsapp} aria-disabled="true">
-        {contenu}
-        <span className={`a-valider ${styles.waAFournir}`}>[LIEN WHATSAPP À FOURNIR]</span>
-      </div>
-    );
-  }
   return (
-    <a className={styles.whatsapp} href={url} target="_blank" rel="noopener">
+    <a className={styles.whatsapp} href={url || undefined} target="_blank" rel="noopener">
       {contenu}
     </a>
-  );
-}
-
-export function BoutonPartage() {
-  const [copie, setCopie] = useState(false);
-
-  async function partager() {
-    const url = `${window.location.origin}/?utm_source=partage&utm_medium=merci`;
-    const texte = "Benjamin fait 2 lives gratuits sur le boudoir, les 18 et 19 octobre à 20h. Je pense que ça va te plaire :";
-    if (navigator.share) {
-      try {
-        await navigator.share({ title: "Live boudoir avec Benjamin", text: texte, url });
-        return;
-      } catch {
-        return; // partage annulé
-      }
-    }
-    try {
-      await navigator.clipboard.writeText(`${texte} ${url}`);
-      setCopie(true);
-      window.setTimeout(() => setCopie(false), 2500);
-    } catch {
-      window.prompt("Copie ce lien :", url);
-    }
-  }
-
-  return (
-    <button type="button" className={styles.partage} onClick={partager}>
-      {copie ? "Lien copié" : "Partager le live"}
-    </button>
   );
 }

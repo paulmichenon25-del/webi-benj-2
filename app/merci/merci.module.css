@@ -30,21 +30,9 @@
 
 .entete {
   max-width: 760px;
-  padding-top: 34px;
+  padding-top: 30px;
   padding-bottom: 8px;
   text-align: center;
-}
-
-.valide {
-  display: grid;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  margin: 0 auto 14px;
-  border-radius: 50%;
-  background: var(--cuivre);
-  color: #fff;
-  box-shadow: 0 10px 24px rgba(188, 108, 46, 0.35);
 }
 
 .titre {
@@ -63,27 +51,8 @@
   color: var(--cuivre);
 }
 
-.chapo {
-  max-width: 34em;
-  margin: 0 auto 24px;
-  font-size: 1.02rem;
-  color: var(--encre-douce);
-}
-
 .video {
-  margin: 0 -4px;
-}
-
-.note {
-  margin: 10px 0 0;
-  font-family: var(--font-titre), Georgia, serif;
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--gris);
-}
-
-.ctaHaut {
-  margin-top: 22px;
+  margin: 4px -4px 0;
 }
 
 /* Bouton WhatsApp, repris de juillet */
@@ -144,18 +113,11 @@ a.whatsapp:hover {
   font-weight: 700;
 }
 
-.waAFournir {
-  width: 100%;
-  text-align: center;
-}
-
 /* Étapes */
 .etapes {
   max-width: 760px;
-  display: grid;
-  gap: 22px;
-  padding-top: 56px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 56px;
   scroll-margin-top: 50px;
 }
 
@@ -213,6 +175,21 @@ a.whatsapp:hover {
 
 .etiquetteVerte {
   background: #1f8a4c;
+}
+
+.agendaSection {
+  max-width: 760px;
+  padding-top: 48px;
+  padding-bottom: 56px;
+  text-align: center;
+}
+
+.agendaSection h2 {
+  font-size: clamp(1.6rem, 6.5vw, 2.2rem);
+}
+
+.agendaIcs {
+  grid-column: 1 / -1;
 }
 
 .agenda {
@@ -284,77 +261,10 @@ a.whatsapp:hover {
   flex: 0 0 auto;
 }
 
-/* Pendant ce temps */
-.mail {
-  max-width: 640px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
-}
-
-.mail h2 {
-  font-size: clamp(1.7rem, 7vw, 2.4rem);
-}
-
-.mail p {
-  margin: 0;
-  color: var(--encre-douce);
-}
-
-/* Compte à rebours, repris de juillet */
-.rebours {
-  max-width: 760px;
-  padding-bottom: 56px;
-}
-
-.reboursCarte {
-  padding: 30px 16px 26px;
-  border-radius: 24px;
-  background: radial-gradient(circle at 80% 70%, rgba(188, 108, 46, 0.35), transparent 55%), var(--nuit);
-  color: var(--ivoire);
-  text-align: center;
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.22);
-}
-
-.reboursTitre {
-  margin: 0 0 18px;
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #a29e95;
-}
-
-.reboursCarte > div {
-  margin-bottom: 18px;
-}
-
-.reboursCarte > div > div {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.12);
-}
-
-.reboursCarte > div b {
-  color: #fff;
-  font-size: 2.3rem;
-}
-
-.reboursCarte > div span {
-  color: #a29e95;
-}
-
-.reboursDates {
-  margin: 0;
-  font-size: 0.92rem;
-  color: #cfc9be;
-}
-
 /* Programme */
 .programme {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding: 56px 0;
   background: var(--sable);
-  max-width: none;
 }
 
 .soirees {
@@ -395,64 +305,17 @@ a.whatsapp:hover {
   color: var(--cuivre-profond);
 }
 
-/* À très vite */
-.fin {
-  padding: 56px 0;
-  background: var(--nuit);
-}
-
-.finCarte {
-  width: calc(100% - 2 * var(--gouttiere));
-  max-width: 560px;
-  padding-top: 34px;
-  padding-bottom: 30px;
-  background: var(--ivoire);
-  border-radius: 20px;
-  text-align: center;
-}
-
-.auRevoir {
-  font-size: clamp(1.9rem, 8vw, 2.6rem);
-}
-
-.finCarte p {
-  color: var(--encre-douce);
-}
-
-.partage {
-  min-height: 48px;
-  padding: 10px 24px;
-  border: 1.5px solid var(--encre);
-  border-radius: 999px;
-  background: transparent;
-  color: var(--encre);
-  font: inherit;
-  font-weight: 800;
-  font-size: 0.85rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.partage:hover {
-  background: var(--sable);
-}
-
 .signature {
-  margin: 22px 0 0 !important;
+  margin: 28px 0 0;
   font-family: var(--font-titre), Georgia, serif;
   font-style: italic;
-  font-size: 1.3rem;
-  color: var(--encre) !important;
+  font-size: 1.2rem;
+  color: var(--encre);
 }
 
 @media (min-width: 768px) {
   .etape {
     padding: 46px 40px 32px;
-  }
-  .agenda {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: none;
   }
   .soirees {
     grid-template-columns: 1fr 1fr;

@@ -25,7 +25,7 @@ export function VideoPresentation({
           <span className={styles.lecture} aria-hidden="true">
             <svg width="26" height="26" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor" /></svg>
           </span>
-          <span className="a-valider">[VIDÉO À FOURNIR : {aFournir}]</span>
+          {aFournir && <span className="a-valider">[VIDÉO À FOURNIR : {aFournir}]</span>}
         </div>
       </div>
     );
