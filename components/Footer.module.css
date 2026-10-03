@@ -23,11 +23,6 @@
   padding: 6px 0;
 }
 
-.meta {
-  font-size: 0.75rem;
-  opacity: 0.75;
-}
-
 @media (min-width: 900px) {
   .footer {
     padding-bottom: 36px;

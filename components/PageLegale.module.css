@@ -1,0 +1,45 @@
+.page {
+  padding: 40px 0 64px;
+}
+
+.retour {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.titre {
+  font-size: clamp(2rem, 8vw, 2.8rem);
+  margin-bottom: 8px;
+}
+
+.texte h2 {
+  margin: 34px 0 10px;
+  font-size: 1.35rem;
+}
+
+.texte p,
+.texte li {
+  color: var(--encre-douce);
+}
+
+.texte ul {
+  margin: 0 0 14px;
+  padding-left: 20px;
+}
+
+.texte li {
+  margin-bottom: 6px;
+}
+
+.texte a {
+  color: var(--accent);
+}
+
+.maj {
+  font-size: 0.85rem;
+  color: var(--gris) !important;
+}
