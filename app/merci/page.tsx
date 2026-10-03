@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 // Page merci, volontairement simple : vidéo, groupe WhatsApp (la priorité),
-// programme, puis agenda et compte à rebours. Un petit bouton WhatsApp sous la vidéo, le grand dans le bloc dédié.
+// programme, puis agenda et compte à rebours. Un seul bouton WhatsApp, juste sous la vidéo.
 
 const AVANTAGES_GROUPE = [
   "Tes liens d'accès aux deux soirées",
@@ -41,19 +41,12 @@ export default function MerciPage() {
           <div className={styles.video}>
             <VideoPresentation src={video} poster={poster} aFournir="" />
           </div>
-          <div className={styles.ctaVideo}>
-            <BoutonWhatsApp url={WHATSAPP_URL} compact />
-          </div>
-        </header>
-
-        <section id="whatsapp" className={`conteneur ${styles.etapes}`}>
-          <article className={`${styles.etape} ${styles.etapeForte}`}>
+          <div id="whatsapp" className={styles.ctaVideo}>
             <span className={`surtitre ${styles.obligatoire}`}>
               <span className="pulse" aria-hidden="true" />
               Obligatoire
             </span>
-            <h2>Rejoins le groupe WhatsApp privé</h2>
-            <p>C&apos;est là que tout se passe :</p>
+            <BoutonWhatsApp url={WHATSAPP_URL} />
             <ul className={styles.avantages}>
               {AVANTAGES_GROUPE.map((a) => (
                 <li key={a}>
@@ -62,10 +55,8 @@ export default function MerciPage() {
                 </li>
               ))}
             </ul>
-            <BoutonWhatsApp url={WHATSAPP_URL} />
-            <p className={styles.petit}>Groupe privé réservé aux inscrits.</p>
-          </article>
-        </section>
+          </div>
+        </header>
 
         <section className={styles.programme}>
           <div className="conteneur">

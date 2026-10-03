@@ -106,16 +106,7 @@ const IconeWhatsApp = () => (
   </svg>
 );
 
-export function BoutonWhatsApp({ url, compact = false }: { url: string; compact?: boolean }) {
-  if (compact) {
-    return (
-      <a className={styles.waCompact} href={url || undefined} target="_blank" rel="noopener">
-        <IconeWhatsApp />
-        Rejoindre le groupe WhatsApp
-        <span aria-hidden="true">→</span>
-      </a>
-    );
-  }
+export function BoutonWhatsApp({ url }: { url: string }) {
   const contenu = (
     <>
       <span className={styles.waIcone}>
