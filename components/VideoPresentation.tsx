@@ -4,7 +4,17 @@ import { useRef, useState } from "react";
 import styles from "./VideoPresentation.module.css";
 
 // Vidéo de Benjamin en tête de page : rien n'est chargé avant le clic.
-export function VideoPresentation({ src, poster, duree }: { src?: string; poster?: string; duree?: string }) {
+export function VideoPresentation({
+  src,
+  poster,
+  duree,
+  aFournir = "/benjamin-presentation.mp4",
+}: {
+  src?: string;
+  poster?: string;
+  duree?: string;
+  aFournir?: string;
+}) {
   const ref = useRef<HTMLVideoElement>(null);
   const [lancee, setLancee] = useState(false);
 
@@ -15,7 +25,7 @@ export function VideoPresentation({ src, poster, duree }: { src?: string; poster
           <span className={styles.lecture} aria-hidden="true">
             <svg width="26" height="26" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor" /></svg>
           </span>
-          <span className="a-valider">[VIDÉO À FOURNIR : /benjamin-presentation.mp4]</span>
+          <span className="a-valider">[VIDÉO À FOURNIR : {aFournir}]</span>
         </div>
       </div>
     );

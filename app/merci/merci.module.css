@@ -1,138 +1,466 @@
+/* Bandeau collant, repris de la page de validation de juillet */
+.bandeau {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  background: linear-gradient(90deg, var(--cuivre-profond), var(--cuivre) 50%, var(--cuivre-profond));
+  color: #fff;
+  font-size: 0.88rem;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(126, 68, 24, 0.25);
+}
+
+.bandeau :global(.pulse) {
+  background: #fff;
+}
+
+.bandeauSuite {
+  opacity: 0.9;
+}
+
 .page {
-  padding: 32px 0 24px;
+  padding-bottom: 0;
 }
 
 .entete {
+  max-width: 760px;
+  padding-top: 34px;
+  padding-bottom: 8px;
   text-align: center;
-  margin-bottom: 28px;
+}
+
+.valide {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: var(--cuivre);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(188, 108, 46, 0.35);
 }
 
 .titre {
-  font-size: clamp(1.9rem, 8vw, 3rem);
-  margin-bottom: 22px;
-}
-
-.dates {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.date {
-  display: grid;
-  gap: 2px;
-  padding: 18px 10px;
-  border-radius: var(--rayon);
-  background: var(--nuit);
-  color: var(--ivoire);
-}
-
-.dateLabel {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #e9b48a;
-}
-
-.dateJour {
-  font-family: var(--font-titre), Georgia, serif;
-  font-size: 1.2rem;
-  line-height: 1.25;
-}
-
-.dateHeure {
   font-family: var(--font-impact), Impact, sans-serif;
-  font-size: 2.2rem;
-  line-height: 1.1;
+  font-weight: 400;
+  font-size: clamp(2.1rem, 9.6vw, 3.6rem);
+  line-height: 1.04;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
-.fuseau {
-  margin: 12px 0 0;
-  font-size: 0.85rem;
-  color: var(--gris);
+.titre em {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--cuivre);
 }
 
-.bloc {
-  margin-bottom: 18px;
-  padding: 26px 20px;
-  background: #fff;
-  border-radius: 18px;
-  border: 1px solid var(--lin);
-}
-
-.bloc h2 {
-  font-size: 1.45rem;
-  margin-bottom: 10px;
-}
-
-.bloc > p {
+.chapo {
+  max-width: 34em;
+  margin: 0 auto 24px;
+  font-size: 1.02rem;
   color: var(--encre-douce);
 }
 
+.video {
+  margin: 0 -4px;
+}
+
+.note {
+  margin: 10px 0 0;
+  font-family: var(--font-titre), Georgia, serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--gris);
+}
+
+.ctaHaut {
+  margin-top: 22px;
+}
+
+/* Bouton WhatsApp, repris de juillet */
+.whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 12px 18px 12px 12px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2bd36b, #1fa855);
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  box-shadow: 0 16px 34px rgba(31, 168, 85, 0.3);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  flex-wrap: wrap;
+}
+
+a.whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 42px rgba(31, 168, 85, 0.4);
+}
+
+.waIcone {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.18);
+  flex: 0 0 auto;
+}
+
+.waTexte {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+}
+
+.waTexte b {
+  font-weight: 900;
+  font-size: 1.02rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.waTexte small {
+  font-size: 0.85rem;
+  opacity: 0.92;
+}
+
+.waFleche {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.waAFournir {
+  width: 100%;
+  text-align: center;
+}
+
+/* Étapes */
+.etapes {
+  max-width: 760px;
+  display: grid;
+  gap: 22px;
+  padding-top: 56px;
+  padding-bottom: 20px;
+  scroll-margin-top: 50px;
+}
+
 .etape {
-  margin: 0 0 6px !important;
-  font-size: 0.78rem;
-  font-weight: 600;
+  position: relative;
+  padding: 40px 20px 26px;
+  background: #fff;
+  border: 1px solid var(--lin);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--ombre);
+}
+
+.etape h2,
+.soiree h3 {
+  font-family: var(--font-impact), Impact, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 1.08;
+}
+
+.etape h2 {
+  font-size: clamp(1.6rem, 7vw, 2.3rem);
+  margin-bottom: 10px;
+}
+
+.etape > p {
+  color: var(--encre-douce);
+}
+
+.etapeForte {
+  border: 2px dashed rgba(31, 168, 85, 0.45);
+}
+
+.etiquette {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--encre);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent) !important;
+}
+
+.etape > .etiquette {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.etiquetteVerte {
+  background: #1f8a4c;
 }
 
 .agenda {
   display: grid;
-  gap: 18px;
-  margin-top: 6px;
-}
-
-.agendaLabel {
-  margin: 0 0 8px;
-  font-weight: 600;
-}
-
-.agendaBoutons {
-  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 10px;
+  max-width: 520px;
+  margin: 18px auto 0;
 }
 
-.agendaBoutons a {
-  padding: 10px 8px;
+.agendaBouton {
+  display: grid;
+  gap: 2px;
+  padding: 12px 8px;
+  border: 1.5px solid var(--encre);
+  border-radius: 12px;
+  background: var(--ivoire);
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.agendaBouton:hover {
+  background: var(--sable);
+}
+
+.agendaBouton b {
   font-size: 0.92rem;
+  font-weight: 800;
 }
 
-.video {
-  border-radius: var(--rayon);
-  overflow: hidden;
-  background: var(--lin);
-  aspect-ratio: 9 / 16;
-  max-height: 60vh;
-  margin: 0 auto;
+.agendaBouton span {
+  font-size: 0.76rem;
+  color: var(--gris);
 }
 
-.video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.petit {
+  margin: 14px 0 0;
+  font-size: 0.85rem;
+  color: var(--gris) !important;
 }
 
-.videoVide {
-  height: 100%;
+.avantages {
+  display: grid;
+  gap: 10px;
+  max-width: 420px;
+  margin: 6px auto 22px;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.avantages li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.coche {
   display: grid;
   place-items: center;
-  padding: 20px;
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  border-radius: 50%;
+  background: rgba(31, 168, 85, 0.14);
+  color: #1f8a4c;
+  font-size: 12px;
+  font-weight: 900;
+  flex: 0 0 auto;
+}
+
+/* Pendant ce temps */
+.mail {
+  max-width: 640px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
-.rappel {
-  background: var(--accent-clair);
-  border-color: transparent;
+.mail h2 {
+  font-size: clamp(1.7rem, 7vw, 2.4rem);
+}
+
+.mail p {
+  margin: 0;
+  color: var(--encre-douce);
+}
+
+/* Compte à rebours, repris de juillet */
+.rebours {
+  max-width: 760px;
+  padding-bottom: 56px;
+}
+
+.reboursCarte {
+  padding: 30px 16px 26px;
+  border-radius: 24px;
+  background: radial-gradient(circle at 80% 70%, rgba(188, 108, 46, 0.35), transparent 55%), var(--nuit);
+  color: var(--ivoire);
+  text-align: center;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.22);
+}
+
+.reboursTitre {
+  margin: 0 0 18px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #a29e95;
+}
+
+.reboursCarte > div {
+  margin-bottom: 18px;
+}
+
+.reboursCarte > div > div {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.reboursCarte > div b {
+  color: #fff;
+  font-size: 2.3rem;
+}
+
+.reboursCarte > div span {
+  color: #a29e95;
+}
+
+.reboursDates {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #cfc9be;
+}
+
+/* Programme */
+.programme {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background: var(--sable);
+  max-width: none;
+}
+
+.soirees {
+  display: grid;
+  gap: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.soiree {
+  padding: 24px 20px;
+  background: var(--ivoire);
+  border-radius: 18px;
+  border: 1px solid var(--lin);
+}
+
+.soiree .etiquette {
+  margin-bottom: 14px;
+}
+
+.soiree h3 {
+  font-size: 1.5rem;
+  color: var(--cuivre-profond);
+  margin-bottom: 8px;
+}
+
+.soiree p {
+  margin: 0;
+  color: var(--encre-douce);
+}
+
+.jusquauBout {
+  max-width: 760px;
+  margin: 18px auto 0;
+  text-align: center;
+  font-family: var(--font-titre), Georgia, serif;
+  font-style: italic;
+  color: var(--cuivre-profond);
+}
+
+/* À très vite */
+.fin {
+  padding: 56px 0;
+  background: var(--nuit);
+}
+
+.finCarte {
+  width: calc(100% - 2 * var(--gouttiere));
+  max-width: 560px;
+  padding-top: 34px;
+  padding-bottom: 30px;
+  background: var(--ivoire);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.auRevoir {
+  font-size: clamp(1.9rem, 8vw, 2.6rem);
+}
+
+.finCarte p {
+  color: var(--encre-douce);
+}
+
+.partage {
+  min-height: 48px;
+  padding: 10px 24px;
+  border: 1.5px solid var(--encre);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--encre);
+  font: inherit;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.partage:hover {
+  background: var(--sable);
 }
 
 .signature {
-  margin: 0;
+  margin: 22px 0 0 !important;
   font-family: var(--font-titre), Georgia, serif;
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--encre) !important;
+}
+
+@media (min-width: 768px) {
+  .etape {
+    padding: 46px 40px 32px;
+  }
+  .agenda {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: none;
+  }
+  .soirees {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  .bandeau {
+    font-size: 0.78rem;
+  }
 }

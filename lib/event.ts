@@ -108,14 +108,8 @@ function fold(line: string): string {
   return out.join("\r\n ");
 }
 
-export function buildIcs(soiree: Soiree, liveUrl: string, now = new Date()): string {
-  const stamp = toCompactUtc(now.toISOString());
-  const lines = [
-    "BEGIN:VCALENDAR",
-    "VERSION:2.0",
-    "PRODID:-//FineArt Academie//Live boudoir octobre 2026//FR",
-    "CALSCALE:GREGORIAN",
-    "METHOD:PUBLISH",
+function vevent(soiree: Soiree, liveUrl: string, stamp: string): string[] {
+  return [
     "BEGIN:VEVENT",
     `UID:live-boudoir-2026-10-soiree-${soiree.id}@fineart-academie.com`,
     `DTSTAMP:${stamp}`,
@@ -136,6 +130,20 @@ export function buildIcs(soiree: Soiree, liveUrl: string, now = new Date()): str
     "TRIGGER:-PT10M",
     "END:VALARM",
     "END:VEVENT",
+  ];
+}
+
+// Une soirée, ou les deux d'un coup (un seul fichier = un seul clic sur iPhone).
+export function buildIcs(soirees: Soiree | Soiree[], liveUrl: string, now = new Date()): string {
+  const stamp = toCompactUtc(now.toISOString());
+  const liste = Array.isArray(soirees) ? soirees : [soirees];
+  const lines = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//FineArt Academie//Live boudoir octobre 2026//FR",
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH",
+    ...liste.flatMap((s) => vevent(s, liveUrl, stamp)),
     "END:VCALENDAR",
   ];
   return lines.map(fold).join("\r\n") + "\r\n";

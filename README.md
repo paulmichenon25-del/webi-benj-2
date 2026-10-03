@@ -55,9 +55,12 @@ utm_source=facebook&utm_medium=paid&utm_campaign={{campaign.name}}&utm_content={
 
 ## Page merci
 
-- Prénom repris de l'inscription.
-- Google Agenda + `.ics` (Apple / Outlook) pour chaque soirée, 20h heure de Paris, rappels 1h et 10 min avant. Le lien live personnel renvoyé par WebinarJam est mis dans l'événement ; sinon `NEXT_PUBLIC_WEBINAR_LIVE_URL`.
-- Bloc WhatsApp affiché seulement si `NEXT_PUBLIC_WHATSAPP_URL` est renseigné.
+Sur le modèle de la page de validation de juillet et de celle de Déclic :
+
+- Bandeau collant « Ne ferme pas cette page », titre avec le prénom, vidéo de Benjamin (`/public/benjamin-merci.mp4`, 16:9), bouton WhatsApp.
+- Étape 1 : agenda. Un `.ics` avec les deux soirées (Apple / Outlook, `/api/agenda?soiree=tout`) et un lien Google Agenda par soirée, 20h heure de Paris, rappels 1h et 10 min avant. Le lien live personnel renvoyé par WebinarJam est mis dans l'événement ; sinon `NEXT_PUBLIC_WEBINAR_LIVE_URL`.
+- Étape 2 : groupe WhatsApp privé (`NEXT_PUBLIC_WHATSAPP_URL`). Tant qu'il est vide, le bouton affiche « [LIEN WHATSAPP À FOURNIR] ».
+- Rappel de l'email (cadeau mystère, spams), compte à rebours, programme des deux soirées, partage.
 
 ## A/B test des landings
 

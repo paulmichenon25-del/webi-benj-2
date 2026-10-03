@@ -21,3 +21,11 @@ export const CADEAU_LIVE = {
   texte:
     "Calcul de prix, templates, et d'autres choses que je garde pour le live. Si tu n'es pas là, tu passes à côté.",
 };
+
+// Page merci. [VIDÉO À FOURNIR : /public/benjamin-merci.mp4] (+ .jpg en aperçu), format 16:9.
+export const VIDEO_MERCI = "/benjamin-merci.mp4";
+export const POSTER_MERCI = "/benjamin-merci.jpg";
+
+// Lien d'invitation du groupe WhatsApp privé. [À FOURNIR : lien d'invitation]
+// Se règle dans Vercel (NEXT_PUBLIC_WHATSAPP_URL) ou directement ici.
+export const WHATSAPP_URL = process.env.NEXT_PUBLIC_WHATSAPP_URL || "";
