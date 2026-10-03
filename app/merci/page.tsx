@@ -46,9 +46,6 @@ export default function MerciPage() {
               <span className="pulse" aria-hidden="true" />
               Obligatoire
             </span>
-            <p className={styles.carteWaTitre}>
-              Dernière étape : <em>rejoins le groupe privé du live</em>
-            </p>
             <BoutonWhatsApp url={WHATSAPP_URL} />
             <ul className={styles.avantages}>
               {AVANTAGES_GROUPE.map((a) => (
