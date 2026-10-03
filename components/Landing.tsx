@@ -170,7 +170,7 @@ export function Landing({ variante }: { variante: Variante }) {
             <div className={styles.programme}>
               <article className={styles.soiree}>
                 <span className={styles.soireeTag}>Soirée 1 · Dim. 18 octobre · 20h</span>
-                <h3>L&apos;opportunité boudoir et ta structure</h3>
+                <h3>Créer l&apos;offre boudoir qui te fait vivre toute l&apos;année</h3>
                 <ol>
                   <li><span>01</span>Pourquoi le boudoir est la prestation qui fait vivre de la photo à plein temps</li>
                   <li><span>02</span>Construire ton offre premium, que tu fasses déjà du boudoir ou pas encore</li>
@@ -183,7 +183,7 @@ export function Landing({ variante }: { variante: Variante }) {
                 <h3>Trouver tes clientes</h3>
                 <ol>
                   <li><span>01</span>Où trouver tes clientes boudoir, y compris dans tes contacts actuels</li>
-                  <li><span>02</span>Le message exact à envoyer à tes anciennes clientes</li>
+                  <li><span>02</span>Le message exact à leur envoyer pour qu&apos;elles réservent</li>
                   <li><span>03</span>Les premières actions à lancer dès le lendemain du live</li>
                   <li className={styles.bonusLive}><span>+</span>Bonus et annonce réservés aux présents</li>
                 </ol>

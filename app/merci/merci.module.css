@@ -131,8 +131,7 @@ a.whatsapp:hover {
   box-shadow: var(--ombre);
 }
 
-.etape h2,
-.soiree h3 {
+.etape h2 {
   font-family: var(--font-impact), Impact, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -153,28 +152,14 @@ a.whatsapp:hover {
   border: 2px dashed rgba(31, 168, 85, 0.45);
 }
 
-.etiquette {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: var(--encre);
-  color: #fff;
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.etape > .etiquette {
+.obligatoire {
   position: absolute;
-  top: -13px;
+  top: -17px;
   left: 50%;
   transform: translateX(-50%);
+  margin: 0;
+  background: var(--accent-clair);
   white-space: nowrap;
-}
-
-.etiquetteVerte {
-  background: #1f8a4c;
 }
 
 .agendaSection {
@@ -189,7 +174,7 @@ a.whatsapp:hover {
 }
 
 .reboursCarte {
-  margin-bottom: 44px;
+  margin-top: 44px;
   padding: 30px 12px 26px;
   border-radius: 24px;
   background: radial-gradient(circle at 80% 70%, rgba(188, 108, 46, 0.35), transparent 55%), var(--nuit);
@@ -246,15 +231,19 @@ a.whatsapp:hover {
   display: grid;
   gap: 2px;
   padding: 12px 8px;
-  border: 1.5px solid var(--encre);
-  border-radius: 12px;
-  background: var(--ivoire);
+  border: 1px solid rgba(188, 108, 46, 0.35);
+  border-radius: 14px;
+  background: #fff;
   text-decoration: none;
   transition: background 0.15s ease;
 }
 
 .agendaBouton:hover {
-  background: var(--sable);
+  background: var(--accent-clair);
+}
+
+.agendaBouton b {
+  color: var(--accent-fonce);
 }
 
 .agendaBouton b {
@@ -318,18 +307,30 @@ a.whatsapp:hover {
 
 .soiree {
   padding: 24px 20px;
-  background: var(--ivoire);
-  border-radius: 18px;
-  border: 1px solid var(--lin);
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid rgba(188, 108, 46, 0.22);
 }
 
-.soiree .etiquette {
-  margin-bottom: 14px;
+.soireeTag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(188, 108, 46, 0.25);
+  background: rgba(188, 108, 46, 0.08);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 .soiree h3 {
-  font-size: 1.5rem;
-  color: var(--cuivre-profond);
+  font-family: var(--font-titre), Georgia, serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.2;
   margin-bottom: 8px;
 }
 

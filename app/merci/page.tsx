@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 // Page merci, volontairement simple : vidéo, groupe WhatsApp (la priorité),
-// programme, puis compte à rebours et agenda. Un seul bouton WhatsApp sur la page.
+// programme, puis agenda et compte à rebours. Un seul bouton WhatsApp sur la page.
 
 const AVANTAGES_GROUPE = [
   "Tes liens d'accès aux deux soirées",
@@ -45,7 +45,10 @@ export default function MerciPage() {
 
         <section id="whatsapp" className={`conteneur ${styles.etapes}`}>
           <article className={`${styles.etape} ${styles.etapeForte}`}>
-            <span className={`${styles.etiquette} ${styles.etiquetteVerte}`}>Obligatoire</span>
+            <span className={`surtitre ${styles.obligatoire}`}>
+              <span className="pulse" aria-hidden="true" />
+              Obligatoire
+            </span>
             <h2>Rejoins le groupe WhatsApp privé</h2>
             <p>C&apos;est là que tout se passe :</p>
             <ul className={styles.avantages}>
@@ -71,14 +74,14 @@ export default function MerciPage() {
             </div>
             <div className={styles.soirees}>
               <article className={styles.soiree}>
-                <span className={styles.etiquette}>Dim. 18 oct. · 20h</span>
-                <h3>L&apos;opportunité boudoir et ta structure</h3>
-                <p>Pourquoi le boudoir, ton offre premium, et le prix pour en vivre toute l&apos;année.</p>
+                <span className={styles.soireeTag}>Soirée 1 · Dim. 18 oct. · 20h</span>
+                <h3>Créer l&apos;offre boudoir qui te fait vivre toute l&apos;année</h3>
+                <p>Pourquoi le boudoir, comment construire ton offre premium, et à quel prix la vendre.</p>
               </article>
               <article className={styles.soiree}>
-                <span className={styles.etiquette}>Lun. 19 oct. · 20h</span>
+                <span className={styles.soireeTag}>Soirée 2 · Lun. 19 oct. · 20h</span>
                 <h3>Trouver tes clientes</h3>
-                <p>Où les trouver, le message à envoyer à tes anciennes clientes, et tes premières actions.</p>
+                <p>Où les trouver, le message exact à leur envoyer pour qu&apos;elles réservent, et tes actions dès le lendemain.</p>
               </article>
             </div>
             <p className={styles.jusquauBout}>
@@ -88,13 +91,13 @@ export default function MerciPage() {
         </section>
 
         <section className={`conteneur ${styles.agendaSection}`}>
+          <h2>Bloque les deux soirs dans ton agenda</h2>
+          <BoutonsAgenda />
           <div className={styles.reboursCarte}>
             <p className={styles.reboursTitre}>La première soirée commence dans</p>
             <CompteARebours variante="blocs" />
             <p className={styles.reboursDates}>Dimanche 18 & lundi 19 octobre · 20h · en ligne</p>
           </div>
-          <h2>Bloque les deux soirs dans ton agenda</h2>
-          <BoutonsAgenda />
           <p className={styles.signature}>À dimanche, 20h. Benjamin</p>
         </section>
       </main>
