@@ -74,7 +74,7 @@
 .ctaVideo {
   position: relative;
   max-width: 560px;
-  margin: 34px auto 44px;
+  margin: 34px auto 24px;
   padding: 30px 18px 20px;
   border-radius: 24px;
   border: 1px solid rgba(31, 168, 85, 0.28);
@@ -154,8 +154,8 @@ a.whatsapp:hover {
 
 .agendaSection {
   max-width: 760px;
-  padding-top: 48px;
-  padding-bottom: 56px;
+  padding-top: 32px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -164,7 +164,7 @@ a.whatsapp:hover {
 }
 
 .reboursCarte {
-  margin-top: 44px;
+  margin-top: 28px;
   padding: 30px 12px 26px;
   border-radius: 24px;
   background: radial-gradient(circle at 80% 70%, rgba(188, 108, 46, 0.35), transparent 55%), var(--nuit);
@@ -281,7 +281,7 @@ a.whatsapp:hover {
 
 /* Programme */
 .programme {
-  padding: 56px 0;
+  padding: 36px 0;
   background: var(--sable);
 }
 
