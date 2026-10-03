@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BoutonsAgenda, BoutonWhatsApp, TitreMerci } from "@/components/Merci";
+import { CompteARebours } from "@/components/CompteARebours";
 import { VideoPresentation } from "@/components/VideoPresentation";
 import { Footer } from "@/components/Footer";
 import { publicFileExists } from "@/lib/assets";
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 // Page merci, volontairement simple : vidéo, groupe WhatsApp (la priorité),
-// programme, puis agenda. Un seul bouton WhatsApp sur la page.
+// programme, puis compte à rebours et agenda. Un seul bouton WhatsApp sur la page.
 
 const AVANTAGES_GROUPE = [
   "Tes liens d'accès aux deux soirées",
@@ -87,6 +88,11 @@ export default function MerciPage() {
         </section>
 
         <section className={`conteneur ${styles.agendaSection}`}>
+          <div className={styles.reboursCarte}>
+            <p className={styles.reboursTitre}>La première soirée commence dans</p>
+            <CompteARebours variante="blocs" />
+            <p className={styles.reboursDates}>Dimanche 18 & lundi 19 octobre · 20h · en ligne</p>
+          </div>
           <h2>Bloque les deux soirs dans ton agenda</h2>
           <BoutonsAgenda />
           <p className={styles.signature}>À dimanche, 20h. Benjamin</p>

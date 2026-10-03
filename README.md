@@ -60,7 +60,7 @@ Volontairement simple, dans cet ordre :
 1. Bandeau « Ne ferme pas cette page », titre avec le prénom, vidéo de Benjamin (`/public/benjamin-merci.mp4`, 16:9).
 2. Groupe WhatsApp privé, la priorité : seul bouton WhatsApp de la page (`NEXT_PUBLIC_WHATSAPP_URL`).
 3. Ce qui t'attend : les deux soirées.
-4. Agenda : un `.ics` avec les deux soirées (Apple / Outlook, `/api/agenda?soiree=tout`) et un lien Google Agenda par soirée, 20h heure de Paris, rappels 1h et 10 min avant. Le lien live personnel renvoyé par WebinarJam est mis dans l'événement ; sinon `NEXT_PUBLIC_WEBINAR_LIVE_URL`.
+4. Compte à rebours, puis agenda : un `.ics` avec les deux soirées (Apple / Outlook, `/api/agenda?soiree=tout`) et un lien Google Agenda par soirée, 20h heure de Paris, rappels 1h et 10 min avant. Le lien live personnel renvoyé par WebinarJam est mis dans l'événement ; sinon `NEXT_PUBLIC_WEBINAR_LIVE_URL`.
 
 ## A/B test des landings
 

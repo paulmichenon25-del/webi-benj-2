@@ -188,6 +188,48 @@ a.whatsapp:hover {
   font-size: clamp(1.6rem, 6.5vw, 2.2rem);
 }
 
+.reboursCarte {
+  margin-bottom: 44px;
+  padding: 30px 12px 26px;
+  border-radius: 24px;
+  background: radial-gradient(circle at 80% 70%, rgba(188, 108, 46, 0.35), transparent 55%), var(--nuit);
+  color: var(--ivoire);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.22);
+}
+
+.reboursTitre {
+  margin: 0 0 18px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a29e95;
+}
+
+.reboursCarte > div {
+  margin-bottom: 18px;
+}
+
+.reboursCarte > div > div {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.reboursCarte > div b {
+  color: #fff;
+  font-size: 2.3rem;
+}
+
+.reboursCarte > div span {
+  color: #a29e95;
+}
+
+.reboursDates {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cfc9be;
+}
+
 .agendaIcs {
   grid-column: 1 / -1;
 }
