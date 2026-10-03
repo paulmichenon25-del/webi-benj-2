@@ -41,12 +41,10 @@ export default function Page() {
       <h2>À quoi elles servent</h2>
       <ul>
         <li>
-          T&apos;inscrire au live et t&apos;envoyer tes accès, la confirmation et les rappels avant chaque soirée,
-          par email et par SMS ou WhatsApp. Base légale : l&apos;exécution de ta demande d&apos;inscription.
-        </li>
-        <li>
-          T&apos;envoyer ensuite des emails de Benjamin sur la photographie boudoir et ses formations. Base légale :
-          l&apos;intérêt légitime. Tu peux te désinscrire à tout moment grâce au lien présent dans chaque email.
+          T&apos;inscrire au live et t&apos;envoyer tout ce qui concerne le challenge : tes accès, la confirmation,
+          les rappels avant chaque soirée et les informations liées aux deux soirées, par email et par SMS ou
+          WhatsApp. Base légale : l&apos;exécution de ta demande d&apos;inscription. Tu peux te désinscrire à tout
+          moment grâce au lien présent dans chaque email.
         </li>
         <li>
           Mesurer l&apos;efficacité des publicités et améliorer la page. Base légale : l&apos;intérêt légitime et,
@@ -74,8 +72,8 @@ export default function Page() {
 
       <h2>Combien de temps elles sont conservées</h2>
       <p>
-        Tes données sont conservées pendant 3 ans à compter de ton dernier échange avec Benjamin (ouverture
-        d&apos;un email, inscription, réponse), puis supprimées. Si tu te désinscris, tu ne reçois plus aucun email.
+        Tes données sont conservées le temps nécessaire à l&apos;organisation du challenge, et au maximum 3 ans
+        après ton inscription, puis supprimées. Si tu te désinscris, tu ne reçois plus aucun email.
       </p>
 
       <h2>Cookies et mesure d&apos;audience</h2>

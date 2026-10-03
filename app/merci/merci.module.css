@@ -52,8 +52,45 @@
   color: var(--cuivre);
 }
 
+.titre span {
+  display: block;
+}
+
+/* Une ligne par phrase : la taille suit la largeur de l'écran. */
+.titreDeuxLignes {
+  font-size: min(calc(7.4vw * 28 / var(--n, 28)), calc(3rem * 28 / var(--n, 28)));
+}
+
+.titreDeuxLignes span,
+.titreDeuxLignes em {
+  white-space: nowrap;
+}
+
 .video {
   margin: 4px -4px 0;
+}
+
+.ctaVideo {
+  margin-top: 16px;
+}
+
+.waCompact {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2bd36b, #1fa855);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(31, 168, 85, 0.28);
+}
+
+.waCompact svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* Bouton WhatsApp, repris de juillet */

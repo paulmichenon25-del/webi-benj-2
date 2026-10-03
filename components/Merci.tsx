@@ -53,8 +53,12 @@ export function TitreMerci() {
   }, []);
 
   return (
-    <h1 className={styles.titre}>
-      Ta place est réservée{prenom ? `, ${prenom}` : ""}. <em>Il te reste 1 chose à faire.</em>
+    // 2 lignes pile : la taille s'ajuste à la longueur de la 1re ligne. Prénom très long : retour à la ligne normal.
+    <h1
+      className={`${styles.titre} ${prenom.length > 14 ? "" : styles.titreDeuxLignes}`}
+      style={{ "--n": Math.max(28, 24 + prenom.length) } as React.CSSProperties}
+    >
+      <span>Ta place est réservée{prenom ? `, ${prenom}` : ""}.</span> <em>Il te reste 1 chose à faire.</em>
     </h1>
   );
 }
@@ -102,7 +106,16 @@ const IconeWhatsApp = () => (
   </svg>
 );
 
-export function BoutonWhatsApp({ url }: { url: string }) {
+export function BoutonWhatsApp({ url, compact = false }: { url: string; compact?: boolean }) {
+  if (compact) {
+    return (
+      <a className={styles.waCompact} href={url || undefined} target="_blank" rel="noopener">
+        <IconeWhatsApp />
+        Rejoindre le groupe WhatsApp
+        <span aria-hidden="true">→</span>
+      </a>
+    );
+  }
   const contenu = (
     <>
       <span className={styles.waIcone}>

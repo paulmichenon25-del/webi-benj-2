@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 // Page merci, volontairement simple : vidéo, groupe WhatsApp (la priorité),
-// programme, puis agenda et compte à rebours. Un seul bouton WhatsApp sur la page.
+// programme, puis agenda et compte à rebours. Un petit bouton WhatsApp sous la vidéo, le grand dans le bloc dédié.
 
 const AVANTAGES_GROUPE = [
   "Tes liens d'accès aux deux soirées",
@@ -40,6 +40,9 @@ export default function MerciPage() {
           <TitreMerci />
           <div className={styles.video}>
             <VideoPresentation src={video} poster={poster} aFournir="" />
+          </div>
+          <div className={styles.ctaVideo}>
+            <BoutonWhatsApp url={WHATSAPP_URL} compact />
           </div>
         </header>
 
