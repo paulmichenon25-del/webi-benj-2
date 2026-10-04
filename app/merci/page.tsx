@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-// Page merci, volontairement simple : annonce du cadeau, groupe WhatsApp (la priorité), vidéo,
-// programme, puis agenda et compte à rebours. Un seul bouton WhatsApp, juste sous l'annonce du cadeau.
+// Page merci, volontairement simple : vidéo, groupe WhatsApp (la priorité), petite note sur le cadeau,
+// programme, puis agenda et compte à rebours. Un seul bouton WhatsApp, juste sous la vidéo.
 
 const AVANTAGES_GROUPE = [
   "Tes liens d'accès aux deux soirées",
@@ -38,26 +38,9 @@ export default function MerciPage() {
         <header className={`conteneur ${styles.entete}`}>
           <span className="surtitre">Inscription confirmée</span>
           <TitreMerci />
-          <aside className={styles.cadeau} aria-labelledby="titre-cadeau">
-            <span className={styles.cadeauIcone} aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="8" width="18" height="4" rx="1" />
-                <path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
-                <path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5" />
-              </svg>
-            </span>
-            <h2 id="titre-cadeau" className={styles.cadeauTitre}>
-              Ton cadeau arrive dans quelques minutes
-            </h2>
-            <p>
-              Je t&apos;envoie une petite surprise par email, juste après celui de confirmation. Ouvre-le dès
-              qu&apos;il arrive.
-            </p>
-            <p className={styles.cadeauAide}>
-              Il n&apos;est pas là ? Regarde dans l&apos;onglet Promotions ou dans tes spams, et fais-le glisser
-              dans ta boîte principale : c&apos;est comme ça que tu recevras ton lien pour rejoindre le live.
-            </p>
-          </aside>
+          <div className={styles.video}>
+            <VideoPresentation src={video} poster={poster} aFournir="" />
+          </div>
           <div id="whatsapp" className={styles.ctaVideo}>
             <span className={`surtitre ${styles.obligatoire}`}>
               <span className="pulse" aria-hidden="true" />
@@ -73,9 +56,18 @@ export default function MerciPage() {
               ))}
             </ul>
           </div>
-          <div className={styles.video}>
-            <VideoPresentation src={video} poster={poster} aFournir="" />
-          </div>
+          <p className={styles.noteCadeau}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <rect x="3" y="8" width="18" height="4" rx="1" />
+              <path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
+              <path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5" />
+            </svg>
+            <span>
+              Une petite surprise t&apos;arrive aussi par email dans quelques minutes. Pas reçue ? Regarde dans
+              Promotions ou dans tes spams, et glisse-la dans ta boîte principale : c&apos;est là que t&apos;arrivera
+              ton lien pour le live.
+            </span>
+          </p>
         </header>
 
         <section className={styles.programme}>
