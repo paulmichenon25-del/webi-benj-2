@@ -279,6 +279,8 @@ function FormulaireInscription() {
         {!envoi && <small>Oui, je participe</small>}
       </button>
 
+      <p className={styles.cadeau}>Un cadeau t&apos;attend dans ta boîte mail juste après ton inscription.</p>
+
       <p className={styles.mentions}>
         Tes infos servent uniquement à t&apos;envoyer les accès au live.
       </p>
