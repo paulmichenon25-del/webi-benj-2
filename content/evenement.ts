@@ -26,6 +26,6 @@ export const CADEAU_LIVE = {
 export const VIDEO_MERCI = "/benjamin-merci.mp4";
 export const POSTER_MERCI = "/benjamin-merci.jpg";
 
-// Lien d'invitation du groupe WhatsApp privé. [À FOURNIR : lien d'invitation]
-// Se règle dans Vercel (NEXT_PUBLIC_WHATSAPP_URL) ou directement ici.
-export const WHATSAPP_URL = process.env.NEXT_PUBLIC_WHATSAPP_URL || "";
+// Lien d'invitation du groupe WhatsApp privé (NEXT_PUBLIC_WHATSAPP_URL dans Vercel pour le changer sans toucher au code).
+export const WHATSAPP_URL =
+  process.env.NEXT_PUBLIC_WHATSAPP_URL || "https://chat.whatsapp.com/Hl0fILz0BsuKwAapGSL3Vr";
