@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { NextResponse, type NextRequest } from "next/server";
+import { NextResponse, after, type NextRequest } from "next/server";
 import {
   SEGMENTS,
   normalizeMobile,
@@ -10,7 +10,7 @@ import {
 } from "@/lib/lead";
 import { registerToWebinarJam, webinarJamConfigured } from "@/lib/integrations/webinarjam";
 import { leadStoreConfigured, storeLead, type StoredLead } from "@/lib/integrations/leadStore";
-import { sendCapiLead } from "@/lib/integrations/metaCapi";
+import { sendCapiCompleteRegistration } from "@/lib/integrations/metaCapi";
 import { inscrireDansSystemeIo, systemeIoConfigured } from "@/lib/integrations/systemeio";
 
 export const runtime = "nodejs";
@@ -21,7 +21,7 @@ function clientIp(req: NextRequest): string | undefined {
 }
 
 export async function POST(req: NextRequest) {
-  let body: Partial<LeadInput>;
+  let body: Partial<LeadInput> & { eventId?: unknown };
   try {
     body = await req.json();
   } catch {
@@ -50,7 +50,9 @@ export async function POST(req: NextRequest) {
   const phone = normalizeMobile(input.telephone, input.pays)!;
   const ip = clientIp(req);
   const userAgent = req.headers.get("user-agent") || "";
-  const eventId = randomUUID();
+  // ID généré par le navigateur à l'envoi du formulaire : le même part au Pixel et à l'API Conversions.
+  const eventId =
+    typeof body.eventId === "string" && /^[A-Za-z0-9-]{8,64}$/.test(body.eventId) ? body.eventId : randomUUID();
 
   if (!webinarJamConfigured() && !leadStoreConfigured() && !systemeIoConfigured()) {
     if (process.env.NODE_ENV === "production") {
@@ -122,17 +124,21 @@ export async function POST(req: NextRequest) {
   const fbcCookie = req.cookies.get("_fbc")?.value;
   const fbc =
     fbcCookie || (input.tracking.fbclid ? `fb.1.${Date.now()}.${input.tracking.fbclid}` : undefined);
-  await sendCapiLead({
-    eventId,
-    email: input.email,
-    phoneE164: phone.e164,
-    prenom: input.prenom,
-    ip,
-    userAgent,
-    fbp,
-    fbc,
-    sourceUrl: input.tracking.page_url,
-  });
+  // Envoyé après la réponse : la personne arrive sur /merci sans attendre Meta, et un échec
+  // de l'appel est seulement journalisé.
+  after(() =>
+    sendCapiCompleteRegistration({
+      eventId,
+      email: input.email,
+      phoneE164: phone.e164,
+      prenom: input.prenom,
+      ip,
+      userAgent,
+      fbp,
+      fbc,
+      sourceUrl: input.tracking.page_url || req.headers.get("referer") || process.env.NEXT_PUBLIC_SITE_URL,
+    }),
+  );
 
   return NextResponse.json({ ok: true, eventId, liveUrl: lead.webinarjam_lien_live });
 }

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { SOIREES, defaultLiveUrl, googleCalendarUrl } from "@/lib/event";
-import { trackLead } from "./MetaPixel";
+import { trackCompleteRegistration } from "./MetaPixel";
 import { STORAGE_INSCRIPTION } from "./Inscription";
 import styles from "@/app/merci/merci.module.css";
 
@@ -14,6 +14,27 @@ function lireInscription(): Inscription {
   } catch {
     return {};
   }
+}
+
+const STORAGE_EVENEMENTS = "fa_cr_envoyes";
+
+// Mémorise les inscriptions déjà envoyées au Pixel : un rechargement de /merci ne renvoie rien.
+function dejaEnvoye(eventId: string): boolean {
+  try {
+    return (JSON.parse(localStorage.getItem(STORAGE_EVENEMENTS) || "[]") as string[]).includes(eventId);
+  } catch {
+    return false;
+  }
+}
+
+function marquerEnvoye(eventId: string, data: Inscription) {
+  try {
+    sessionStorage.setItem(STORAGE_INSCRIPTION, JSON.stringify({ ...data, eventId, leadEnvoye: true }));
+  } catch {}
+  try {
+    const liste = JSON.parse(localStorage.getItem(STORAGE_EVENEMENTS) || "[]") as string[];
+    localStorage.setItem(STORAGE_EVENEMENTS, JSON.stringify([...liste, eventId].slice(-20)));
+  } catch {}
 }
 
 function usePrenom(): string {
@@ -29,27 +50,13 @@ export function TitreMerci() {
   const prenom = usePrenom();
 
   useEffect(() => {
-    // Événement Lead du Pixel, une seule fois par inscription (même event_id que l'API Conversions).
+    // CompleteRegistration, une seule fois par inscription, avec l'eventID généré à l'envoi du
+    // formulaire (le même que celui envoyé par le serveur à l'API Conversions).
     const data = lireInscription();
-    if (data.eventId && !data.leadEnvoye) {
-      const envoyer = () => {
-        trackLead(data.eventId!);
-        try {
-          sessionStorage.setItem(STORAGE_INSCRIPTION, JSON.stringify({ ...data, leadEnvoye: true }));
-        } catch {}
-      };
-      // Le script du Pixel peut finir de charger après ce composant.
-      if (window.fbq) envoyer();
-      else {
-        let essais = 0;
-        const t = window.setInterval(() => {
-          if (window.fbq || ++essais > 20) {
-            window.clearInterval(t);
-            if (window.fbq) envoyer();
-          }
-        }, 250);
-      }
-    }
+    const eventId = data.eventId || new URLSearchParams(window.location.search).get("eid") || "";
+    if (!/^[A-Za-z0-9-]{8,64}$/.test(eventId) || data.leadEnvoye || dejaEnvoye(eventId)) return;
+    marquerEnvoye(eventId, data);
+    trackCompleteRegistration(eventId);
   }, []);
 
   return (

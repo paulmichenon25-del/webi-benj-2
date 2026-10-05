@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Anton, Inter, Playfair_Display } from "next/font/google";
-import { MetaPixel } from "@/components/MetaPixel";
+import { MetaPixel, MetaPixelNoscript } from "@/components/MetaPixel";
 import "./globals.css";
 
 // Titres : serif élégante (version validée par Paul). Anton : dates et chiffres,
@@ -50,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr" className={`${titre.variable} ${impact.variable} ${texte.variable}`}>
       <body>
+        <MetaPixelNoscript />
         {children}
         <MetaPixel />
       </body>

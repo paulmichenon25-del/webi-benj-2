@@ -16,6 +16,13 @@ export const STORAGE_INSCRIPTION = "fa_inscription";
 
 const STORAGE_TRACKING = "fa_tracking";
 
+function nouvelEventId(): string {
+  try {
+    if (crypto.randomUUID) return crypto.randomUUID();
+  } catch {}
+  return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 12)}`;
+}
+
 function safeGet(key: string): string | null {
   try {
     return sessionStorage.getItem(key);
@@ -163,11 +170,14 @@ function FormulaireInscription() {
       return;
     }
     setEnvoi(true);
+    // ID unique de l'inscription, partagé par le Pixel (sur /merci) et l'API Conversions (serveur)
+    // pour que Meta ne compte qu'une seule fois l'événement CompleteRegistration.
+    const eventId = nouvelEventId();
     try {
       const res = await fetch("/api/inscription", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({ ...payload, eventId }),
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok || !data.ok) {
@@ -178,9 +188,9 @@ function FormulaireInscription() {
       }
       safeSet(
         STORAGE_INSCRIPTION,
-        JSON.stringify({ prenom: prenom.trim(), liveUrl: data.liveUrl || "", eventId: data.eventId, leadEnvoye: false }),
+        JSON.stringify({ prenom: prenom.trim(), liveUrl: data.liveUrl || "", eventId: data.eventId || eventId, leadEnvoye: false }),
       );
-      router.push(`/merci?prenom=${encodeURIComponent(prenom.trim())}`);
+      router.push(`/merci?prenom=${encodeURIComponent(prenom.trim())}&eid=${encodeURIComponent(data.eventId || eventId)}`);
     } catch {
       setErreurGlobale("La connexion a coupé. Vérifie ton réseau et réessaie.");
       setEnvoi(false);
