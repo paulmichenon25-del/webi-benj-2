@@ -9,7 +9,29 @@ export type ContactSystemeIo = {
   prenom: string;
   email: string;
   telephoneE164: string;
+  suivi?: Partial<Record<(typeof CHAMPS_SUIVI)[number], string>>;
 };
+
+// Provenance de l'inscrit, enregistrée dans des champs personnalisés systeme.io du même nom
+// (à créer dans systeme.io : Paramètres > Champs personnalisés, slugs identiques).
+export const CHAMPS_SUIVI = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "fbclid"] as const;
+
+// Envoyé à part, après le tag : si un champ n'existe pas dans systeme.io, l'inscription et
+// l'email de confirmation ne sont pas affectés, l'erreur est seulement journalisée.
+async function enregistrerSuivi(id: number, suivi: ContactSystemeIo["suivi"]) {
+  const fields = CHAMPS_SUIVI.filter((k) => suivi?.[k]).map((k) => ({ slug: k, value: suivi![k]!.slice(0, 250) }));
+  if (!fields.length) return;
+  try {
+    const res = await appel(`/contacts/${id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/merge-patch+json" },
+      body: JSON.stringify({ fields }),
+    });
+    if (!res.ok) console.error("[systeme.io] UTM non enregistrés", res.status, await res.text().catch(() => ""));
+  } catch (err) {
+    console.error("[systeme.io] UTM non enregistrés", err);
+  }
+}
 
 export function systemeIoConfigured(): boolean {
   return Boolean(process.env.SYSTEMEIO_API_KEY && process.env.SYSTEMEIO_TAG_ID);
@@ -65,6 +87,7 @@ export async function inscrireDansSystemeIo(c: ContactSystemeIo): Promise<{ ok: 
     });
     // 204 = tag posé ; 422 = le contact avait déjà ce tag (inscription en double) : pas une erreur.
     if (!tag.ok && tag.status !== 422) return { ok: false, error: `tag non posé (HTTP ${tag.status})` };
+    await enregistrerSuivi(id, c.suivi);
     return { ok: true };
   } catch (err) {
     return { ok: false, error: err instanceof Error ? err.message : String(err) };

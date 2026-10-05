@@ -2,6 +2,7 @@
 
 import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { trackOuvertureFormulaire } from "./MetaPixel";
 import {
   COUNTRIES,
   TRACKING_KEYS,
@@ -73,7 +74,10 @@ export function InscriptionProvider({ children, variante = "" }: { children: Rea
   const dialogRef = useRef<HTMLDialogElement>(null);
   const open = useCallback(() => {
     const d = dialogRef.current;
-    if (d && !d.open) d.showModal();
+    if (d && !d.open) {
+      d.showModal();
+      trackOuvertureFormulaire();
+    }
   }, []);
   const close = useCallback(() => dialogRef.current?.close(), []);
 
@@ -190,7 +194,7 @@ function FormulaireInscription() {
         STORAGE_INSCRIPTION,
         JSON.stringify({ prenom: prenom.trim(), liveUrl: data.liveUrl || "", eventId: data.eventId || eventId, leadEnvoye: false }),
       );
-      router.push(`/merci?prenom=${encodeURIComponent(prenom.trim())}&eid=${encodeURIComponent(data.eventId || eventId)}`);
+      router.push(`/merci?eid=${encodeURIComponent(data.eventId || eventId)}`);
     } catch {
       setErreurGlobale("La connexion a coupé. Vérifie ton réseau et réessaie.");
       setEnvoi(false);

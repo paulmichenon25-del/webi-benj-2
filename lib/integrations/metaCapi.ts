@@ -61,7 +61,10 @@ export async function sendCapiCompleteRegistration(l: CapiInscription): Promise<
         signal: AbortSignal.timeout(8000),
       },
     );
-    if (!res.ok) console.error("[meta-capi]", res.status, await res.text().catch(() => ""));
+    const reponse = await res.text().catch(() => "");
+    if (!res.ok) console.error("[meta-capi]", res.status, reponse);
+    // Réponse de Meta visible dans les logs Vercel (ex. {"events_received":1,...}) pour vérifier l'envoi.
+    else console.info("[meta-capi] ok", l.eventId, reponse);
   } catch (err) {
     console.error("[meta-capi]", err);
   }

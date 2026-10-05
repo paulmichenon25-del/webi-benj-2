@@ -19,7 +19,7 @@ import styles from "@/app/page.module.css";
 // grand visuel avec badge, carte événement, objections, programme par soirée, intervenant,
 // FAQ et carte finale. Couleurs : crème, noir, cuivre #BC6C2E sur les détails.
 
-const PHOTO_HERO = "/benjamin-hero.jpg"; // [IMAGE À FOURNIR : /public/benjamin-hero.jpg]
+const PHOTO_HERO = "/benjamin-hero.jpg"; // facultative : à défaut, la photo portrait est utilisée
 const PHOTO_PORTRAIT = "/benjamin-portrait.jpg"; // photo fournie par Paul
 
 const DOULEURS = [
@@ -67,21 +67,27 @@ export function Landing({ variante }: { variante: Variante }) {
               {variante.titre} <em>{variante.titreEm}</em>
             </h1>
 
-            <div className={styles.heroMedia}>
-              {variante.media === "video" ? (
-                <VideoPresentation src={videoPresentation} poster={posterPresentation} duree="2 min" />
-              ) : (
+            {/* Vidéo : le bloc n'apparaît que si /public/benjamin-presentation.mp4 existe (vérifié au build).
+                Il suffit de déposer le fichier et de redéployer pour l'afficher. */}
+            {variante.media === "video" ? (
+              videoPresentation && (
+                <div className={styles.heroMedia}>
+                  <VideoPresentation src={videoPresentation} poster={posterPresentation} duree="2 min" />
+                </div>
+              )
+            ) : (
+              <div className={styles.heroMedia}>
                 <div className={styles.heroImage}>
                   <Portrait
-                    src={PHOTO_HERO}
+                    src={photoHero ?? PHOTO_PORTRAIT}
                     alt="Benjamin Hanachowicz dans son studio boudoir à Roanne"
                     variante="grand"
                     priority
                     sizes="(min-width: 800px) 760px, 100vw"
                   />
                 </div>
-              )}
-            </div>
+              </div>
+            )}
 
             <BoutonInscription className={styles.heroBouton}>
               Je réserve ma place gratuite <span aria-hidden="true">→</span>

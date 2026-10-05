@@ -40,8 +40,8 @@ function marquerEnvoye(eventId: string, data: Inscription) {
 function usePrenom(): string {
   const [prenom, setPrenom] = useState("");
   useEffect(() => {
-    const fromUrl = new URLSearchParams(window.location.search).get("prenom") || "";
-    setPrenom((lireInscription().prenom || fromUrl).trim().slice(0, 40));
+    // Le prénom passe par sessionStorage, jamais par l'URL (Meta signale les données personnelles dans les URL).
+    setPrenom((lireInscription().prenom || "").trim().slice(0, 40));
   }, []);
   return prenom;
 }

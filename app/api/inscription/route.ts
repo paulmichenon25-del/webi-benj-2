@@ -68,7 +68,12 @@ export async function POST(req: NextRequest) {
 
   // systeme.io (contact + tag → email de confirmation) en parallèle de WebinarJam.
   const sioPromise = systemeIoConfigured()
-    ? inscrireDansSystemeIo({ prenom: input.prenom, email: input.email, telephoneE164: phone.e164 })
+    ? inscrireDansSystemeIo({
+        prenom: input.prenom,
+        email: input.email,
+        telephoneE164: phone.e164,
+        suivi: input.tracking,
+      })
     : Promise.resolve(null);
 
   const wj = webinarJamConfigured()

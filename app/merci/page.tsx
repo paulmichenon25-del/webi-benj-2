@@ -38,9 +38,12 @@ export default function MerciPage() {
         <header className={`conteneur ${styles.entete}`}>
           <span className="surtitre">Inscription confirmée</span>
           <TitreMerci />
-          <div className={styles.video}>
-            <VideoPresentation src={video} poster={poster} aFournir="" />
-          </div>
+          {/* Affichée seulement si /public/benjamin-merci.mp4 existe : déposer le fichier puis redéployer. */}
+          {video && (
+            <div className={styles.video}>
+              <VideoPresentation src={video} poster={poster} aFournir="" />
+            </div>
+          )}
           <div id="whatsapp" className={styles.ctaVideo}>
             <span className={`surtitre ${styles.obligatoire}`}>
               <span className="pulse" aria-hidden="true" />

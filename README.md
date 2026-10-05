@@ -39,7 +39,8 @@ Vidéos : H.264, 720p, < 8 Mo idéalement. Elles ne se chargent qu'au clic.
 1. Validation (prénom, email, mobile normalisé en E.164, segment).
 2. Inscription WebinarJam (`WEBINARJAM_*`). Le téléphone n'est transmis à WebinarJam que si la case de consentement SMS/WhatsApp est cochée.
 3. Envoi de l'inscrit au webhook `LEADS_WEBHOOK_URL` avec : prénom, email, téléphone E.164, segment, consentement, `utm_source/medium/campaign/content/term`, `fbclid`, URL de la landing, URL de provenance, statut WebinarJam, lien live personnel, `event_id`.
-4. Événement `CompleteRegistration` vers l'API Conversions Meta (si `META_CAPI_TOKEN`), envoyé après la réponse, dédoublonné avec le Pixel déclenché une seule fois sur `/merci` grâce au même `eventID` (généré par le navigateur à l'envoi du formulaire). Pixel `1031384306524044` : PageView au chargement et à chaque changement de route.
+4. Événement `CompleteRegistration` vers l'API Conversions Meta (si `META_CAPI_TOKEN`), envoyé après la réponse, dédoublonné avec le Pixel déclenché une seule fois sur `/merci` grâce au même `eventID` (généré par le navigateur à l'envoi du formulaire). Pixel `1031384306524044` : PageView au chargement et à chaque changement de route, AddToWishlist à la première ouverture du formulaire (une fois par session). Le prénom ne passe jamais dans l'URL (sessionStorage) ; /merci ne reçoit que `eid`.
+5. UTM (utm_source, utm_medium, utm_campaign, utm_content, utm_term) et fbclid : captés à l'arrivée, gardés en sessionStorage, envoyés avec l'inscription et enregistrés dans les champs personnalisés systeme.io de même slug (à créer dans systeme.io).
 
 Si WebinarJam échoue mais que le webhook passe (ou l'inverse), la personne est quand même redirigée vers `/merci` et la ligne du webhook porte `webinarjam_statut: "erreur"` pour la rattraper à la main.
 

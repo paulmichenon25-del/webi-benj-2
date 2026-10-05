@@ -78,3 +78,18 @@ export function MetaPixelNoscript() {
 export function trackCompleteRegistration(eventId: string) {
   quandFbqPret(() => window.fbq!("track", "CompleteRegistration", {}, { eventID: eventId }));
 }
+
+const STORAGE_OUVERTURE = "fa_atw_envoye";
+
+// Ouverture du formulaire d'inscription : AddToWishlist, une seule fois par session.
+export function trackOuvertureFormulaire() {
+  try {
+    if (sessionStorage.getItem(STORAGE_OUVERTURE)) return;
+    sessionStorage.setItem(STORAGE_OUVERTURE, "1");
+  } catch {
+    // sessionStorage indisponible (navigation privée stricte) : on garde au moins une seule fois par page.
+    if ((window as unknown as { __faAtw?: boolean }).__faAtw) return;
+    (window as unknown as { __faAtw?: boolean }).__faAtw = true;
+  }
+  quandFbqPret(() => window.fbq!("track", "AddToWishlist"));
+}
