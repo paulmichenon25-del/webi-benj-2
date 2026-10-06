@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { BoutonsAgenda, BoutonWhatsApp, TitreMerci } from "@/components/Merci";
 import { CompteARebours } from "@/components/CompteARebours";
 import { VideoPresentation } from "@/components/VideoPresentation";
+import { WistiaVideo } from "@/components/WistiaVideo";
 import { Footer } from "@/components/Footer";
 import { publicFileExists } from "@/lib/assets";
-import { POSTER_MERCI, VIDEO_MERCI, WHATSAPP_URL } from "@/content/evenement";
+import { POSTER_MERCI, VIDEO_MERCI, WHATSAPP_URL, WISTIA_MERCI } from "@/content/evenement";
 import styles from "./merci.module.css";
 
 export const metadata: Metadata = {
@@ -38,10 +39,14 @@ export default function MerciPage() {
         <header className={`conteneur ${styles.entete}`}>
           <span className="surtitre">Inscription confirmée</span>
           <TitreMerci />
-          {/* Affichée seulement si /public/benjamin-merci.mp4 existe : déposer le fichier puis redéployer. */}
-          {video && (
+          {/* Vidéo Wistia (WISTIA_MERCI) ou, à défaut, /public/benjamin-merci.mp4 ; sinon, pas de bloc. */}
+          {(WISTIA_MERCI || video) && (
             <div className={styles.video}>
-              <VideoPresentation src={video} poster={poster} aFournir="" />
+              {WISTIA_MERCI ? (
+                <WistiaVideo mediaId={WISTIA_MERCI} titre="Un mot de Benjamin" />
+              ) : (
+                <VideoPresentation src={video} poster={poster} aFournir="" />
+              )}
             </div>
           )}
           <div id="whatsapp" className={styles.ctaVideo}>

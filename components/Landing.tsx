@@ -3,12 +3,14 @@ import { CtaMobile } from "@/components/CtaMobile";
 import { Portrait } from "@/components/Portrait";
 import { Footer } from "@/components/Footer";
 import { VideoPresentation } from "@/components/VideoPresentation";
+import { WistiaVideo } from "@/components/WistiaVideo";
 import { CompteARebours } from "@/components/CompteARebours";
 import {
   CADEAU_INSCRIPTION,
   CADEAU_LIVE,
   POSTER_PRESENTATION,
   VIDEO_PRESENTATION,
+  WISTIA_PRESENTATION,
 } from "@/content/evenement";
 import { TEMOIGNAGES, URL_TEMOIGNAGES } from "@/content/temoignages";
 import { publicFileExists } from "@/lib/assets";
@@ -67,12 +69,16 @@ export function Landing({ variante }: { variante: Variante }) {
               {variante.titre} <em>{variante.titreEm}</em>
             </h1>
 
-            {/* Vidéo : le bloc n'apparaît que si /public/benjamin-presentation.mp4 existe (vérifié au build).
-                Il suffit de déposer le fichier et de redéployer pour l'afficher. */}
+            {/* Vidéo : Wistia (WISTIA_PRESENTATION) ou, à défaut, /public/benjamin-presentation.mp4.
+                Sans l'un ni l'autre, le bloc n'apparaît pas. */}
             {variante.media === "video" ? (
-              videoPresentation && (
+              (WISTIA_PRESENTATION || videoPresentation) && (
                 <div className={styles.heroMedia}>
-                  <VideoPresentation src={videoPresentation} poster={posterPresentation} duree="2 min" />
+                  {WISTIA_PRESENTATION ? (
+                    <WistiaVideo mediaId={WISTIA_PRESENTATION} titre="Le mot de Benjamin" />
+                  ) : (
+                    <VideoPresentation src={videoPresentation} poster={posterPresentation} duree="2 min" />
+                  )}
                 </div>
               )
             ) : (

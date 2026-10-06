@@ -8,6 +8,9 @@ export const NOM_EVENEMENT = "Plein Temps";
 // Vidéo de présentation (2 min max, format 16:9) en tête de page.
 // [VIDÉO À FOURNIR : /public/benjamin-presentation.mp4] (+ .jpg en aperçu)
 export const VIDEO_PRESENTATION = "/benjamin-presentation.mp4";
+// Vidéos hébergées sur Wistia (prioritaires sur les fichiers .mp4). Identifiant = code dans l'URL Wistia.
+export const WISTIA_PRESENTATION = "8o0tcya8ft";
+export const WISTIA_MERCI = "";
 export const POSTER_PRESENTATION = "/benjamin-presentation.jpg";
 
 // Cadeaux volontairement mystérieux sur la page : le contenu se découvre par email et en live.
