@@ -10,7 +10,7 @@ export const NOM_EVENEMENT = "Plein Temps";
 export const VIDEO_PRESENTATION = "/benjamin-presentation.mp4";
 // Vidéos hébergées sur Wistia (prioritaires sur les fichiers .mp4). Identifiant = code dans l'URL Wistia.
 export const WISTIA_PRESENTATION = "8o0tcya8ft";
-export const WISTIA_MERCI = "";
+export const WISTIA_MERCI = "dt1scp9yv0";
 export const POSTER_PRESENTATION = "/benjamin-presentation.jpg";
 
 // Cadeaux volontairement mystérieux sur la page : le contenu se découvre par email et en live.
