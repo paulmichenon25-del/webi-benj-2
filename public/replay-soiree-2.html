@@ -151,35 +151,19 @@ h1 em{font-style:normal;color:var(--cuivre-vif)}
 /* Académie */
 .etape p.academie{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(216,134,60,.25)}
 
-/* Témoignages */
-.temoignages{margin-top:64px}
-.temoignages-tete{text-align:center;max-width:620px;margin:0 auto}
-.temoignages h2{margin:14px 0 12px;font-family:var(--titre);font-weight:400;text-transform:uppercase;text-wrap:balance;font-size:clamp(1.9rem,7.4vw,2.8rem);line-height:1.04}
-.temoignages h2 em{font-style:normal;color:var(--cuivre-vif)}
-.temoignages-tete p{color:var(--creme-douce)}
-.chiffres{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:28px 0 0;border-radius:18px;overflow:hidden;background:var(--bord-doux);border:1px solid var(--bord-doux)}
-.chiffres li{display:grid;align-content:start;gap:2px;padding:16px 14px;background:var(--fond-2);font-size:.82rem;line-height:1.35;color:var(--creme-douce)}
-.chiffres b{font-family:var(--titre);font-weight:400;font-size:1.7rem;line-height:1.05;color:var(--cuivre-clair);letter-spacing:.01em}
-.chiffres span{margin-top:4px;font-size:.74rem;color:var(--gris)}
-.mur-note{margin:28px 0 14px;text-align:center;font-size:.82rem;color:var(--gris)}
-.mur{columns:1;column-gap:16px}
-.carte-t{break-inside:avoid;margin-bottom:16px;border-radius:16px;overflow:hidden;background:var(--carte);border:1px solid var(--bord-doux)}
-.carte-t img{display:block;width:100%;height:auto;background:#f3eee7}
-.carte-t figcaption{padding:12px 14px 14px;border-top:1px solid var(--bord-doux)}
-.carte-t figcaption b{display:block;font-size:.84rem;font-weight:700}
-.carte-t figcaption span{display:block;margin-top:3px;font-size:.88rem;line-height:1.45;color:var(--creme-douce)}
-.vid{position:relative;aspect-ratio:9/16;background:#000;cursor:pointer}
-.vid img,.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
-.vid-lecture{position:absolute;inset:0;display:grid;place-items:center}
-.vid-lecture span{display:grid;place-items:center;width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,var(--cuivre-vif),var(--cuivre-profond));box-shadow:0 10px 28px rgba(0,0,0,.45)}
-.vid-duree{position:absolute;right:10px;bottom:10px;padding:2px 7px;border-radius:6px;background:rgba(0,0,0,.6);color:#fff;font-size:.72rem;font-weight:600}
-.vid.lecture-en-cours img,.vid.lecture-en-cours .vid-lecture,.vid.lecture-en-cours .vid-duree{display:none}
-.vid:focus-visible{outline:3px solid var(--cuivre-clair);outline-offset:-3px}
-.mur.replie .carte-t:nth-child(n+13){display:none}
-@media (max-width:599px){.mur.replie .carte-t:nth-child(n+7){display:none}}
-.voir-tout{display:block;margin:6px auto 0;padding:13px 24px;border-radius:999px;border:1px solid var(--bord);background:transparent;color:var(--creme);font:inherit;font-weight:700;cursor:pointer;transition:border-color .15s ease,background .15s ease}
-.voir-tout:hover{border-color:var(--cuivre-vif);background:rgba(188,108,46,.08)}
-.temoignages .cta{margin-top:32px}
+/* Lien vers les témoignages */
+.temoignages{
+  display:grid;gap:18px;margin-top:28px;padding:26px 22px;border-radius:var(--rayon);text-decoration:none;
+  background:radial-gradient(circle at 100% 0,rgba(188,108,46,.22),transparent 60%),var(--fond-2);
+  border:1px solid var(--bord);transition:border-color .18s ease,transform .18s ease;
+}
+.temoignages:hover{border-color:var(--cuivre-vif);transform:translateY(-2px)}
+.temoignages-texte{display:grid;gap:10px;justify-items:start}
+.temoignages-titre{font-family:var(--titre);text-transform:uppercase;font-size:clamp(1.6rem,6.4vw,2.2rem);line-height:1.06}
+.temoignages-titre em{font-style:normal;color:var(--cuivre-vif)}
+.temoignages-sous{color:var(--creme-douce)}
+.temoignages-bouton{justify-self:start;display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;border:1px solid var(--cuivre-vif);color:var(--creme);font-weight:700}
+.temoignages:hover .temoignages-bouton{background:rgba(188,108,46,.14)}
 
 /* Autre soirée */
 .autre{
@@ -204,12 +188,8 @@ footer nav{display:flex;justify-content:center;gap:18px;margin-top:10px}
 footer a{color:var(--gris);text-decoration:none}
 footer a:hover{color:var(--creme)}
 
-@media (min-width:600px){
-  .mur{columns:2}
-  .chiffres{grid-template-columns:repeat(4,1fr)}
-}
 @media (min-width:820px){
-  .mur{columns:3}
+  .temoignages{grid-template-columns:1fr auto;align-items:center;gap:28px;padding:30px 34px}
   .page{padding-top:36px}
   h1{font-size:3.6rem}
   .video{max-width:660px;margin:24px auto 0}
@@ -237,7 +217,7 @@ footer a:hover{color:var(--creme)}
 }
 @media (prefers-reduced-motion:reduce){
   .pulse{animation:none}
-  .cta,.cta-fleche,.autre{transition:none}
+  .cta,.cta-fleche,.autre,.temoignages{transition:none}
 }
 </style>
 </head>
@@ -305,31 +285,14 @@ footer a:hover{color:var(--creme)}
   </a>
   </section>
 
-  <section class="temoignages" aria-labelledby="temoignages-titre">
-    <div class="temoignages-tete">
+  <a class="temoignages" href="https://temoignages.fineart-academie.com/" target="_blank" rel="noopener">
+    <span class="temoignages-texte">
       <span class="eyebrow">La communauté FineArt Académie</span>
-      <h2 id="temoignages-titre">Ils étaient exactement <em>là où tu es.</em></h2>
-      <p>Des photographes qui débutaient, qui tournaient en rond ou qui bradaient leur travail. Voilà ce qu'ils racontent, en vidéo et dans leurs messages, quelques semaines ou quelques mois après avoir rejoint l'académie.</p>
-    </div>
-    <ul class="chiffres" aria-label="Quelques résultats">
-      <li><b>36&nbsp;000&nbsp;€</b>par an, activité autonome<span>Romain, Bourgogne Boudoir</span></li>
-      <li><b>11&nbsp;000&nbsp;€</b>en trois mois, dont 6&nbsp;000&nbsp;€ en octobre<span>Nicolas, Alsace Boudoir</span></li>
-      <li><b>8&nbsp;000</b>abonnées en 10 jours<span>Samantha, Échappe et Belle</span></li>
-      <li><b>4&nbsp;700&nbsp;€</b>de CA à venir, deux mois après ses débuts<span>Benjamin M., Le Mans</span></li>
-      <li><b>1&nbsp;200&nbsp;CHF</b>dès le premier mois<span>Jessica, Nébuleuse</span></li>
-      <li><b>880&nbsp;€</b>bookés en 24 heures<span>Maëllie, Sinister Elegance</span></li>
-      <li><b>6</b>réservations en 3 jours, juillet complet<span>Chloé, La Réunion</span></li>
-      <li><b>×4</b>sur le CA mensuel, de 250&nbsp;€ à plus de 1&nbsp;000&nbsp;€<span>Élève de l'académie</span></li>
-    </ul>
-    <p class="mur-note">Les vidéos se lancent au clic, avec le son. Les captures sont telles que Benjamin les a reçues.</p>
-    <div class="mur" id="mur"></div>
-    <button class="voir-tout" id="voir-tout" type="button">Voir les 85 témoignages</button>
-    <a class="cta js-reserver" href="https://app.iclosed.io/e/Klocka/appel" target="_blank" rel="noopener">
-    <span class="cta-icone" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></span>
-    <span class="cta-texte"><b>Je réserve mon appel offert</b><small>Offert · en direct avec Benjamin</small></span>
-    <span class="cta-fleche" aria-hidden="true">→</span>
+      <span class="temoignages-titre">Ils étaient exactement <em>là où tu es.</em></span>
+      <span class="temoignages-sous">Découvre les retours des membres de l'académie, en vidéo et dans leurs messages.</span>
+    </span>
+    <span class="temoignages-bouton">Voir les témoignages <span aria-hidden="true">↗</span></span>
   </a>
-  </section>
 
   <a class="autre autre--precedent" href="/replay">
     <span class="autre-texte">
@@ -366,43 +329,6 @@ footer a:hover{color:var(--creme)}
   }
   maj();
   setInterval(maj, 1000);
-})();
-
-// Mur de témoignages (repris de temoignages.fineart-academie.com) : 6 visibles sur mobile, 12 sur ordinateur, le reste au clic.
-(function () {
-  var BASE = "https://temoignages.fineart-academie.com/";
-  var ITEMS = [{"t": "v", "src": "videos/r00.mp4", "poster": "videos/r00.jpg", "w": 9, "h": 16, "who": "Benjamin M. et Samantha", "what": "Deux clientes signées, puis le vocal de Samantha."}, {"t": "s", "src": "img/n_mariage.webp", "w": 900, "h": 1117, "who": "Nicolas, Alsace Boudoir", "what": "Compte boudoir lancé en avril : plus de 11 000 abonnés en 6 mois, entre 2 et 2,5 millions de vues par mois. D’août à décembre, le boudoir couvre presque une année du CA qu’il faisait avec le mariage et la formation réunis."}, {"t": "s", "src": "img/n_bm2.webp", "w": 900, "h": 1440, "who": "Benjamin M., Le Mans", "what": "Environ 3 millions de vues, 2 975 abonnés, et près de 4 700 € de chiffre d’affaires à venir, deux mois après ses débuts."}, {"t": "s", "src": "img/s7969.webp", "w": 900, "h": 1146, "who": "Romain, Bourgogne Boudoir", "what": "36 000 € par an. L’activité est autonome depuis 3 ans."}, {"t": "v", "src": "videos/r23.mp4", "poster": "videos/r23.jpg", "w": 9, "h": 16, "who": "Jessica, Nébuleuse (Neuchâtel)", "what": "1 200 CHF dès le premier mois."}, {"t": "s", "src": "img/n_x4.webp", "w": 900, "h": 728, "who": "Élève de l’académie", "what": "De 250 € de CA par mois en moyenne à plus de 1 000 € chaque mois depuis juillet. ×4, et le CDI qui pourrait bientôt sauter."}, {"t": "s", "src": "img/n_49seances.webp", "w": 500, "h": 817, "who": "Nicolas, Alsace Boudoir", "what": "Inscrit en février, boudoir lancé en août en parallèle du mariage : 49 séances en 6 mois, 36 prévues d’octobre à décembre, et un panier moyen autour de 500 €, tout inclus."}, {"t": "s", "src": "img/s9932.webp", "w": 900, "h": 1569, "who": "Samantha, Échappe et Belle", "what": "Près de 8 000 abonnées en 10 jours. Séances passées de 190 à 350 €. 2 900 € en juin."}, {"t": "s", "src": "img/n_tarifs2.webp", "w": 900, "h": 719, "who": "Élève de l’académie", "what": "Tarifs doublés, et 3 clientes qui n’ont pas négocié un seul instant. En partant de rien côté communication."}, {"t": "v", "src": "videos/r17.mp4", "poster": "videos/r17.jpg", "w": 9, "h": 16, "who": "Nicolas, Alsace Boudoir", "what": "750 € de chiffre d’affaires le premier mois dans l’académie."}, {"t": "s", "src": "img/s8767.webp", "w": 900, "h": 1446, "who": "Maëllie, Sinister Elegance", "what": "880 € bookés en 24 heures."}, {"t": "s", "src": "img/s9602.webp", "w": 900, "h": 1314, "who": "Benjamin M., Le Mans", "what": "2 clientes signées, 1 299 € de CA en septembre, avant la fin du mois."}, {"t": "s", "src": "img/n_agenda.webp", "w": 500, "h": 515, "who": "Une élève de l’académie", "what": "Agenda ouvert fin mars : des séances payées tous les mois depuis, et un record à 2 600 en octobre (4 shootings, 2 collabs). Plus environ 1 500 d’extras réglés en services."}, {"t": "v", "src": "videos/r14.mp4", "poster": "videos/r14.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "1 000 € dès les premières séances."}, {"t": "s", "src": "img/n_inst.webp", "w": 875, "h": 1960, "who": "Une élève de l’académie", "what": "Deux projets signés pour octobre et novembre, 1 600 € de chiffre d’affaires. « Je me sens tellement boostée, fière et émue à la fois. »"}, {"t": "s", "src": "img/n_nico.webp", "w": 900, "h": 646, "who": "Nicolas, Alsace Boudoir", "what": "11 000 € depuis août, dont 6 000 € sur le seul mois d’octobre. Il y a six mois, il partait de zéro."}, {"t": "s", "src": "img/s9931.webp", "w": 900, "h": 920, "who": "Chloé, La Réunion", "what": "250 à 300 € les bons mois avant. Plus de 1 000 € en avril, deux mois après son arrivée."}, {"t": "v", "src": "videos/r15.mp4", "poster": "videos/r15.jpg", "w": 9, "h": 16, "who": "Philippe", "what": "Une clientèle qui revient, un mois après la formation."}, {"t": "s", "src": "img/n_tarifs.webp", "w": 900, "h": 670, "who": "Une élève de l’académie", "what": "Tarifs passés de 180 € à 350 €, et une première réservation à 595 €."}, {"t": "s", "src": "img/s9930.webp", "w": 900, "h": 1576, "who": "Jessica, Nébuleuse", "what": "Cinq mois plus tôt, elle n’avait jamais touché un appareil photo."}, {"t": "v", "src": "videos/r21.mp4", "poster": "videos/r21.jpg", "w": 9, "h": 16, "who": "Nicolas, Alsace Boudoir", "what": "Bloqué à 1 300 abonnés pendant 2 ans. Puis 1,5 million de vues en un mois."}, {"t": "s", "src": "img/s8054.webp", "w": 900, "h": 1213, "who": "Samantha, Échappe et Belle", "what": "900 abonnés en un mois, sans publicité."}, {"t": "s", "src": "img/s7643.webp", "w": 900, "h": 1350, "who": "Marie LC, Normandie", "what": "De moins de 1 000 vues à 10 900 en quelques semaines."}, {"t": "v", "src": "videos/r24.mp4", "poster": "videos/r24.jpg", "w": 9, "h": 16, "who": "Benjamin répond", "what": "En combien de temps ses élèves ont leurs premières réservations."}, {"t": "s", "src": "img/n_bm1.webp", "w": 900, "h": 1865, "who": "Benjamin M., Le Mans", "what": "Un mois de publication en appliquant la méthode à la lettre : 435 000 vues et 923 nouveaux abonnés."}, {"t": "s", "src": "img/s9362.webp", "w": 900, "h": 1521, "who": "Maëllie, Sinister Elegance", "what": "« Ce qui fait vraiment la différence, c’est toi : ta présence, ton suivi. »"}, {"t": "s", "src": "img/s8314.webp", "w": 900, "h": 860, "who": "Une élève de l’académie", "what": "Un reel à 161 000 vues et 196 abonnés en plus."}, {"t": "v", "src": "videos/r05.mp4", "poster": "videos/r05.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "1 200 € de chiffre d’affaires dès le deuxième mois."}, {"t": "s", "src": "img/s7709.webp", "w": 900, "h": 1644, "who": "Une élève débutante", "what": "Deux clientes qui font 5 heures de route pour venir chez elle."}, {"t": "s", "src": "img/s8795.webp", "w": 900, "h": 769, "who": "Christophe", "what": "Premier shooting, et déjà une recommandation avant même la retouche."}, {"t": "v", "src": "videos/r26.mp4", "poster": "videos/r26.jpg", "w": 9, "h": 16, "who": "Six élèves, six parcours", "what": "Nicolas, Samantha, Chloé, Philippe, Manuela, Jessica — en moins de trois minutes."}, {"t": "s", "src": "img/n_2ans.webp", "w": 900, "h": 493, "who": "Un élève de l’académie", "what": "« Je crois surtout que j’ai gagné 2 ans. »"}, {"t": "s", "src": "img/n_reel.webp", "w": 900, "h": 766, "who": "Élève de l’académie", "what": "Deux ans pour atteindre 1 200 abonnés. Puis un seul reel construit avec la méthode : plus de 1 000 abonnés d’un coup, dont beaucoup de prospects qualifiés."}, {"t": "v", "src": "videos/r01.mp4", "poster": "videos/r01.jpg", "w": 9, "h": 16, "who": "Samantha, Échappe et Belle", "what": "Refuser un mariage pour un contrat boudoir."}, {"t": "s", "src": "img/s9621.webp", "w": 900, "h": 519, "who": "Un élève", "what": "Sa première formule vendue sera peut-être celle à 1 350 €."}, {"t": "s", "src": "img/s7552.webp", "w": 900, "h": 586, "who": "Instant Suspendu", "what": "« Je ne regrette rien depuis la formation que j’ai faite avec toi. »"}, {"t": "v", "src": "videos/r19.mp4", "poster": "videos/r19.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "La communauté de la FineArt Académie."}, {"t": "s", "src": "img/s9921.webp", "w": 900, "h": 1259, "who": "Sur Instagram", "what": "Trois photographes racontent ce que l’académie a changé."}, {"t": "s", "src": "img/s9922.webp", "w": 900, "h": 485, "who": "Willpict, Normandie", "what": "« Après un an à échanger avec Ben, je n’ai jamais autant progressé. »"}, {"t": "v", "src": "videos/r25.mp4", "poster": "videos/r25.jpg", "w": 9, "h": 16, "who": "Benjamin répond", "what": "Des élèves qui ont vraiment changé de vie."}, {"t": "s", "src": "img/s7562.webp", "w": 900, "h": 1023, "who": "Jessica A.", "what": "Complète pour avril, agenda de mai qui s’ouvre."}, {"t": "s", "src": "img/s9113.webp", "w": 900, "h": 1486, "who": "Nicolas, Alsace Boudoir", "what": "Rétro à 4 mois : 11 shootings rémunérés, compte passé de 0 à 2 000 abonnés."}, {"t": "v", "src": "videos/r09.mp4", "poster": "videos/r09.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "L’avant et l’après avec l’académie."}, {"t": "s", "src": "img/s7457.webp", "w": 890, "h": 1200, "who": "Nobody’s Body", "what": "« Un vrai game changer. »"}, {"t": "s", "src": "img/s8053.webp", "w": 900, "h": 769, "who": "Une élève", "what": "« Meilleur conseil de ma vie. Ça a totalement changé la prise de contact. »"}, {"t": "v", "src": "videos/r12.mp4", "poster": "videos/r12.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "Confiance en moi à fond. Je sais ce que je vaux."}, {"t": "s", "src": "img/s9925.webp", "w": 900, "h": 1541, "who": "Chloé, La Réunion", "what": "Juillet complet, 6 réservations en 3 jours."}, {"t": "s", "src": "img/s9919.webp", "w": 900, "h": 1160, "who": "Une photographe expérimentée", "what": "Elle hésitait. Elle apprend encore, dès le début de la formation."}, {"t": "v", "src": "videos/r08.mp4", "poster": "videos/r08.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "Chaque module se construit sur le précédent."}, {"t": "s", "src": "img/s8442.webp", "w": 900, "h": 653, "who": "Nicolas, Alsace Boudoir", "what": "Bientôt 500 000 vues cumulées sur 30 jours."}, {"t": "s", "src": "img/s9920.webp", "w": 900, "h": 1097, "who": "Un élève", "what": "« Meilleur investissement que j’ai fait dans une formation. »"}, {"t": "v", "src": "videos/r02.mp4", "poster": "videos/r02.jpg", "w": 9, "h": 16, "who": "Nicolas, Alsace Boudoir", "what": "Le Discord, pour ne jamais être seul dans son coin."}, {"t": "s", "src": "img/s7799.webp", "w": 900, "h": 793, "who": "Un élève", "what": "« J’ai des clientes, je suis sur un nuage. »"}, {"t": "s", "src": "img/s9928.webp", "w": 900, "h": 1517, "who": "Deux élèves", "what": "Une story, 7 demandes en 2 heures. Un post épinglé, 3 shootings réservés."}, {"t": "v", "src": "videos/r06.mp4", "poster": "videos/r06.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "Aujourd’hui, elle sait qu’elle peut vivre de sa passion."}, {"t": "s", "src": "img/s9882.webp", "w": 900, "h": 784, "who": "Nicolas, Alsace Boudoir", "what": "« Tellement pépite ton contenu sur la Méthode ART. »"}, {"t": "s", "src": "img/s7541.webp", "w": 900, "h": 383, "who": "Un élève", "what": "« Deux vidéos et j’ai l’impression d’avancer à pas de géant. »"}, {"t": "v", "src": "videos/r20.mp4", "poster": "videos/r20.jpg", "w": 9, "h": 16, "who": "Jessica, Nébuleuse", "what": "Comment elle a monté ses tarifs de 300 à 450 CHF."}, {"t": "s", "src": "img/s9918.webp", "w": 900, "h": 1086, "who": "Nico Fly", "what": "Premier shooting calé, deux autres dans les tuyaux."}, {"t": "s", "src": "img/s7915.webp", "w": 900, "h": 1036, "who": "Une élève", "what": "Des contrats réguliers, y compris de personnes hésitantes depuis le début."}, {"t": "v", "src": "videos/r11.mp4", "poster": "videos/r11.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "Ce que la formation lui a apporté."}, {"t": "s", "src": "img/s7371.webp", "w": 900, "h": 678, "who": "Nanalison Photographie", "what": "« Ce workshop m’a poussée à aller encore plus loin. Et ça change tout. »"}, {"t": "s", "src": "img/n_double.webp", "w": 900, "h": 982, "who": "Élève de l’académie", "what": "Un mois de méthode, les réservations arrivent tout de suite. Dès que la communication s’arrête, les messages aussi."}, {"t": "v", "src": "videos/r18.mp4", "poster": "videos/r18.jpg", "w": 9, "h": 16, "who": "Jessica, Nébuleuse", "what": "Ses clients convaincus avant même le shooting."}, {"t": "s", "src": "img/s9917.webp", "w": 900, "h": 1105, "who": "Chloé, La Réunion", "what": "3 réservations depuis qu’elle soigne le marketing."}, {"t": "s", "src": "img/s7698.webp", "w": 900, "h": 548, "who": "Une élève", "what": "Premières photos boudoir de sa vie, grâce aux guides."}, {"t": "v", "src": "videos/r03.mp4", "poster": "videos/r03.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "Déjà 5 clientes payantes qui l’attendent dans le sud."}, {"t": "s", "src": "img/s9605.webp", "w": 900, "h": 861, "who": "Benjamin M., Le Mans", "what": "« Je pensais pas que ça irait si vite. » 4 questionnaires de plus à traiter."}, {"t": "s", "src": "img/s7980.webp", "w": 900, "h": 580, "who": "Un élève", "what": "« J’ai appris énormément en ligne et grâce au workshop. »"}, {"t": "v", "src": "videos/r13.mp4", "poster": "videos/r13.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "Une autre élève a fait 1 200 € dès le deuxième mois."}, {"t": "s", "src": "img/s9924.webp", "w": 900, "h": 1436, "who": "Nicolas, Alsace Boudoir", "what": "Premier shooting plein tarif signé, presque 100 000 vues en 30 jours."}, {"t": "s", "src": "img/s8562.webp", "w": 900, "h": 984, "who": "Jessica, Nébuleuse", "what": "« Ton cadre et ta direction m’ont permis d’affronter mes craintes. »"}, {"t": "v", "src": "videos/r22.mp4", "poster": "videos/r22.jpg", "w": 9, "h": 16, "who": "Nicolas, Alsace Boudoir", "what": "Depuis l’académie, une direction claire."}, {"t": "s", "src": "img/s7445.webp", "w": 900, "h": 795, "who": "Un élève", "what": "Première séance boudoir avec sa conjointe, guidée par les guides."}, {"t": "s", "src": "img/s9929.webp", "w": 900, "h": 1488, "who": "Jessica, Nébuleuse", "what": "400 abonnés en moins de 4 mois."}, {"t": "v", "src": "videos/r04.mp4", "poster": "videos/r04.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "Dès le deuxième mois, 1 200 € de chiffre d’affaires."}, {"t": "s", "src": "img/s9933.webp", "w": 900, "h": 1537, "who": "Une élève", "what": "173 000 vues, 2 957 abonnés en plus, juillet complet."}, {"t": "v", "src": "videos/r10.mp4", "poster": "videos/r10.jpg", "w": 9, "h": 16, "who": "Élève de l’académie", "what": "Ça te donne une intention, c’est la cerise sur le gâteau."}, {"t": "s", "src": "img/s8414.webp", "w": 850, "h": 180, "who": "Philippe", "what": "« Les clientes pleurent quand elles voient les photos. »"}, {"t": "v", "src": "videos/r07.mp4", "poster": "videos/r07.jpg", "w": 9, "h": 16, "who": "Philippe", "what": "Un mois après la formation, déjà deux clientes payantes."}, {"t": "s", "src": "img/s9913.webp", "w": 900, "h": 1645, "who": "Samantha, Échappe et Belle", "what": "« Lancez-vous les yeux fermés. »"}, {"t": "v", "src": "videos/r16.mp4", "poster": "videos/r16.jpg", "w": 9, "h": 16, "who": "Benjamin", "what": "Ce qu’il voit chez ceux qui réussissent."}, {"t": "s", "src": "img/s9114.webp", "w": 900, "h": 880, "who": "Nicolas, Alsace Boudoir", "what": "« Je serais des années en arrière si tu n’étais pas là. »"}, {"t": "s", "src": "img/s7370.webp", "w": 900, "h": 689, "who": "Nanalison Photographie", "what": "« Se former avec des photographes comme Ben, c’est investir. »"}, {"t": "s", "src": "img/s8014.webp", "w": 800, "h": 1200, "who": "Nicolas, Alsace Boudoir", "what": "145 000 vues en 30 jours."}];
-  var DUREES = {"videos/r00.mp4": "2:07", "videos/r01.mp4": "0:37", "videos/r02.mp4": "0:40", "videos/r03.mp4": "0:18", "videos/r04.mp4": "0:51", "videos/r05.mp4": "0:20", "videos/r06.mp4": "0:40", "videos/r07.mp4": "0:28", "videos/r08.mp4": "0:38", "videos/r09.mp4": "0:45", "videos/r10.mp4": "0:12", "videos/r11.mp4": "0:42", "videos/r12.mp4": "0:48", "videos/r13.mp4": "0:49", "videos/r14.mp4": "0:24", "videos/r15.mp4": "0:25", "videos/r16.mp4": "0:24", "videos/r17.mp4": "0:30", "videos/r18.mp4": "0:13", "videos/r19.mp4": "0:25", "videos/r20.mp4": "0:34", "videos/r21.mp4": "0:52", "videos/r22.mp4": "0:20", "videos/r23.mp4": "0:37", "videos/r24.mp4": "0:59", "videos/r25.mp4": "0:39", "videos/r26.mp4": "2:53"};
-  var mur = document.getElementById("mur"), bouton = document.getElementById("voir-tout");
-  function esc(t) { var d = document.createElement("div"); d.textContent = t; return d.innerHTML; }
-  mur.innerHTML = ITEMS.map(function (it) {
-    var legende = '<figcaption><b>' + esc(it.who) + '</b><span>' + esc(it.what) + '</span></figcaption>';
-    if (it.t === "v") return '<figure class="carte-t"><div class="vid" data-src="' + BASE + it.src + '" tabindex="0" role="button" aria-label="Lire la vidéo de ' + esc(it.who) + '">' +
-      '<img src="' + BASE + it.poster + '" alt="" width="540" height="960" loading="lazy">' +
-      '<span class="vid-lecture"><span><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M8 5.5v13l11-6.5z"/></svg></span></span>' +
-      '<span class="vid-duree">' + (DUREES[it.src] || "") + '</span></div>' + legende + '</figure>';
-    return '<figure class="carte-t"><img src="' + BASE + it.src + '" alt="Message de ' + esc(it.who) + '" width="' + it.w + '" height="' + it.h + '" loading="lazy">' + legende + '</figure>';
-  }).join("");
-  mur.classList.add("replie");
-  bouton.addEventListener("click", function () { mur.classList.remove("replie"); bouton.hidden = true; });
-  var active = null;
-  function lancer(v) {
-    if (active && active !== v) { var av = active.querySelector("video"); if (av) av.pause(); active.classList.remove("lecture-en-cours"); }
-    var vid = v.querySelector("video");
-    if (!vid) {
-      vid = document.createElement("video");
-      vid.src = v.dataset.src; vid.playsInline = true; vid.controls = true; vid.preload = "auto";
-      vid.addEventListener("ended", function () { v.classList.remove("lecture-en-cours"); vid.currentTime = 0; });
-      v.appendChild(vid);
-    }
-    v.classList.add("lecture-en-cours"); active = v; vid.play();
-  }
-  mur.addEventListener("click", function (e) {
-    var v = e.target.closest(".vid"); if (v && e.target.tagName !== "VIDEO") lancer(v);
-  });
-  mur.addEventListener("keydown", function (e) {
-    var v = e.target.closest(".vid"); if (v && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); lancer(v); }
-  });
 })();
 
 // Clic sur la réservation : événement Contact pour le Pixel.
