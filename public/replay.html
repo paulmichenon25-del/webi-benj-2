@@ -10,10 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<!-- Vidéo Wistia de la soirée 1 : remplacer A_FOURNIR_S1 par le media-id (ce script, le style et la balise plus bas). -->
+<!-- Vidéo Wistia de la soirée 1 : remplacer gnkvoye24m par le media-id (ce script, le style et la balise plus bas). -->
 <script src="https://fast.wistia.com/player.js" async></script>
-<script src="https://fast.wistia.com/embed/A_FOURNIR_S1.js" async type="module"></script>
-<style>wistia-player[media-id='A_FOURNIR_S1']:not(:defined){background:center / contain no-repeat url('https://fast.wistia.com/embed/medias/A_FOURNIR_S1/swatch');display:block;filter:blur(5px);padding-top:56.25%;}</style>
+<script src="https://fast.wistia.com/embed/gnkvoye24m.js" async type="module"></script>
+<style>wistia-player[media-id='gnkvoye24m']:not(:defined){background:center / contain no-repeat url('https://fast.wistia.com/embed/medias/gnkvoye24m/swatch');display:block;filter:blur(5px);padding-top:56.25%;}</style>
 
 <!-- Meta Pixel (Pixel // Webi) : PageView, et Contact au clic sur la réservation. -->
 <script>
@@ -179,6 +179,9 @@ h1 em{font-style:normal;color:var(--cuivre-vif)}
 .autre-sous{font-size:.86rem;color:var(--gris)}
 .autre-fleche{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;flex:0 0 auto;border:1px solid var(--bord);color:var(--cuivre-vif);font-size:1.25rem;font-weight:800}
 .autre--precedent{flex-direction:row-reverse}
+.autre--bientot,.autre--bientot:hover{transform:none;border-style:dashed;border-color:var(--bord-doux);cursor:default}
+.autre--bientot .autre-fleche{color:var(--gris);border-color:var(--bord-doux)}
+.soirees .bientot{display:grid;justify-items:center;padding:7px 10px;border-radius:999px;line-height:1.25;opacity:.55;cursor:default}
 
 footer{margin-top:60px;padding:28px 16px 34px;border-top:1px solid var(--bord-doux);text-align:center;font-size:.8rem;color:var(--gris)}
 .logo{font-family:var(--titre);font-size:1.3rem;letter-spacing:.02em;text-transform:uppercase;color:var(--creme)}
@@ -235,7 +238,7 @@ footer a:hover{color:var(--creme)}
 <main class="page">
   <nav class="soirees" aria-label="Les deux soirées">
     <a href="/replay" aria-current="page"><b>Soirée 1</b><span>Dim. 18 oct.</span></a>
-    <a href="/replay/soiree-2"><b>Soirée 2</b><span>Lun. 19 oct.</span></a>
+    <span class="bientot" aria-disabled="true"><b>Soirée 2</b><span>Bientôt</span></span>
   </nav>
 
   <header class="entete">
@@ -248,7 +251,7 @@ footer a:hover{color:var(--creme)}
       <span class="lecture"><svg width="30" height="30" viewBox="0 0 24 24"><path fill="#fff" d="M8 5.5v13l11-6.5z"/></svg></span>
       <span>Le replay se charge…</span>
     </div>
-    <wistia-player media-id="A_FOURNIR_S1" aspect="1.7777777777777777" aria-label="Replay de la soirée 1"></wistia-player>
+    <wistia-player media-id="gnkvoye24m" aspect="1.7777777777777777" aria-label="Replay de la soirée 1"></wistia-player>
   </div>
 
   <a class="cta js-reserver" href="https://app.iclosed.io/e/Klocka/appel" target="_blank" rel="noopener">
@@ -294,14 +297,14 @@ footer a:hover{color:var(--creme)}
     <span class="temoignages-bouton">Voir les témoignages <span aria-hidden="true">↗</span></span>
   </a>
 
-  <a class="autre autre--suivant" href="/replay/soiree-2">
+<div class="autre autre--bientot">
     <span class="autre-texte">
       <span class="autre-badge">Soirée 2 · Lundi 19 octobre</span>
-      <span class="autre-titre">Accéder au replay de la soirée 2</span>
-      <span class="autre-sous">La suite de dimanche&nbsp;: la rediffusion de lundi soir.</span>
+      <span class="autre-titre">Le replay de la soirée 2 arrive bientôt</span>
+      <span class="autre-sous">Il sera disponible ici après le live de lundi soir.</span>
     </span>
-    <span class="autre-fleche" aria-hidden="true">→</span>
-  </a>
+    <span class="autre-fleche" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+  </div>
 </main>
 
 <footer>
