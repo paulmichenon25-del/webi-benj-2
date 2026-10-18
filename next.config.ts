@@ -2,9 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
-  // Page replay autonome (public/replay.html) servie sur /replay.
+  // Pages replay autonomes (public/replay*.html) : /replay (soirée 1) et /replay/soiree-2.
   async rewrites() {
-    return [{ source: "/replay", destination: "/replay.html" }];
+    return [
+      { source: "/replay", destination: "/replay.html" },
+      { source: "/replay/soiree-2", destination: "/replay-soiree-2.html" },
+    ];
   },
 };
 
