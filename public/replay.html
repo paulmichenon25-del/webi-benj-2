@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<!-- Vidéo Wistia de la soirée 1 : remplacer gnkvoye24m par le media-id (ce script, le style et la balise plus bas). -->
+<!-- Vidéo Wistia de la soirée 1 (media-id gnkvoye24m). -->
 <script src="https://fast.wistia.com/player.js" async></script>
 <script src="https://fast.wistia.com/embed/gnkvoye24m.js" async type="module"></script>
 <style>wistia-player[media-id='gnkvoye24m']:not(:defined){background:center / contain no-repeat url('https://fast.wistia.com/embed/medias/gnkvoye24m/swatch');display:block;filter:blur(5px);padding-top:56.25%;}</style>
@@ -105,7 +105,7 @@ h1 em{font-style:normal;color:var(--cuivre-vif)}
   background:radial-gradient(circle at 50% 45%,#2b211a,#110e0c);
   box-shadow:var(--ombre),0 0 0 6px rgba(188,108,46,.07);
 }
-.video wistia-player{position:relative;z-index:1;display:block;width:100%;height:100%}
+.video wistia-player,.video iframe{position:relative;z-index:1;display:block;width:100%;height:100%;border:0}
 .attente{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:12px;color:var(--creme-douce);font-size:.85rem;text-align:center;padding:16px}
 .lecture{display:grid;place-items:center;width:76px;height:76px;border-radius:50%;background:linear-gradient(135deg,var(--cuivre-vif),var(--cuivre-profond));box-shadow:0 12px 30px rgba(188,108,46,.45)}
 
@@ -238,7 +238,7 @@ footer a:hover{color:var(--creme)}
 <main class="page">
   <nav class="soirees" aria-label="Les deux soirées">
     <a href="/replay" aria-current="page"><b>Soirée 1</b><span>Dim. 18 oct.</span></a>
-    <span class="bientot" aria-disabled="true"><b>Soirée 2</b><span>Bientôt</span></span>
+    <a href="/replay/soiree-2"><b>Soirée 2</b><span>Lun. 19 oct.</span></a>
   </nav>
 
   <header class="entete">
@@ -297,14 +297,14 @@ footer a:hover{color:var(--creme)}
     <span class="temoignages-bouton">Voir les témoignages <span aria-hidden="true">↗</span></span>
   </a>
 
-<div class="autre autre--bientot">
+<a class="autre autre--suivant" href="/replay/soiree-2">
     <span class="autre-texte">
       <span class="autre-badge">Soirée 2 · Lundi 19 octobre</span>
-      <span class="autre-titre">Le replay de la soirée 2 arrive bientôt</span>
-      <span class="autre-sous">Il sera disponible ici après le live de lundi soir.</span>
+      <span class="autre-titre">Accéder au replay de la soirée 2</span>
+      <span class="autre-sous">La suite de dimanche&nbsp;: la rediffusion de lundi soir.</span>
     </span>
-    <span class="autre-fleche" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-  </div>
+    <span class="autre-fleche" aria-hidden="true">→</span>
+  </a>
 </main>
 
 <footer>

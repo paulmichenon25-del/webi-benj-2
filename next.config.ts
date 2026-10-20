@@ -6,8 +6,7 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       { source: "/replay", destination: "/replay.html" },
-      // Soirée 2 : réactiver avec public/replay-soiree-2.html quand son replay est prêt.
-      // { source: "/replay/soiree-2", destination: "/replay-soiree-2.html" },
+      { source: "/replay/soiree-2", destination: "/replay-soiree-2.html" },
     ];
   },
 };
