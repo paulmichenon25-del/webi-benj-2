@@ -109,6 +109,41 @@ PS : si tu n'es pas encore dans le groupe WhatsApp, [c'est par ici]([LIEN WHATSA
 
 ---
 
+### P1 · Vendredi 27 novembre, 19h30 · Preuve : l'histoire de Nicolas
+
+**Objet :** « Je serais des années en arrière »
+**Pré-header :** L'histoire de Nicolas, en chiffres
+
+Salut {first_name},
+
+Aujourd'hui, je laisse parler quelqu'un d'autre que moi.
+
+Nicolas fait du mariage, en Alsace. Quand il rejoint l'académie, le boudoir, pour lui, c'est une envie. Pas encore une activité.
+
+Voilà ce qu'il m'a envoyé, au fil des mois :
+
+- le premier mois : 750 € de chiffre d'affaires en boudoir ;
+- au bout de quatre mois : 11 séances payées ;
+- depuis août : 11 000 €, dont 6 000 € sur le seul mois d'octobre ;
+- un panier moyen autour de 500 € par séance, tout compris.
+
+Et il fait toujours ses mariages à côté. Le boudoir ne les a pas remplacés : il a rempli les mois où le mariage s'arrête.
+
+Il y a un message de lui que je garde précieusement : « Je serais des années en arrière si tu n'étais pas là. »
+
+Je ne te dis pas que tu feras pareil, chacun avance à son rythme. Mais au départ, Nicolas n'avait rien de plus que toi : un appareil, une envie, et des doutes.
+
+Ses captures, telles que je les ai reçues, sont ici :
+👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])
+
+Vendredi 4 décembre à 20h, je te montre de l'intérieur l'académie qu'il a suivie.
+👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
+
+Je te fais des bisous,
+Benjamin
+
+---
+
 ### M3 · Samedi 28 novembre, 11h · Histoire d'élève
 
 **Objet :** De 190 € à 350 € la séance
@@ -139,6 +174,39 @@ PS : d'autres histoires comme celle de Samantha sont [ici]([LIEN TÉMOIGNAGES]).
 
 ---
 
+### P2 · Dimanche 29 novembre, 19h30 · Preuve : les prix
+
+**Objet :** Ils ont osé monter leurs prix
+**Pré-header :** Et leurs clientes n'ont pas négocié
+
+Salut {first_name},
+
+Le prix, c'est la peur n°1 des photographes que j'accompagne. Peur de faire fuir, peur qu'on te réponde « c'est trop cher ».
+
+Alors voilà ce que certains m'ont envoyé ces derniers mois :
+
+- une élève : de 180 € à 350 € la séance, et une première réservation à 595 € ;
+- Jessica, en Suisse : de 300 à 450 CHF la séance ;
+- une autre élève : tarifs doublés, et trois clientes qui n'ont pas négocié un seul instant, en partant de rien côté communication ;
+- un élève dont la toute première formule vendue sera peut-être celle à 1 350 €.
+
+Ce qu'ils ont en commun, ce n'est pas l'audace. C'est qu'ils ont construit leur offre avant de toucher à leur prix.
+
+Quand ce que tu proposes ne ressemble à rien d'autre, la cliente ne compare plus. Elle réserve.
+
+Leurs captures, telles que je les ai reçues :
+👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])
+
+Vendredi soir, je te montre le module où ça se construit, et la fiche qu'ils ont tous remplie.
+👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
+
+Bon dimanche soir,
+Benjamin
+
+PS : si tu n'es pas encore dans le groupe WhatsApp, [c'est par ici]([LIEN WHATSAPP]).
+
+---
+
 ### M4 · Lundi 30 novembre, 19h30 · Le bon moment (Saint-Valentin)
 
 **Objet :** Décembre, ce n'est pas trop tard
@@ -165,6 +233,40 @@ Je te fais des bisous,
 Benjamin
 
 PS : si tu n'es pas encore dans le groupe WhatsApp, [c'est par ici]([LIEN WHATSAPP]).
+
+---
+
+### P3 · Mardi 1er décembre, 19h30 · Preuve : les débutants
+
+**Objet :** Ils partaient de zéro
+**Pré-header :** Jamais touché un appareil, ou presque
+
+Salut {first_name},
+
+« Je débute, c'est trop tôt pour moi. »
+
+C'est une des phrases que j'entends le plus pendant les appels. Alors je te présente ceux qui l'ont dite avant toi.
+
+**Jessica, à Neuchâtel.** Cinq mois avant de m'écrire, elle n'avait jamais touché un appareil photo. Son premier mois dans l'académie : 1 200 CHF.
+
+**Chloé, à La Réunion.** Les bons mois, elle faisait 250 à 300 €. Deux mois après son arrivée : plus de 1 000 € en avril. Puis juillet complet, avec 6 réservations en 3 jours.
+
+**Philippe.** Un mois après la formation, deux clientes payantes. Et cette phrase qu'il m'a envoyée : « Les clientes pleurent quand elles voient les photos. »
+
+**Christophe.** Premier shooting, et déjà une recommandation avant même la retouche.
+
+Et une élève débutante qui m'a raconté que deux clientes faisaient cinq heures de route pour venir chez elle.
+
+Débuter, ce n'est pas un problème. C'est même le meilleur moment : tu pars directement sur de bonnes bases, au lieu de passer des années à corriger tes erreurs.
+
+Leurs vidéos et leurs captures :
+👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])
+
+Vendredi 4 décembre, 20h, je te montre par où ils ont commencé.
+👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
+
+Je te fais des bisous,
+Benjamin
 
 ---
 
@@ -394,27 +496,46 @@ Benjamin
 
 ---
 
-### M13 · Lundi 7 décembre, 19h · Témoignages
+### M13 · Lundi 7 décembre, 19h · Preuve : dans leurs mots
 
-**Objet :** Ils hésitaient aussi
-**Pré-header :** Et voilà où ils en sont aujourd'hui
+**Objet :** Dans leurs mots
+**Pré-header :** Ce que les élèves m'écrivent, tel quel
 
 Salut {first_name},
 
-Tous les élèves que tu as entendus vendredi ont hésité avant de se lancer. Tous.
+Pas de long discours aujourd'hui. Juste ce que les élèves de l'académie m'ont écrit, tel quel :
 
-Nicolas faisait du mariage, que du mariage. Il a ajouté le boudoir et, en quatre mois, il a fait onze séances payées. Aujourd'hui, il a toujours ses mariages, et son agenda ne se vide plus l'hiver.
+« Je crois surtout que j'ai gagné 2 ans. »
 
-Jessica n'avait jamais touché un appareil photo. Trois mois après son entrée dans l'académie, son agenda était plein pour l'été.
+« Meilleur investissement que j'ai fait dans une formation. »
 
-Samantha a fait passer sa séance de 190 € à 350 €, sans perdre de clientes.
+« Ce qui fait vraiment la différence, c'est toi : ta présence, ton suivi. »
+Maëllie, Sinister Elegance (880 € de séances réservées en 24 heures)
 
-Ils n'avaient pas plus de talent que toi, ni plus de temps. Ils ont juste décidé, à un moment, d'arrêter d'attendre le bon moment.
+« Après un an à échanger avec Ben, je n'ai jamais autant progressé. »
+Willpict, Normandie
 
-Prends cinq minutes pour regarder leurs témoignages :
+« Meilleur conseil de ma vie. Ça a totalement changé la prise de contact. »
+
+« Deux vidéos et j'ai l'impression d'avancer à pas de géant. »
+
+« J'ai des clientes, je suis sur un nuage. »
+
+« Je me sens tellement boostée, fière et émue à la fois. »
+Une élève, deux projets signés pour 1 600 €
+
+« Je pensais pas que ça irait si vite. »
+Benjamin M., Le Mans
+
+« Lancez-vous les yeux fermés. »
+Samantha, Échappe et Belle
+
+Celle de Samantha me fait sourire. Il y a une dizaine de jours, je te disais l'inverse : ne te lance pas les yeux fermés. Vendredi, tu as vu l'académie les yeux grands ouverts.
+
+Tous ces messages, avec les captures et les vidéos :
 👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])
 
-Et si tu veux que ce soit ton tour, il te reste jusqu'au [DATE LIMITE] pour profiter de [BONUS] :
+Et si tu veux que le prochain message soit le tien, il te reste jusqu'au [DATE LIMITE] pour profiter de [BONUS] :
 👉 [Je réserve mon appel]([LIEN APPEL])
 
 Je te fais des bisous,

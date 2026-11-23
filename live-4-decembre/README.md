@@ -5,11 +5,12 @@ Objectif unique : **convertir les personnes qui ont déjà eu un appel, et faire
 
 | Fichier | Contenu |
 |---|---|
-| `01-mails.md` | 16 mails pour toute la base + 3 mails pour les « appel passé, pas encore inscrits » |
+| `01-mails.md` | 19 mails pour toute la base, dont 4 mails de preuve, + 3 mails pour les « appel passé, pas encore inscrits » |
 | `02-whatsapp.md` | Messages du groupe WhatsApp + messages individuels de Benjamin (les plus importants pour closer) |
 | `03-sms.md` | 3 SMS + règles à respecter |
 | `04-instagram-youtube.md` | Plan stories, post/reel, titre et description du live YouTube |
 | `05-conducteur-live.md` | Déroulé conseillé du live (pour les slides et l'ordre de passage) |
+| `06-banque-de-preuves.md` | Les 85 témoignages de la page, avec leurs chiffres et citations exactes |
 
 ---
 
@@ -101,14 +102,17 @@ Les mails sont écrits ; ces points sont marqués `[À CONFIRMER]` dans les fich
 | **Mar 24/11** | M1 · 19h30 Annonce | | W1 · 19h vidéo + post Skool élèves | Annonce + sticker rappel | |
 | Mer 25/11 | | S1-A · 19h30 « On s'est parlé » | | Stories coulisses | |
 | **Jeu 26/11** | M2 · 19h30 Acheter les yeux fermés | Message individuel n°1 | W2 · 11h vocal | Reel | |
+| Ven 27/11 | **P1 · 19h30 Preuve : Nicolas** | | | | |
 | Sam 28/11 | M3 · 11h Histoire d'élève | | W3 · 18h témoignage | Stories témoignage | |
+| Dim 29/11 | **P2 · 19h30 Preuve : les prix** | | | | |
 | Lun 30/11 | M4 · 19h30 Saint-Valentin | | | Boîte à questions | |
+| Mar 01/12 | **P3 · 19h30 Preuve : les débutants** | | | | |
 | **Mer 02/12** | M5 · 19h30 FAQ | | W4 · 19h coulisses Skool | Stories Skool | |
 | **Jeu 03/12** | M6 · 19h30 J-1 | Message individuel n°2 | W5 · 18h vocal | Rappel | SMS 1 · 18h |
 | **Ven 04/12** | M7 9h15 · M8 18h · M9 19h45 · M10 20h15 | Message individuel n°3 · 17h | W6 18h · W7 19h55 | Compte à rebours, « en live » | SMS 2 · 19h |
 | Sam 05/12 | M11 · 9h Replay + offre | S1-B · 14h « Suite à notre appel » | W8 · 11h | Stories après-live | |
 | Dim 06/12 | M12 · 19h FAQ après-live | | | | |
-| Lun 07/12 | M13 · 19h Témoignages | Message individuel n°4 | W9 · 19h | Témoignage | |
+| Lun 07/12 | **M13 · 19h Preuve : dans leurs mots** | Message individuel n°4 | W9 · 19h | Témoignage | |
 | **Mar 08/12** | M14 · 19h J-1 | S1-C · 12h | W10 · 18h | | SMS 3 · 18h |
 | **Mer 09/12** | M15 · 10h Dernier jour + M15 bis · 19h « Ce soir minuit » | | W11 · 18h | Stories dernier jour | |
 
