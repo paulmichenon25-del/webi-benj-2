@@ -6,8 +6,8 @@ Expéditeur : Benjamin - Photo (benjamin@fineartacademie.com). Variable prénom 
 
 | Repère | Lien |
 |---|---|
-| `[LIEN LIVE]` | URL du live YouTube programmé (avec « Me notifier ») · [À CONFIRMER] |
-| `[LIEN AGENDA]` | `https://calendar.google.com/calendar/render?action=TEMPLATE&text=Portes%20ouvertes%20de%20l%27acad%C3%A9mie%20avec%20Benjamin&dates=20261204T190000Z/20261204T210000Z&details=Live%20YouTube%20%3A%20%5BLIEN%20LIVE%5D` (remplacer `%5BLIEN%20LIVE%5D` par l'URL YouTube) |
+| `[LIEN LIVE]` | URL du live YouTube programmé · **n'apparaît qu'à partir du J-1 (M6)**, avant on renvoie vers l'agenda |
+| `[LIEN AGENDA]` | `https://calendar.google.com/calendar/render?action=TEMPLATE&text=Portes%20ouvertes%20de%20l%27acad%C3%A9mie%20avec%20Benjamin&dates=20261204T190000Z%2F20261204T203000Z&details=Live%20en%20direct%20sur%20YouTube.%20Le%20lien%20t%27arrive%20par%20mail%20et%20sur%20WhatsApp%20avant%20le%20live.&ctz=Europe%2FParis` (prêt à l'emploi, sans le lien du live) |
 | `[LIEN APPEL]` | https://app.iclosed.io/e/Klocka/appel |
 | `[LIEN TÉMOIGNAGES]` | https://temoignages.fineart-academie.com |
 | `[LIEN WHATSAPP]` | https://chat.whatsapp.com/Hl0fILz0BsuKwAapGSL3Vr (groupe d'octobre · vérifier qu'il est toujours actif) |
@@ -21,7 +21,7 @@ Envoi : **toute la base** = S1 + S2, élèves exclus. Les mails **S1-A, S1-B, S1
 
 ## AVANT LE LIVE
 
-### M1 · Mercredi 25 novembre, 19h30 · Annonce
+### M1 · Mardi 24 novembre, 19h30 · Annonce
 
 **Objet :** Je t'ouvre les portes de l'académie
 **Pré-header :** Vendredi 4 décembre, 20h, en direct sur YouTube
@@ -36,10 +36,12 @@ C'est une très bonne question. Et plutôt que d'y répondre par mail, je vais t
 
 Je te fais visiter la plateforme comme si tu étais déjà dedans : les modules, les fiches, la communauté, les lives. Des élèves viendront raconter où ils en sont, avec leurs mots. Et je réponds à toutes tes questions, sans filtre.
 
-C'est gratuit, il n'y a rien à remplir. Tu cliques, tu actives le rappel, et on se retrouve vendredi soir :
-👉 [Je mets un rappel pour le live]([LIEN LIVE])
+C'est gratuit, il n'y a rien à remplir. Bloque juste ta soirée :
+👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
-Tu peux aussi [l'ajouter à ton agenda]([LIEN AGENDA]) pour ne pas l'oublier.
+Je t'enverrai le lien pour rejoindre le live juste avant.
+
+Et si tu comptes être là, réponds-moi simplement « je serai là ». Ça me fait plaisir de savoir qui vient, et je lis tout.
 
 Je te fais des bisous,
 Benjamin
@@ -48,7 +50,7 @@ PS : j'aurai une annonce à faire pendant le live, réservée à ceux qui seront
 
 ---
 
-### S1-A · Jeudi 26 novembre, 19h30 · Uniquement S1 (appel passé, pas inscrit)
+### S1-A · Mercredi 25 novembre, 19h30 · Uniquement S1 (appel passé, pas inscrit)
 
 **Objet :** On s'est parlé il y a quelques semaines
 **Pré-header :** Et je voulais t'inviter personnellement
@@ -63,17 +65,17 @@ Mais je sais aussi ce qui revient le plus souvent après ces appels : « J'aimer
 
 Alors c'est ce que je vais faire. **Vendredi 4 décembre à 20h, je fais visiter l'académie en direct sur YouTube**, de l'intérieur, module par module. Des élèves seront là pour raconter leur parcours, et tu pourras me poser toutes les questions qui te restent.
 
-Je serais vraiment content de te voir dans le chat :
-👉 [Je mets un rappel pour le live]([LIEN LIVE])
+Je serais vraiment content de te voir dans le chat. Bloque ta soirée :
+👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
-Et si une question te trotte dans la tête d'ici là, réponds simplement à ce mail. Je lis tout.
+Je t'envoie le lien juste avant. Tu penses pouvoir être là ? Réponds-moi en un mot, et si une question te trotte dans la tête d'ici là, pose-la-moi aussi. Je lis tout.
 
 Je te fais des bisous,
 Benjamin
 
 ---
 
-### M2 · Vendredi 27 novembre, 19h30 · L'objection « acheter les yeux fermés »
+### M2 · Jeudi 26 novembre, 19h30 · L'objection « acheter les yeux fermés »
 
 **Objet :** « Je ne veux pas acheter les yeux fermés »
 **Pré-header :** Tu as raison. Alors je te montre tout.
@@ -98,7 +100,7 @@ C'est pour ça que vendredi, je ne vais pas te « présenter » l'académie. **J
 Ensuite, tu décides. En connaissance de cause.
 
 Vendredi 4 décembre, 20h, sur YouTube :
-👉 [Je mets un rappel pour le live]([LIEN LIVE])
+👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
 Belle soirée à toi,
 Benjamin
@@ -107,7 +109,7 @@ PS : si tu n'es pas encore dans le groupe WhatsApp, [c'est par ici]([LIEN WHATSA
 
 ---
 
-### M3 · Dimanche 29 novembre, 19h30 · Histoire d'élève
+### M3 · Samedi 28 novembre, 11h · Histoire d'élève
 
 **Objet :** De 190 € à 350 € la séance
 **Pré-header :** Sans perdre une seule cliente
@@ -128,9 +130,9 @@ Je ne te raconte pas ça pour te promettre la même chose. Chaque parcours est d
 
 Vendredi soir, tu verras où ce travail se fait. Et tu entendras certains élèves te le raconter eux-mêmes.
 
-👉 [Je mets un rappel pour le live]([LIEN LIVE])
+👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
-Bon dimanche soir,
+Bon week-end à toi,
 Benjamin
 
 PS : d'autres histoires comme celle de Samantha sont [ici]([LIEN TÉMOIGNAGES]).
@@ -157,7 +159,7 @@ Je ne te dis pas ça pour te presser. Je te dis ça parce que j'aurais aimé qu'
 Vendredi soir, je te montre par où on commence dans l'académie, et ce que tu peux avoir mis en place d'ici fin janvier.
 
 Vendredi 4 décembre, 20h :
-👉 [Je mets un rappel pour le live]([LIEN LIVE])
+👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
 Je te fais des bisous,
 Benjamin
@@ -194,7 +196,7 @@ Non. Il y a la communauté, où tes photos sont analysées une par une, et des l
 [À CONFIRMER : « Oui, mais pas longtemps. » si replay jusqu'à la date limite.] Mais l'annonce que je ferai pendant le live, et les réponses à tes questions dans le chat, c'est en direct.
 
 Vendredi soir, je te montre tout ça en vrai, à l'écran.
-👉 [Je mets un rappel pour le live]([LIEN LIVE])
+👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
 Une autre question ? Réponds à ce mail, je lis tout.
 

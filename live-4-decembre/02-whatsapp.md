@@ -5,7 +5,7 @@ Trois parties :
 - **B. Les messages individuels de Benjamin** (tutoiement, depuis son numéro) : **c'est là que se fait le closing.** Les ventes d'octobre sont tombées juste après les échanges directs.
 - **C. Les élèves** : un message sur Skool pour les inviter, et le brief des témoins.
 
-Liens : `[LIEN LIVE]` (YouTube), `[LIEN APPEL]` (https://app.iclosed.io/e/Klocka/appel), `[LIEN REPLAY]`, `[LIEN TÉMOIGNAGES]` (https://temoignages.fineart-academie.com), `[BONUS]`, `[DATE LIMITE]`.
+Liens : `[LIEN AGENDA]` (lien Google Agenda défini dans `01-mails.md`), `[LIEN LIVE]` (YouTube, à partir du J-1 seulement), `[LIEN APPEL]` (https://app.iclosed.io/e/Klocka/appel), `[LIEN REPLAY]`, `[LIEN TÉMOIGNAGES]` (https://temoignages.fineart-academie.com), `[BONUS]`, `[DATE LIMITE]`.
 
 ---
 
@@ -13,25 +13,27 @@ Liens : `[LIEN LIVE]` (YouTube), `[LIEN APPEL]` (https://app.iclosed.io/e/Klocka
 
 Même format qu'en octobre : alterner vidéo, vocal et texte, un message tous les deux jours, puis serré autour du jour J. Les vidéos et vocaux : script indicatif, Benjamin le dit avec ses mots.
 
-### W1 · Mercredi 25 novembre, 19h · Vidéo (≈ 1 min)
+**Le lien du live n'est posté qu'à partir du J-1 (W5).** Avant, on fait bloquer la soirée et réagir au message (un 👍 ou un ❤️ montre qui sera là).
+
+### W1 · Mardi 24 novembre, 19h · Vidéo (≈ 1 min)
 
 > Script :
 > « Salut à tous, c'est Benjamin. Ça fait un petit moment ! J'espère que vous allez bien.
 > Je reviens vers vous parce que depuis le live d'octobre, beaucoup d'entre vous m'ont posé la même question : à quoi ressemble l'académie, à l'intérieur ?
 > Alors j'ai décidé de vous la montrer. Vendredi 4 décembre, à 20h, je fais un live sur YouTube où j'ouvre la plateforme devant vous : les modules, les fiches, la communauté. Il y aura aussi des élèves qui viendront raconter leur parcours. Et je répondrai à toutes vos questions.
-> Le lien est juste en dessous. Activez le rappel, et on se retrouve vendredi soir. Je vous embrasse. »
+> Bloquez votre soirée dès maintenant, je vous enverrai le lien ici même juste avant. Et si vous comptez être là, mettez un petit cœur sous ce message, que je sache qui vient. Je vous embrasse. »
 
 Texte sous la vidéo :
 > 📅 Vendredi 4 décembre · 20h · en direct sur YouTube
 > Les portes ouvertes de l'académie
-> 👉 [LIEN LIVE]
-> (Cliquez sur « Me notifier » pour recevoir le rappel)
+> Ajoutez-le à votre agenda : [LIEN AGENDA]
+> Le lien du live arrive ici juste avant. Vous serez là ? Un ❤️ sous ce message 😊
 
-### W2 · Vendredi 27 novembre, 11h · Vocal (≈ 45 s)
+### W2 · Jeudi 26 novembre, 11h · Vocal (≈ 45 s)
 
 > « Petit vocal rapide. Je prépare le live du 4 décembre, et je voulais vous dire une chose : si vous avez une question sur l'académie, sur le prix, sur le temps que ça prend, sur votre niveau, gardez-la précieusement. Notez-la quelque part. Même celle qui vous paraît bête. C'est exactement pour ça que je fais ce live : pour que vous puissiez décider en sachant tout. Douce journée à vous. »
 
-### W3 · Dimanche 29 novembre, 18h · Témoignage
+### W3 · Samedi 28 novembre, 18h · Témoignage
 
 > Je vous partage le parcours de quelques photographes que j'accompagne.
 > Certains n'avaient jamais tenu un appareil photo. D'autres faisaient du mariage et ont ajouté le boudoir. Tous ont hésité avant de se lancer.
@@ -44,8 +46,7 @@ Texte sous la vidéo :
 
 > Je suis en train de préparer la visite de vendredi 👀
 > [capture d'écran ou vidéo de 15 s de la plateforme Skool, sans montrer de nom d'élève]
-> Vendredi, vous verrez tout ça en vrai, module par module. 20h, sur YouTube.
-> 👉 [LIEN LIVE]
+> Vendredi, vous verrez tout ça en vrai, module par module. 20h, sur YouTube. Le lien arrive ici demain.
 
 ### W5 · Jeudi 3 décembre, 18h · Vocal J-1
 
@@ -98,19 +99,19 @@ Texte sous la vidéo :
 
 Priorité : les appels d'octobre, puis ceux de juillet. Et en premier ceux qui avaient dit « je réfléchis » ou « pas tout de suite pour le budget ».
 
-### B1 · Vendredi 27 novembre · Invitation
+### B1 · Jeudi 26 novembre · Invitation
 
 > Coucou {prénom}, c'est Benjamin 😊
 > J'espère que tu vas bien depuis notre appel ! Je voulais te prévenir en direct : vendredi 4 décembre à 20h, je fais un live sur YouTube où je montre l'académie de l'intérieur, module par module, avec des élèves qui témoignent.
 > Tu m'avais dit que tu avais besoin de [y voir plus clair / réfléchir au budget / voir à quoi ça ressemble], je pense que ça peut vraiment t'aider.
-> Le lien : [LIEN LIVE]
-> Tu penses pouvoir être là ?
+> Tu penses pouvoir être là ? Si oui, je t'envoie le lien la veille.
 
 (Attendre la réponse. Si elle répond, la conversation est ouverte : c'est l'objectif.)
 
-### B2 · Jeudi 3 décembre · Rappel (seulement à ceux qui n'ont pas répondu à B1)
+### B2 · Jeudi 3 décembre · Le lien (à tous ; pour ceux qui n'ont pas répondu à B1, c'est aussi la relance)
 
-> Hello {prénom} ! Petit rappel, c'est demain soir 20h 😊 Si tu as une question qui te bloque encore, pose-la-moi dans le chat, je la prendrai en direct. [LIEN LIVE]
+> Hello {prénom} ! Comme promis, voici le lien pour demain soir 20h 😊 [LIEN LIVE]
+> Si tu as une question qui te bloque encore, pose-la-moi dans le chat, je la prendrai en direct.
 
 ### B3 · Vendredi 4 décembre, 17h · Jour J (à ceux qui ont dit oui)
 
@@ -140,13 +141,13 @@ Réponses types selon l'objection (à adapter) :
 
 ## C. Les élèves de l'académie
 
-### C1 · Post Skool (communauté) · Mercredi 25 novembre
+### C1 · Post Skool (communauté) · Mardi 24 novembre (ajouter le lien en commentaire le 3 décembre)
 
 > **Vendredi 4 décembre à 20h : je fais visiter l'académie en direct 🎥**
 > Je fais un live sur YouTube pour montrer l'académie de l'intérieur aux photographes qui hésitent encore à nous rejoindre.
 > Vous êtes évidemment les bienvenus dans le chat : vos messages et vos retours, c'est ce qui rassure le plus ceux qui hésitent.
 > Et si vous avez envie de raconter votre parcours en direct quelques minutes (où vous en étiez, ce que vous avez mis en place, où vous en êtes), écrivez-moi en privé ✋
-> Le lien : [LIEN LIVE]
+> Je posterai le lien ici la veille.
 
 ### C2 · Brief des élèves témoins (à envoyer en privé à ceux qui acceptent)
 

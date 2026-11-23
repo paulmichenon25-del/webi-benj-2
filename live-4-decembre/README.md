@@ -98,10 +98,10 @@ Les mails sont écrits ; ces points sont marqués `[À CONFIRMER]` dans les fich
 
 | Date | Mail (toute la base) | S1 en plus | WhatsApp groupe | Instagram | SMS |
 |---|---|---|---|---|---|
-| **Mer 25/11** | M1 · 19h30 Annonce | | W1 · 19h vidéo | Annonce + sticker rappel | |
-| Jeu 26/11 | | S1-A · 19h30 « On s'est parlé » | | Stories coulisses | |
-| **Ven 27/11** | M2 · 19h30 Acheter les yeux fermés | Message individuel n°1 | W2 · 11h vocal | Reel | |
-| Dim 29/11 | M3 · 19h30 Histoire d'élève | | W3 · 18h témoignage | Stories témoignage | |
+| **Mar 24/11** | M1 · 19h30 Annonce | | W1 · 19h vidéo + post Skool élèves | Annonce + sticker rappel | |
+| Mer 25/11 | | S1-A · 19h30 « On s'est parlé » | | Stories coulisses | |
+| **Jeu 26/11** | M2 · 19h30 Acheter les yeux fermés | Message individuel n°1 | W2 · 11h vocal | Reel | |
+| Sam 28/11 | M3 · 11h Histoire d'élève | | W3 · 18h témoignage | Stories témoignage | |
 | Lun 30/11 | M4 · 19h30 Saint-Valentin | | | Boîte à questions | |
 | **Mer 02/12** | M5 · 19h30 FAQ | | W4 · 19h coulisses Skool | Stories Skool | |
 | **Jeu 03/12** | M6 · 19h30 J-1 | Message individuel n°2 | W5 · 18h vocal | Rappel | SMS 1 · 18h |
@@ -111,5 +111,7 @@ Les mails sont écrits ; ces points sont marqués `[À CONFIRMER]` dans les fich
 | Lun 07/12 | M13 · 19h Témoignages | Message individuel n°4 | W9 · 19h | Témoignage | |
 | **Mar 08/12** | M14 · 19h J-1 | S1-C · 12h | W10 · 18h | | SMS 3 · 18h |
 | **Mer 09/12** | M15 · 10h Dernier jour + M15 bis · 19h « Ce soir minuit » | | W11 · 18h | Stories dernier jour | |
+
+**Le lien du live n'est envoyé qu'à partir du J-1 (jeudi 3/12)** : avant, les messages font ajouter la soirée à l'agenda et répondre « je serai là ».
 
 Rythme : un mail tous les deux jours jusqu'au J-2, puis tous les jours. C'est plus léger qu'en octobre (un par jour pendant 10 jours) : la base a déjà reçu beaucoup de mails cet automne, et le live est plus court (une seule soirée).
