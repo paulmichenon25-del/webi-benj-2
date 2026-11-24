@@ -39,7 +39,8 @@ Je te fais visiter la plateforme comme si tu étais déjà dedans : les modules,
 C'est gratuit, il n'y a rien à remplir. Bloque juste ta soirée :
 👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
-Je t'enverrai le lien pour rejoindre le live juste avant.
+Le lien du live, les rappels et les infos pratiques passeront par le groupe WhatsApp. Si tu n'y es pas encore, rejoins-le maintenant :
+👉 [Je rejoins le groupe WhatsApp]([LIEN WHATSAPP])
 
 Et si tu comptes être là, réponds-moi simplement « je serai là ». Ça me fait plaisir de savoir qui vient, et je lis tout.
 
