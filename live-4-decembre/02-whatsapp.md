@@ -29,6 +29,33 @@ Texte sous la vidéo :
 > Ajoutez-le à votre agenda : [LIEN AGENDA]
 > Le lien du live arrive ici juste avant. Vous serez là ? Un ❤️ sous ce message 😊
 
+**Version texte, utilisée le 24/11 (Benjamin indisponible pour la vidéo) :**
+
+> Bonsoir à tous, c'est Benjamin 😊
+>
+> Ça fait un petit moment ! Depuis le live d'octobre, vous êtes nombreux à m'avoir posé la même question : « À quoi ressemble l'académie, à l'intérieur ? »
+>
+> Alors plutôt que de vous la décrire, je vais vous la montrer.
+>
+> 📅 **Vendredi 4 décembre, 20h, en direct sur YouTube : les portes ouvertes de l'académie.**
+>
+> Au programme :
+> 🎥 la visite de la plateforme, comme si vous étiez déjà dedans : les modules, les fiches, la communauté, les lives
+> 💬 des élèves qui viennent raconter leur parcours, avec leurs mots
+> ❓ vos questions, toutes, sans filtre
+>
+> Et j'aurai une annonce à faire pendant le live, uniquement pour ceux qui seront là en direct.
+>
+> Bloquez votre soirée dès maintenant 👇
+> [LIEN AGENDA]
+>
+> Le lien du live arrivera ici même juste avant.
+>
+> Vous serez là ? Mettez un ❤️ sous ce message, que je sache qui vient !
+>
+> Je vous embrasse,
+> Benjamin
+
 ### W2 · Jeudi 26 novembre, 11h · Vocal (≈ 45 s)
 
 > « Petit vocal rapide. Je prépare le live du 4 décembre, et je voulais vous dire une chose : si vous avez une question sur l'académie, sur le prix, sur le temps que ça prend, sur votre niveau, gardez-la précieusement. Notez-la quelque part. Même celle qui vous paraît bête. C'est exactement pour ça que je fais ce live : pour que vous puissiez décider en sachant tout. Douce journée à vous. »
