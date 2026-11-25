@@ -129,8 +129,9 @@ Priorité : les appels d'octobre, puis ceux de juillet. Et en premier ceux qui a
 ### B1 · Jeudi 26 novembre · Invitation
 
 > Coucou {prénom}, c'est Benjamin 😊
-> J'espère que tu vas bien depuis notre appel ! Je voulais te prévenir en direct : vendredi 4 décembre à 20h, je fais un live sur YouTube où je montre l'académie de l'intérieur, module par module, avec des élèves qui témoignent.
-> Tu m'avais dit que tu avais besoin de [y voir plus clair / réfléchir au budget / voir à quoi ça ressemble], je pense que ça peut vraiment t'aider.
+> J'espère que tu vas bien depuis notre appel ! Je voulais te prévenir en direct : vendredi 4 décembre à 20h, je fais un live sur YouTube.
+> L'académie, tu l'as déjà vue avec moi. Mais cette fois, ce sont des élèves qui viendront raconter en direct où ils en étaient et ce qui a changé pour eux. Et je répondrai aux questions de tout le monde.
+> Je pense que ça peut vraiment t'aider pour [ce qui te faisait hésiter : le budget / le temps / la peur de ne pas y arriver].
 > Tu penses pouvoir être là ? Si oui, je t'envoie le lien la veille.
 
 (Attendre la réponse. Si elle répond, la conversation est ouverte : c'est l'objectif.)

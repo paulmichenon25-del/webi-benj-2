@@ -15,7 +15,7 @@ Expéditeur : Benjamin - Photo (benjamin@fineartacademie.com). Variable prénom 
 | `[BONUS]` | Bonus du soir · [À CONFIRMER avec Benjamin, voir README §4] |
 | `[DATE LIMITE]` | Proposé : mercredi 9 décembre à minuit · [À CONFIRMER] |
 
-Envoi : **toute la base** = S1 + S2, élèves exclus. Les mails **S1-A, S1-B, S1-C** vont uniquement aux personnes qui ont eu un appel sans s'inscrire.
+Envoi : **toute la base** = S1 + S2, élèves exclus. Les mails **S1-B et S1-C** vont uniquement aux personnes qui ont eu un appel sans s'inscrire.
 
 ---
 
@@ -51,31 +51,6 @@ PS : j'aurai une annonce à faire pendant le live, réservée à ceux qui seront
 
 ---
 
-### S1-A · Mercredi 25 novembre, 19h30 · Uniquement S1 (appel passé, pas inscrit)
-
-**Objet :** On s'est parlé il y a quelques semaines
-**Pré-header :** Et je voulais t'inviter personnellement
-
-Salut {first_name},
-
-On s'est parlé il y a quelques semaines, au téléphone, de ton activité et de ce que tu voulais construire avec le boudoir.
-
-Tu n'as pas rejoint l'académie à ce moment-là, et c'est complètement OK. C'est une vraie décision, et je préfère mille fois quelqu'un qui prend le temps qu'une inscription sur un coup de tête.
-
-Mais je sais aussi ce qui revient le plus souvent après ces appels : « J'aimerais bien voir à quoi ça ressemble avant de me lancer. »
-
-Alors c'est ce que je vais faire. **Vendredi 4 décembre à 20h, je fais visiter l'académie en direct sur YouTube**, de l'intérieur, module par module. Des élèves seront là pour raconter leur parcours, et tu pourras me poser toutes les questions qui te restent.
-
-Je serais vraiment content de te voir dans le chat. Bloque ta soirée :
-👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
-
-Je t'envoie le lien juste avant. Tu penses pouvoir être là ? Réponds-moi en un mot, et si une question te trotte dans la tête d'ici là, pose-la-moi aussi. Je lis tout.
-
-Je te fais des bisous,
-Benjamin
-
----
-
 ### M2 · Jeudi 26 novembre, 19h30 · L'objection « acheter les yeux fermés »
 
 **Objet :** « Je ne veux pas acheter les yeux fermés »
@@ -83,7 +58,7 @@ Benjamin
 
 Salut {first_name},
 
-Il y a une phrase que j'entends souvent pendant les appels :
+Il y a une phrase qu'on me dit souvent :
 
 « Ça a l'air bien, mais je ne veux pas acheter les yeux fermés. »
 
@@ -447,9 +422,9 @@ PS : tu as déjà eu ton appel avec moi ? Pas besoin d'en refaire un complet. R�
 
 Salut {first_name},
 
-Lors de notre appel, on avait parlé de ta situation et de ce que tu voulais construire. Tu avais besoin de réfléchir, et je l'ai respecté.
+Pendant notre appel, je t'avais montré l'académie en détail. Tu avais besoin de réfléchir, et je l'ai respecté.
 
-Hier soir, j'ai ouvert l'académie en grand. Si tu étais là, tu as vu exactement ce qu'il y a à l'intérieur. Sinon, [le replay est ici]([LIEN REPLAY]).
+Hier soir, tu as pu voir autre chose : des élèves qui étaient exactement là où tu es, et qui ont raconté en direct ce qui a changé pour eux. Si tu n'as pas pu être là, [le replay est ici]([LIEN REPLAY]).
 
 Alors je te pose la question simplement : **qu'est-ce qui te retient encore ?**
 

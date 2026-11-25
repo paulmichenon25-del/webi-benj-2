@@ -5,7 +5,7 @@ Objectif unique : **convertir les personnes qui ont déjà eu un appel, et faire
 
 | Fichier | Contenu |
 |---|---|
-| `01-mails.md` | 19 mails pour toute la base, dont 4 mails de preuve, + 3 mails pour les « appel passé, pas encore inscrits » |
+| `01-mails.md` | 19 mails pour toute la base, dont 4 mails de preuve, + 2 mails pour les « appel passé, pas encore inscrits » |
 | `02-whatsapp.md` | Messages du groupe WhatsApp + messages individuels de Benjamin (les plus importants pour closer) |
 | `03-sms.md` | 3 SMS + règles à respecter |
 | `04-instagram-youtube.md` | Plan stories, post/reel, titre et description du live YouTube |
@@ -54,7 +54,9 @@ Il reste donc **une cinquantaine de personnes qui ont eu un appel en octobre san
 
 ## 2. Le concept : « Portes ouvertes de l'académie »
 
-Pourquoi ce nom : c'est exactement ce que fait Benjamin (il ouvre la plateforme en direct), et ça répond à la vraie objection des hésitants après l'appel : **« Je ne sais pas à quoi ça ressemble de l'intérieur, j'ai peur d'acheter les yeux fermés. »**
+Pourquoi ce nom : c'est exactement ce que fait Benjamin (il ouvre la plateforme en direct). Pour les inscrits qui n'ont pas eu d'appel (S2), c'est la première fois qu'ils voient l'académie de l'intérieur.
+
+**Attention pour S1 (appel passé, pas inscrit) :** Benjamin leur a déjà présenté l'académie en partage d'écran pendant l'appel. Pour eux, l'argument n'est donc pas « voir l'intérieur », mais ce que l'appel ne leur a pas donné : **des élèves qui racontent leurs résultats en direct, les questions et les doutes des autres, et l'annonce (bonus + date limite) réservée aux présents.** Leurs vraies objections sont le budget, le temps et la peur de ne pas y arriver.
 
 Promesse : *« Vendredi soir, je t'ouvre les portes de l'académie. Tu vois tout, en vrai, avant de décider. »*
 
@@ -70,7 +72,7 @@ Ce que le live contient (à annoncer dans la com) :
 
 | Segment | Qui | Ce qu'il reçoit |
 |---|---|---|
-| **S1 · Appel passé, pas inscrit** | Personnes avec un appel iClosed (juillet + octobre) sans achat | Toute la séquence + 3 mails dédiés + messages WhatsApp individuels de Benjamin + SMS |
+| **S1 · Appel passé, pas inscrit** | Personnes avec un appel iClosed (juillet + octobre) sans achat | Toute la séquence + 2 mails dédiés après le live + messages WhatsApp individuels de Benjamin + SMS |
 | **S2 · Inscrits webinaires** | Inscrits juillet + octobre, sans appel | La séquence principale + SMS |
 | **S3 · Élèves** | Membres actuels de l'académie | **Exclus de la séquence de vente.** Un message à part sur Skool pour les inviter (voir `02-whatsapp.md`, partie C) |
 
@@ -100,7 +102,7 @@ Les mails sont écrits ; ces points sont marqués `[À CONFIRMER]` dans les fich
 | Date | Mail (toute la base) | S1 en plus | WhatsApp groupe | Instagram | SMS |
 |---|---|---|---|---|---|
 | **Mar 24/11** | M1 · 19h30 Annonce | | W1 · 19h vidéo + post Skool élèves | Annonce + sticker rappel | |
-| Mer 25/11 | | S1-A · 19h30 « On s'est parlé » | | Stories coulisses | |
+| Mer 25/11 | | | | Stories coulisses | |
 | **Jeu 26/11** | M2 · 19h30 Acheter les yeux fermés | Message individuel n°1 | W2 · 11h vocal | Reel | |
 | Ven 27/11 | **P1 · 19h30 Preuve : Nicolas** | | | | |
 | Sam 28/11 | M3 · 11h Histoire d'élève | | W3 · 18h témoignage | Stories témoignage | |
