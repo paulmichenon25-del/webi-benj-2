@@ -82,6 +82,8 @@ Le lien du live et les rappels passeront par le groupe WhatsApp :
 Je te fais des bisous,
 Benjamin
 
+PS : tu peux voir la vidéo de Nicolas et les messages des autres élèves [ici]([LIEN TÉMOIGNAGES]).
+
 ---
 
 ### P1 · Vendredi 27 novembre, 19h30 · Preuve : l'histoire de Nicolas
@@ -145,6 +147,8 @@ Vendredi soir, tu verras où ce travail se fait. Et tu entendras certains élèv
 Bon week-end à toi,
 Benjamin
 
+PS : d'autres histoires comme celle de Samantha sont [ici]([LIEN TÉMOIGNAGES]).
+
 ---
 
 ### P2 · Dimanche 29 novembre, 19h30 · Preuve : les prix
@@ -166,6 +170,9 @@ Alors voilà ce que certains m'ont envoyé ces derniers mois :
 Ce qu'ils ont en commun, ce n'est pas l'audace. C'est qu'ils ont construit leur offre avant de toucher à leur prix.
 
 Quand ce que tu proposes ne ressemble à rien d'autre, la cliente ne compare plus. Elle réserve.
+
+Leurs captures, telles que je les ai reçues :
+👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])
 
 Vendredi soir, je te montre le module où ça se construit, et la fiche qu'ils ont tous remplie.
 👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
@@ -228,6 +235,9 @@ C'est une des phrases que j'entends le plus pendant les appels. Alors je te pré
 Et une élève débutante qui m'a raconté que deux clientes faisaient cinq heures de route pour venir chez elle.
 
 Débuter, ce n'est pas un problème. C'est même le meilleur moment : tu pars directement sur de bonnes bases, au lieu de passer des années à corriger tes erreurs.
+
+Leurs vidéos et leurs captures :
+👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])
 
 Vendredi 4 décembre, 20h, je te montre par où ils ont commencé.
 👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
