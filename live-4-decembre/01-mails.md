@@ -51,37 +51,33 @@ PS : j'aurai une annonce à faire pendant le live, réservée à ceux qui seront
 
 ---
 
-### M2 · Jeudi 26 novembre, 19h30 · L'objection « acheter les yeux fermés »
+### M2 · Jeudi 26 novembre, 19h30 · Seul dans son coin
 
-**Objet :** « Je ne veux pas acheter les yeux fermés »
-**Pré-header :** Tu as raison. Alors je te montre tout.
+**Objet :** Ce que j'aurais aimé avoir à mes débuts
+**Pré-header :** Pas une formation de plus. Autre chose.
 
 Salut {first_name},
 
-Il y a une phrase qu'on me dit souvent :
+Quand j'ai commencé le boudoir, j'étais seul.
 
-« Ça a l'air bien, mais je ne veux pas acheter les yeux fermés. »
+Seul pour choisir mes réglages. Seul pour fixer mes prix, en regardant ceux des autres et en me demandant si j'avais le droit de demander autant. Seul face à une cliente qui me demandait « vous pouvez me faire un prix ? ». Seul le soir, devant mes photos, à me demander si elles étaient bonnes ou si je me racontais des histoires.
 
-Et tu sais quoi ? Je trouve ça très sain.
+J'ai appris. Mais j'ai mis des années, et j'ai fait à peu près toutes les erreurs possibles.
 
-On a tous déjà payé une formation qui promettait beaucoup et qui s'est résumée à trois vidéos et un PDF. Alors avant de te lancer, tu as besoin de voir. Pas une page de vente, pas une liste de modules : le vrai contenu, la vraie communauté, ce que tu feras concrètement la première semaine.
+Ce qui m'a le plus manqué, ce n'est pas une vidéo de plus. C'est quelqu'un à qui montrer mes images, poser ma question, et entendre « oui, c'est ça » ou « non, recommence ».
 
-C'est pour ça que vendredi, je ne vais pas te « présenter » l'académie. **Je vais l'ouvrir devant toi, en direct.** Tu verras :
+C'est pour ça que l'académie, ce n'est pas que des modules. C'est une communauté où tes photos sont regardées une par une, où tu poses tes questions, et où d'autres photographes avancent en même temps que toi.
 
-- les modules et la façon dont ils se débloquent, dans l'ordre ;
-- les fiches pratiques que les élèves remplissent ;
-- la communauté, les retours sur les photos, les lives ;
-- et des élèves qui te diront, eux, ce que ça a changé.
+Une élève m'a écrit un jour : « Ce qui fait vraiment la différence, c'est toi : ta présence, ton suivi. » C'est le plus beau compliment qu'on puisse me faire.
 
-Ensuite, tu décides. En connaissance de cause.
-
-Vendredi 4 décembre, 20h, sur YouTube :
+Vendredi 4 décembre, je te montre aussi cette partie-là, en direct.
 👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
-Belle soirée à toi,
-Benjamin
+Le lien du live et les rappels passeront par le groupe WhatsApp :
+👉 [Je rejoins le groupe WhatsApp]([LIEN WHATSAPP])
 
-PS : si tu n'es pas encore dans le groupe WhatsApp, [c'est par ici]([LIEN WHATSAPP]). Les rappels de dernière minute passeront par là.
+Je te fais des bisous,
+Benjamin
 
 ---
 
@@ -506,7 +502,7 @@ Benjamin M., Le Mans
 « Lancez-vous les yeux fermés. »
 Samantha, Échappe et Belle
 
-Celle de Samantha me fait sourire. Il y a une dizaine de jours, je te disais l'inverse : ne te lance pas les yeux fermés. Vendredi, tu as vu l'académie les yeux grands ouverts.
+Celle de Samantha me fait sourire. Moi, je préfère que tu te lances les yeux grands ouverts : c'est pour ça que je t'ai tout montré vendredi.
 
 Tous ces messages, avec les captures et les vidéos :
 👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])

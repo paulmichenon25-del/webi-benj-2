@@ -103,7 +103,7 @@ Les mails sont écrits ; ces points sont marqués `[À CONFIRMER]` dans les fich
 |---|---|---|---|---|---|
 | **Mar 24/11** | M1 · 19h30 Annonce | | W1 · 19h vidéo + post Skool élèves | Annonce + sticker rappel | |
 | Mer 25/11 | | | | Stories coulisses | |
-| **Jeu 26/11** | M2 · 19h30 Acheter les yeux fermés | Message individuel n°1 | W2 · 11h vocal | Reel | |
+| **Jeu 26/11** | M2 · 19h30 Ce que j'aurais aimé avoir à mes débuts | Message individuel n°1 | W2 · 11h vocal | Reel | |
 | Ven 27/11 | **P1 · 19h30 Preuve : Nicolas** | | | | |
 | Sam 28/11 | M3 · 11h Histoire d'élève | | W3 · 18h témoignage | Stories témoignage | |
 | Dim 29/11 | **P2 · 19h30 Preuve : les prix** | | | | |
