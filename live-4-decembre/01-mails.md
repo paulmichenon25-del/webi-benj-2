@@ -51,26 +51,29 @@ PS : j'aurai une annonce à faire pendant le live, réservée à ceux qui seront
 
 ---
 
-### M2 · Jeudi 26 novembre, 19h30 · Seul dans son coin
+### M2 · Jeudi 26 novembre, 19h30 · La communauté
 
-**Objet :** Ce que j'aurais aimé avoir à mes débuts
-**Pré-header :** Pas une formation de plus. Autre chose.
+**Objet :** Ce que les élèves citent en premier
+**Pré-header :** Et ce n'est pas les vidéos
 
 Salut {first_name},
 
-Quand j'ai commencé le boudoir, j'étais seul.
+Quand je demande aux élèves ce qui a vraiment changé pour eux dans l'académie, je m'attends à ce qu'ils me parlent des modules. Du prix, de l'offre, de la retouche.
 
-Seul pour choisir mes réglages. Seul pour fixer mes prix, en regardant ceux des autres et en me demandant si j'avais le droit de demander autant. Seul face à une cliente qui me demandait « vous pouvez me faire un prix ? ». Seul le soir, devant mes photos, à me demander si elles étaient bonnes ou si je me racontais des histoires.
+Et pourtant, ce qui revient en premier, c'est presque toujours la communauté.
 
-J'ai appris. Mais j'ai mis des années, et j'ai fait à peu près toutes les erreurs possibles.
+Parce qu'à l'intérieur, tu n'es plus seul(e) dans ton coin :
 
-Ce qui m'a le plus manqué, ce n'est pas une vidéo de plus. C'est quelqu'un à qui montrer mes images, poser ma question, et entendre « oui, c'est ça » ou « non, recommence ».
+- **le salon critique**, où tu postes tes photos et où elles sont analysées une par une : ce qui marche, ce qui coince, ce que tu peux améliorer dès ta prochaine séance ;
+- **un salon par sujet** : le traitement, le décor, le matériel, la tarification, les réseaux sociaux. Tu poses ta question, quelqu'un y a déjà été confronté ;
+- **les lives avec moi**, pour faire le point sur la situation de chacun ;
+- et surtout, **des photographes qui avancent en même temps que toi**. Ceux qui célèbrent ta première réservation, et que tu encourages quand c'est leur tour.
 
-C'est pour ça que l'académie, ce n'est pas que des modules. C'est une communauté où tes photos sont regardées une par une, où tu poses tes questions, et où d'autres photographes avancent en même temps que toi.
+Willpict, en Normandie, me l'a écrit comme ça : « Après un an à échanger avec Ben, je n'ai jamais autant progressé. »
 
-Une élève m'a écrit un jour : « Ce qui fait vraiment la différence, c'est toi : ta présence, ton suivi. » C'est le plus beau compliment qu'on puisse me faire.
+Nicolas, lui, en parle dans sa vidéo : la communauté, c'est ce qui fait qu'on n'est jamais seul dans son coin.
 
-Vendredi 4 décembre, je te montre aussi cette partie-là, en direct.
+Vendredi 4 décembre, je t'ouvre aussi les portes de cette communauté, en direct.
 👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
 Le lien du live et les rappels passeront par le groupe WhatsApp :
@@ -78,6 +81,8 @@ Le lien du live et les rappels passeront par le groupe WhatsApp :
 
 Je te fais des bisous,
 Benjamin
+
+PS : tu peux voir la vidéo de Nicolas et les messages des autres élèves [ici]([LIEN TÉMOIGNAGES]).
 
 ---
 
