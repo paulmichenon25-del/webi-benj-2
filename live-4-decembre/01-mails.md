@@ -73,6 +73,9 @@ Willpict, en Normandie, me l'a écrit comme ça : « Après un an à échanger a
 
 Nicolas, lui, en parle dans sa vidéo : la communauté, c'est ce qui fait qu'on n'est jamais seul dans son coin.
 
+Sa vidéo et les messages des autres élèves sont ici :
+👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])
+
 Vendredi 4 décembre, je t'ouvre aussi les portes de cette communauté, en direct.
 👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
@@ -81,8 +84,6 @@ Le lien du live et les rappels passeront par le groupe WhatsApp :
 
 Je te fais des bisous,
 Benjamin
-
-PS : tu peux voir la vidéo de Nicolas et les messages des autres élèves [ici]([LIEN TÉMOIGNAGES]).
 
 ---
 
