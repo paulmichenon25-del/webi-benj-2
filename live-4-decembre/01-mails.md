@@ -96,26 +96,29 @@ Salut {first_name},
 
 Aujourd'hui, je laisse parler quelqu'un d'autre que moi.
 
-Nicolas fait du mariage, en Alsace. Quand il rejoint l'académie, le boudoir, pour lui, c'est une envie. Pas encore une activité.
+Nicolas est photographe de mariage, en Alsace. Il y a six mois, en boudoir, il partait de zéro.
 
 Voilà ce qu'il m'a envoyé, au fil des mois :
 
-- le premier mois : 750 € de chiffre d'affaires en boudoir ;
+- le premier mois dans l'académie : 750 € de chiffre d'affaires ;
 - au bout de quatre mois : 11 séances payées ;
 - depuis août : 11 000 €, dont 6 000 € sur le seul mois d'octobre ;
 - un panier moyen autour de 500 € par séance, tout compris.
 
-Et il fait toujours ses mariages à côté. Le boudoir ne les a pas remplacés : il a rempli les mois où le mariage s'arrête.
+Et il fait toujours ses mariages à côté. Le boudoir ne les a pas remplacés : il s'est ajouté.
 
 Il y a un message de lui que je garde précieusement : « Je serais des années en arrière si tu n'étais pas là. »
 
-Je ne te dis pas que tu feras pareil, chacun avance à son rythme. Mais au départ, Nicolas n'avait rien de plus que toi : un appareil, une envie, et des doutes.
+Je ne te dis pas que tu feras pareil, chacun avance à son rythme. Mais je voulais que tu voies ce qui peut se passer en quelques mois, quand on part de zéro avec la bonne méthode.
 
 Ses captures, telles que je les ai reçues, sont ici :
 👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])
 
 Vendredi 4 décembre à 20h, je te montre de l'intérieur l'académie qu'il a suivie.
 👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
+
+Le lien du live et les rappels passeront par le groupe WhatsApp :
+👉 [Je rejoins le groupe WhatsApp]([LIEN WHATSAPP])
 
 Je te fais des bisous,
 Benjamin
