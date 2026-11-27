@@ -24,3 +24,7 @@ Proposition de déroulé pour construire les slides et caler les témoignages. L
 ## Côté appels
 - **Ouvrir assez de créneaux iClosed du samedi 5 au mercredi 9 décembre**, y compris le mercredi 9 : la date limite tombe ce soir-là, et les mails M14 et M15 renvoient vers l'appel.
 - Pour les personnes déjà appelées : un appel court (15 min) ou un échange WhatsApp suffit, avec le lien de paiement adapté.
+
+## Diaporama Canva
+« Live Portes ouvertes · 4 décembre » (22 slides, gabarit des lives d'octobre) : https://www.canva.com/d/A_5gz2_cWIMrc7i
+Chiffres des élèves vérifiés sur leurs captures (page témoignages). Reste à remplir : [BONUS] et [DATE LIMITE] (slides 18 et 22).
