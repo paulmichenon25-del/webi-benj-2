@@ -100,14 +100,14 @@ Nicolas est photographe de mariage, en Alsace. Il y a six mois, en boudoir, il p
 
 Voilà ce qu'il m'a envoyé, au fil des mois :
 
-- le premier mois dans l'académie : 750 € de chiffre d'affaires ;
+- le premier mois dans l'académie : 750 € de chiffre d'affaires [À CONFIRMER : chiffre tiré d'une vidéo, pas vérifié sur capture] ;
 - au bout de quatre mois : 11 séances payées ;
-- depuis août : 11 000 €, dont 6 000 € sur le seul mois d'octobre ;
+- d'août à fin octobre : 11 000 € en trois mois, dont 6 000 € sur le seul mois d'octobre ;
 - un panier moyen autour de 500 € par séance, tout compris.
 
 Et il fait toujours ses mariages à côté. Le boudoir ne les a pas remplacés : il s'est ajouté.
 
-Il y a un message de lui que je garde précieusement : « Je serais des années en arrière si tu n'étais pas là. »
+Il y a un message de lui que je garde précieusement : « Je serais des années en arrière de ce que je fais aujourd'hui si tu n'étais pas là. »
 
 Je ne te dis pas que tu feras pareil, chacun avance à son rythme. Mais je voulais que tu voies ce qui peut se passer en quelques mois, quand on part de zéro avec la bonne méthode.
 
