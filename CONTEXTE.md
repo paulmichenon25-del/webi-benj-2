@@ -36,7 +36,8 @@ Points de comparaison du webinaire de juillet (Méthode ART) : 7 390 € investi
 - Retargeting « RT - Nurturing - Oct 2026 », du 21/10 au 14/11 : **180,84 €**.
 - **Total Meta : 2 137,55 €**, recoupé avec les rechargements du solde prépayé.
 - Créas : scripts ADS 1 à 10, RT 1 à 3 (dossier Drive « Script ADS Webi 2 Benj »). La pub la plus diffusée au lancement est « BOU-05 : La journée type… » (2 371 personnes touchées le 07/10).
-- Coûts qu'on ne connaît pas encore : montage des pubs, Twilio, logiciels (iClosed, systeme.io et Vercel : 50 €/mois dans le recap de novembre), Claude API (169,63 $ en octobre).
+- **Budget total donné par Paul : 2 800 €, entièrement dépensé** (pub d'acquisition, retargeting et Twilio). Les reçus Meta totalisent 2 137,55 €, ce qui laisse environ 662 € pour Twilio et les autres frais, à confirmer.
+- Hors budget (frais partagés dans les recaps) : logiciels (iClosed, systeme.io et Vercel : 50 €/mois dans le recap de novembre) et Claude API (169,63 $ en octobre).
 
 ### Audience
 - WebinarJam soir 1 (doc « Data Webi 2 benjamin ») :
