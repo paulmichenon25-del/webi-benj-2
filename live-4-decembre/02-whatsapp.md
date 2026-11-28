@@ -69,6 +69,21 @@ Texte sous la vidéo :
 
 (Idéal : joindre un extrait vidéo d'un témoignage, 30 à 60 s, ex. les clips « IG SAM 01 » ou « Benjamin Le Mans » du Drive.)
 
+**Version texte utilisée le 28/11 (histoire de Maëllie, chiffres vérifiés sur ses captures) :**
+
+> Il y a quelques mois, Maëllie envisageait d'abandonner la photo.
+>
+> Aujourd'hui : des séances à 800 €, et depuis deux mois, elle se verse un salaire net d'environ 1 450 € par mois avec son activité boudoir. Elle a même réservé 880 € de séances en 24 heures.
+>
+> Le message qu'elle m'a envoyé, je le garde précieusement : « Ce qui fait vraiment la différence, c'est toi : ta présence, ton suivi. »
+>
+> Ses captures et celles des autres élèves sont ici 👉 temoignages.fineart-academie.com
+>
+> Vendredi 4 décembre à 20h, je vous montre de l'intérieur ce qu'elle a suivi. Le lien du live arrive ici la veille.
+>
+> Douce soirée à vous,
+> Benjamin
+
 ### W4 · Mercredi 2 décembre, 19h · Coulisses (photo ou courte vidéo écran)
 
 > Je suis en train de préparer la visite de vendredi 👀

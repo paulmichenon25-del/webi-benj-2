@@ -124,33 +124,40 @@ Benjamin
 
 ---
 
-### M3 · Samedi 28 novembre, 11h · Histoire d'élève
+### M3 · Samedi 28 novembre, 11h · Preuve : Samantha (chiffres vérifiés sur ses captures)
 
-**Objet :** De 190 € à 350 € la séance
-**Pré-header :** Sans perdre une seule cliente
+**Objet :** « J'ai dû embaucher une amie pour répondre »
+**Pré-header :** L'histoire de Samantha
 
 Salut {first_name},
 
-Je voudrais te raconter l'histoire de Samantha.
+Je voudrais te raconter l'histoire de Samantha, d'Échappe et Belle.
 
-Samantha faisait déjà du boudoir avant de rejoindre l'académie. De belles images, des clientes contentes. Sa séance était à 190 €.
+Samantha faisait déjà du boudoir. De belles images, des clientes contentes, une séance à 190 €. Et comme beaucoup de photographes, elle avait peur de monter ses prix.
 
-Et comme beaucoup de photographes, elle avait peur de monter ses prix. Peur que les clientes partent, peur qu'on lui dise « c'est trop cher », peur de ne plus être légitime.
+Ce qu'on a travaillé ensemble, ce n'est pas juste un nouveau tarif. C'est son offre, et la façon d'en parler.
 
-Ce qu'on a travaillé ensemble, ce n'est pas un nouveau tarif. C'est une nouvelle offre : l'expérience complète, du premier message à la remise des photos, et la façon d'en parler.
+Voilà ce qu'elle m'a écrit quelques semaines plus tard :
 
-Aujourd'hui, sa séance est à 350 €. Et elle n'a perdu aucune cliente.
+« J'ai gagné pas loin de 8 000 abonnées, j'ai dû embaucher une amie pour répondre à plus de 110 questionnaires, et j'ai rempli mon agenda à une vitesse folle. »
+
+Sa séance est passée de 190 € à 350 €. Et elle a ajouté : « J'ai même des femmes qui m'en ont pris deux d'un coup, sans négocier quoi que ce soit. »
+
+Résultat : 2 900 € en juin. Et surtout, moins de séances dans le mois, moins de charge mentale, pour presque autant de chiffre d'affaires qu'avant.
 
 Je ne te raconte pas ça pour te promettre la même chose. Chaque parcours est différent. Je te le raconte parce que c'est exactement ce qui se passe à l'intérieur de l'académie : des photographes qui avaient déjà le talent, et à qui il manquait la méthode.
 
-Vendredi soir, tu verras où ce travail se fait. Et tu entendras certains élèves te le raconter eux-mêmes.
+Ses captures, telles que je les ai reçues :
+👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])
 
+Vendredi 4 décembre, 20h, je te montre de l'intérieur ce qu'elle a suivi.
 👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])
 
-Bon week-end à toi,
-Benjamin
+Le lien du live et les rappels passeront par le groupe WhatsApp :
+👉 [Je rejoins le groupe WhatsApp]([LIEN WHATSAPP])
 
-PS : d'autres histoires comme celle de Samantha sont [ici]([LIEN TÉMOIGNAGES]).
+Je te fais des bisous,
+Benjamin
 
 ---
 
