@@ -145,10 +145,12 @@ Sa séance est passée de 190 € à 350 €. Et elle a ajouté : « J'ai même 
 
 Résultat : 2 900 € en juin. Et surtout, moins de séances dans le mois, moins de charge mentale, pour presque autant de chiffre d'affaires qu'avant.
 
-Je ne te raconte pas ça pour te promettre la même chose. Chaque parcours est différent. Je te le raconte parce que c'est exactement ce qui se passe à l'intérieur de l'académie : des photographes qui avaient déjà le talent, et à qui il manquait la méthode.
+Et aujourd'hui ? Samantha est littéralement surbookée. C'est elle qui choisit ses réservations, et elle remplit son agenda comme elle le souhaite.
 
-Ses captures, telles que je les ai reçues :
-👉 [Je regarde les témoignages]([LIEN TÉMOIGNAGES])
+Elle raconte tout dans l'interview qu'on a tournée ensemble :
+👉 [Je regarde l'interview de Samantha](https://youtu.be/xEzd3fHvKtQ)
+
+Je ne te raconte pas ça pour te promettre la même chose. Chaque parcours est différent. Je te le raconte parce que c'est exactement ce qui se passe à l'intérieur de l'académie : des photographes qui avaient déjà le talent, et à qui il manquait la méthode.
 
 Vendredi 4 décembre, 20h, je te montre de l'intérieur ce qu'elle a suivi.
 👉 [J'ajoute le live à mon agenda]([LIEN AGENDA])

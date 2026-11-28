@@ -69,15 +69,15 @@ Texte sous la vidéo :
 
 (Idéal : joindre un extrait vidéo d'un témoignage, 30 à 60 s, ex. les clips « IG SAM 01 » ou « Benjamin Le Mans » du Drive.)
 
-**Version texte utilisée le 28/11 (histoire de Maëllie, chiffres vérifiés sur ses captures) :**
+**Version utilisée le 28/11 : d'abord la capture de Maëllie (IMG_1602.jpg, dossier Drive « Avis Benj clients »), puis ce message juste en dessous :**
 
-> Il y a quelques mois, Maëllie envisageait d'abandonner la photo.
+> 👆 Ce message, c'est Maëllie, de Sinister Elegance.
 >
-> Aujourd'hui : des séances à 800 €, et depuis deux mois, elle se verse un salaire net d'environ 1 450 € par mois avec son activité boudoir. Elle a même réservé 880 € de séances en 24 heures.
+> Il y a quelques mois, elle envisageait d'abandonner la photo.
 >
-> Le message qu'elle m'a envoyé, je le garde précieusement : « Ce qui fait vraiment la différence, c'est toi : ta présence, ton suivi. »
+> Aujourd'hui, elle vend ses séances 800 €, et ça fait deux mois qu'elle se verse un salaire net d'environ 1 450 € avec son activité boudoir.
 >
-> Ses captures et celles des autres élèves sont ici 👉 temoignages.fineart-academie.com
+> Ce n'est pas une question de chance. C'est une méthode, appliquée sérieusement.
 >
 > Vendredi 4 décembre à 20h, je vous montre de l'intérieur ce qu'elle a suivi. Le lien du live arrive ici la veille.
 >
