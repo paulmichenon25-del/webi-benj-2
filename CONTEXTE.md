@@ -62,7 +62,7 @@ Points de comparaison du webinaire de juillet (Méthode ART) : 7 390 € investi
 
 ### Incohérences à trancher
 1. Pierre-Adrien Lagrange (Sheet) ou Pascale Lagrange (Stripe) : quel est le bon nom ?
-2. Samuel Ernadote (Erny Capture) : compté dans ce webinaire (Sheet) ou dans le webinaire précédent (recap de paiement) ?
+2. ~~Samuel Ernadote (Erny Capture)~~ : **tranché par Paul, il compte bien pour le webinaire d'octobre.**
 3. Anaïs Maurin (363 € × 8, novembre) n'apparaît pas dans le Sheet.
 4. Amandine Neu (Sheet) ou Amandine Peugeot (Stripe) : quel est le bon nom ? Et L'Autre Regard Boudoir est-il bien Coralie Krema Cordoba ?
 5. Julien Lanoy est inscrit sur Skool, mais on ne trouve aucun paiement.
